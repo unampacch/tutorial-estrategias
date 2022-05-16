@@ -1,0 +1,100 @@
+/* ========= INICIO BLOQUE UNO ========== */
+
+.bunoini {
+    background: #05A2C6;
+    background-size: 35%;
+    background-position: 5% 5%;
+    background-repeat: no-repeat;
+    min-height: 30rem;
+}
+.titulobloque {
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 900;
+    color: #FFFFFF;
+    font-size: 2.5rem;
+}
+.proposito {
+    color: #FFFFFF;
+    font-size: 1.1rem;
+}
+ul.preguntas {
+    color: #FFFFFF;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 900;
+    font-size: 1.3rem;
+}
+ul.preguntas li {
+    list-style: none;
+padding: 0.5rem .5rem;
+}
+
+/* ========= FIN BLOQUE UNO ========== */
+
+/* ========= COLOR FONDO OBJETO ========== */
+
+.absoluto {
+ position:relative;
+ z-index:1;
+}
+.absoluto h3 {
+  margin-top: 10rem;
+/*  color: #FFFFFF;*/
+
+}
+.color-fondo-objeto p, .titulo-fondo-morado {
+  /*color: #FFFFFF;*/
+}
+.color-fondo-objeto:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 48%;
+  top: 0;
+  height: 40%;
+  width: 100vw;
+  transform: translateX(-50%);
+  z-index: 0;
+  box-sizing: border-box;
+  background-color: #dfdfdf;
+  margin-top: 6.5rem;
+}
+
+@media screen and (max-width: 991px) {
+  .color-fondo-objeto:before {
+    margin-top: 6.5rem;
+    height: 15%;
+    left: 50%;
+  }
+}
+
+@media screen and (max-width: 990px) {
+.color-fondo-objeto p {
+/*color: #FFF;*/
+}
+}
+
+@media screen and (max-width: 768px) {
+  .color-fondo-objeto:before {
+    height: 10%;
+  }
+}
+
+
+/* ========= PAGINATION ========== */
+
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: #5e22b2;
+    border-color: #5e22b2;
+}
+.page-link {
+    position: relative;
+    display: block;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #5e22b2;
+    background-color: #fff;
+    border: 1px solid #9ed7dc;
+}

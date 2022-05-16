@@ -1,0 +1,145 @@
+{% extends 'base/app-bloques.twig' %}
+
+{% set page_title = 'Almacenar información' %}
+
+{% block content %}
+
+    <div class="contaniner-fluid bg-morado py-5 wow bounceInDown">
+        <div class="container">
+            <h2 class="titulobloque">Las TIC para aprender</h2>
+        </div>
+    </div>
+    <div class="container wow fadeInUp">
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <h1>¿Dónde puedes almacenar información en línea?</h1>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-10 mx-auto">
+                <p>En los últimos años han surgido diversas herramientas para que puedas guardar y consultar tu información a través de internet sin necesidad de una memoria de almacenamiento (USB) o bien la instalación de determinados programas en cada computadora en la que trabajes. A este sistema se le conoce con el nombre de “nube informática” o <span class="font-italic">Cloud Computing</span>, además de utilizar internet, se basa en centros de datos remotos para gestionar servicios de información y aplicaciones; esto hace más fácil consultar tus archivos desde tu celular, cualquier computadora, laptop o tableta.
+</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-morado mt-5 mb-5 container-fluid wow fadeInUp">
+        <div class="container">
+            <div class="p-2 text-white lead">
+                <i class="fas fa-film"></i>
+                &nbsp;&nbsp; ¿Qué es Cloud Computing?</div>
+        </div>
+    </div>
+    <div class="container wow fadeInUp">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/WJIFojx7UuA" allowfullscreen="allowfullscreen"></iframe>
+                </div>
+                <div class="blockquote-footer">
+                    ¿Qué es la nube? (Cloud Computing). Recuperado de https://youtu.be/WJIFojx7UuA (junio, 2018).
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="bg-rosa text-white text-center d-flex container-fluid mt-5 wow fadeInUp">
+        <div class="container p-3">
+            <div class=" text-white lead">Algunas herramientas que hacen uso de la “nube informática” y que son muy útiles para respaldar y compartir archivos de video, audio, texto e imagen, son:</div>
+            <div class="text-white d-none d-xl-block mt-3"><i aria-hidden="true" class=" far fa-2x fa-arrow-alt-circle-down"></i></div>
+        </div>
+    </div>
+    <div class="container mt-5 wow fadeInUp">
+
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <ul id="tabs1" role="tablist" class="nav nav-tabs nav-pills with-arrow lined flex-column flex-sm-row text-center">
+                    <li class="nav-item flex-sm-fill">
+                        <a data-toggle="tab" href="#tab-1" role="tab" aria-selected="true" class="nav-link  mr-sm-3 rounded-0 active">OneDrive</a>
+                    </li>
+                    <li class="nav-item flex-sm-fill">
+                        <a data-toggle="tab" href="#tab-2" role="tab" aria-selected="false" class="nav-link mr-sm-3 rounded-0">Dropbox</a>
+                    </li>
+                    <li class="nav-item flex-sm-fill">
+                        <a data-toggle="tab" href="#tab-3" role="tab" aria-selected="false" class="nav-link rounded-0">Google Drive</a>
+                    </li>
+                    <li class="nav-item flex-sm-fill">
+                        <a data-toggle="tab" href="#tab-4" role="tab" aria-selected="false" class="nav-link rounded-0">iCloud</a>
+                    </li>
+                </ul>
+                <div id="tabs1Content" class="tab-content">
+                    <div id="tab-1" role="tabpanel" aria-labelledby="home-tab" class="tab-pane fade px-4 py-5 show active">
+                        <div class="row">
+                          <div class="col-lg-4">
+                          <img class="img-fluid" alt="TIC" src="/img/bloque4/b4_02_01.jpg">
+                          </div>
+                          <div class="col-lg-8">
+                              <div class="pl-5">
+                              <h3 class="azul"> <a href="https://www.microsoft.com/es-mx/microsoft-365/onedrive/online-cloud-storage" target="_blank"><i class="fas fa-link"></i> OneDrive</a></h3>
+                              <p>Te ofrece hasta un Terabyte para almacenar archivos. También puedes formar grupos con tus compañeros en los que cada miembro puede acceder, crear, modificar y eliminar archivos dentro de las carpetas de OneDrive del grupo. Con tu cuenta de correo de <span class="font-weight-bold rosa">alumno.cch.unam.mx</span> tienes acceso a esta herramienta.</p>
+                              </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div id="tab-2" role="tabpanel" aria-labelledby="profile-tab" class="tab-pane fade px-4 py-5">
+                        <div class="row">
+                          <div class="col-lg-4">
+                          <img class="img-fluid" alt="TIC" src="/img/bloque4/b4_02_02.jpg">
+                          </div>
+                          <div class="col-lg-8">
+                              <div class="pl-5">
+                              <h3 class="azul"> <a href="https://www.dropbox.com/h" target="_blank"><i class="fas fa-link"></i> Dropbox</a></h3>
+                              <p>Al abrir tu cuenta te da 2 GB de espacio libre, que aumenta con 500 MB por cada conocido que invites a unirse y utilice este servicio. Es muy fácil descargarlo, sólo necesitas tener un correo electrónico y seguir unas breves instrucciones.</p>
+                              </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div id="tab-3" role="tabpanel" aria-labelledby="contact-tab" class="tab-pane fade px-4 py-5">
+                        <div class="row">
+                          <div class="col-lg-4">
+                          <img class="img-fluid" alt="TIC" src="/img/bloque4/b4_02_03.jpg">
+                          </div>
+                          <div class="col-lg-8">
+                              <div class="pl-5">
+                              <h3 class="azul"> <a href="https://www.google.com/intl/es-419_ve/drive/" target="_blank"><i class="fas fa-link"></i> Google Drive</a></h3>
+                              <p>Puedes utilizar hasta 5 GB gratis para guardar y acceder a tus archivos desde cualquier lugar y compartirlos con otras personas. El único requisito para descargarlo es que tengas una cuenta de correo electrónico en Gmail.</p>
+                              </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div id="tab-4" role="tabpanel" aria-labelledby="contact-tab" class="tab-pane fade px-4 py-5">
+                        <div class="row">
+                          <div class="col-lg-4">
+                          <img class="img-fluid" alt="TIC" src="/img/bloque4/b4_02_04.jpg">
+                          </div>
+                          <div class="col-lg-8">
+                              <div class="pl-5">
+                              <h3 class="azul"> <a href="https://www.apple.com/mx/icloud/" target="_blank"><i class="fas fa-link"></i> iCloud</a></h3>
+                              <p>Diseñado para los productos Apple, se encarga de sincronizar todas las aplicaciones que instales en todos tus dispositivos Apple, por ejemplo, si compras una canción con iTunes, estará disponible para tu iPhone, laptop, etcétera.</p>
+                              </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container-fluid mt-5">
+        <div class="row minh-100">
+            <div class="col-12 ">
+                <nav aria-label="Page navigation example">
+                  <ul class="pagination pagination-lg flex-wrap justify-content-center">
+                    <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/tic-aprender/que-son-las-tic"><i class="fas fa-angle-double-left"></i></a></li>
+                    <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/tic-aprender/que-son-las-tic">1</a></li>
+                    <li class="page-item active"><a class="page-link" href="{{base_path()}}bloques/tic-aprender/almacenar-informacion">2</a></li>
+                    <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/tic-aprender/trabajo-colaborativo">3</a></li>
+                    <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/tic-aprender/trabajo-colaborativo"><i class="fas fa-angle-double-right"></i></a></li>
+                  </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}

@@ -1,0 +1,120 @@
+{% extends 'base/app-bloques.twig' %}
+
+{% set page_title = 'Técnicas de estudio' %}
+
+{% block content %}
+
+    <div class="contaniner-fluid bg-rosa py-5 wow bounceInDown">
+        <div class="container">
+            <h2 class="titulobloque">Aprender a aprender</h2>
+        </div>
+    </div>
+    <div class="container wow fadeInUp">
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <h1>¿Cuáles técnicas, procedimientos o herramientas manejas?</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container wow fadeInUp">
+        <div class="row">
+            <div class="col-md-7 col-sm-12 mt-2">
+                <img class="img-fluid" alt="CCH" src="/img/bloque2/b2_05_01.png">
+            </div>
+            <div class="col-md-5 col-sm-12 mt-4">
+                <p class="lead morado mt-1">
+                    ¿Conoces a estos tenistas?</p>
+                <p class="mt-2">Para desarrollar estrategias de aprendizaje es muy importante que te involucres en las tareas o problemas a resolver y que manejes una serie de técnicas y procedimientos básicos.</p>
+                <p>Haciendo una analogía con el deporte,
+                    <a href="https://es.wikipedia.org/wiki/Serena_Williams" target="_blank">Serena Williams</a>,
+                    <a href="https://es.wikipedia.org/wiki/Roger_Federer" target="_blank">Roger Federer</a>,
+                    <a href="https://es.wikipedia.org/wiki/Mar%C3%ADa_Shar%C3%A1pova" target="_blank">María Sharapova</a>
+                    o
+                    <a href="https://es.wikipedia.org/wiki/Rafael_Nadal" target="_blank">Rafael Nadal</a>
+                    pueden lograr derrotar al oponente (objetivo) estratégicamente, siempre y cuando manejen una serie de técnicas básicas (saque de mano,
+                    <span class="font-italic">forehand</span>,
+                    <span class="font-italic">backhand</span>,
+                    <span class="font-italic">volley</span>…).</p>
+                <p>Así para aprender de manera consciente e intencional es de fundamental importancia recurrir a una serie de técnicas básicas como: </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-morado wow fadeInUp">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 offset-md-7">
+                    <div class="p-2 text-white lead">
+                        <i class="fas fa-search"></i>
+                        &nbsp;&nbsp; Búsqueda de información</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-azul wow fadeInUp">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 offset-md-7">
+                    <div class="p-2 text-white lead">
+                        <i class="fas fa-book"></i>
+                        &nbsp;&nbsp; Lectura</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-morado wow fadeInUp">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 offset-md-7">
+                    <div class="p-2 text-white lead">
+                        <i class="fas fa-pen-alt"></i>
+                        &nbsp;&nbsp; Escritura</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-azul wow fadeInUp">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 offset-md-7">
+                    <div class="p-2 text-white lead">
+                        <i class="fas fa-sitemap"></i>
+                        &nbsp; Organización gráfica de la información</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-rosa mt-3 mb-5 p-3 wow fadeInUp">
+        <div class="row">
+            <div class="col-7 mx-auto">
+                <div class="p-2 text-white text-center lead">
+                    Aprende de estas técnicas en las siguientes pantallas...
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mt-5">
+        <div class="row minh-100">
+            <div class="col-12 ">
+                <nav aria-label="Page navigation example">
+                  <ul class="pagination pagination-lg flex-wrap justify-content-center">
+                    <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/estrategias-de-aprendizaje"><i class="fas fa-angle-double-left"></i></a></li>
+                    <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/que-es-aprender">1</a></li>
+                    <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/estilos-de-aprendizaje">2</a></li>
+                    <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/cuestionario-honey-alonso">3</a></li>
+                    <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/estrategias-de-aprendizaje">4</a></li>
+                    <li class="page-item active"><a class="page-link" href="{{base_path()}}bloques/aprender/tecnicas-de-estudio">5</a></li>
+                    <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/busqueda-de-informacion">6</a></li>
+                    <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/lectura">7</a></li>
+                    <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/escritura">8</a></li>
+                    <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/organizadores-graficos">9</a></li>
+                    <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/habitos-de-estudio">10</a></li>
+                    <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/busqueda-de-informacion"><i class="fas fa-angle-double-right"></i></a></li>
+                  </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

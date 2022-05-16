@@ -1,0 +1,39 @@
+{% if flash.getMessage('exito') %}
+<!-- Modal HTML -->
+    <div id="myModalExito" class="flash-modal modal fade show">
+    	<div class="modal-dialog modal-confirm">
+    		<div class="modal-content">
+    			<div class="modal-header justify-content-center">
+    				<div class="icon-box">
+    					<!-- <i class="material-icons">&#xE876;</i> -->
+                        <i class="fas fa-check"></i>
+    				</div>
+    				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    			</div>
+    			<div class="modal-body text-center">
+    				<h4>¡Genial!</h4>
+    				<p>{{ flash.getMessage('exito') | first }}</p>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+{% endif %}
+
+{% if flash.getMessage('error') %}
+    <div id="myModalError" class="flash-modal modal fade">
+    	<div class="modal-dialog modal-confirm modal-error">
+    		<div class="modal-content">
+    			<div class="modal-header justify-content-center">
+    				<div class="icon-box">
+                        <i class="fas fa-times"></i>
+    				</div>
+    				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    			</div>
+    			<div class="modal-body text-center">
+    				<h4>¡Ups!</h4>
+    				<p>{{ flash.getMessage('error') | first }}</p>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+{% endif %}

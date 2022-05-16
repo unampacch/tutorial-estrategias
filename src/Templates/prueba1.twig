@@ -1,0 +1,141 @@
+{% extends 'base/app-bloques.twig' %}
+
+{% set page_title = 'TEA' %}
+
+{% block content %}
+
+    <h1>Prueba 1</h1>
+
+    <div class="container">
+
+
+
+        <div class="accordion" id="acordeon1">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+
+                        <a class=" text-left" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapseOne">
+                            Collapsible Group Item #1
+                        </a>
+
+                </div>
+
+                <div id="collapse1" class="collapse show" aria-labelledby="headingOne" data-parent="#acordeon1">
+                    <div class="card-body">
+                        <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a
+                            bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+                            raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <a class="collapsed" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapseTwo">
+                            Collapsible Group Item #2
+                        </a>
+                    </h2>
+                </div>
+                <div id="collapse2" class="collapse" aria-labelledby="headingTwo" data-parent="#acordeon1">
+                    <div class="card-body">
+                        <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a
+                            bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+                            raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <a class="collapsed" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapseThree">
+                            Collapsible Group Item #3
+                        </a>
+                    </h2>
+                </div>
+                <div id="collapse3" class="collapse" aria-labelledby="headingThree" data-parent="#acordeon1">
+                    <div class="card-body">
+                        <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a
+                            bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+                            raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <style media="screen">
+        /*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+        .accordion > .card{
+            overflow: visible;
+        }
+
+        .card {
+            background-color: #fff;
+            border: none;
+            box-shadow: none;
+            margin-bottom: 11px;
+            overflow: visible;
+        }
+        .card-header {
+            padding: 0;
+            border-radius: 10px;
+            border: none;
+        }
+        .card-header a {
+            color: #fff !important;
+            display: block;
+            border: none;
+            padding: 20px 35px;
+            font-size: 20px;
+            background-color: rgba(94,34,178);
+            font-weight: 600;
+            position: relative;
+            color: #fff;
+            box-shadow: none;
+            transition: all 0.1s ease 0;
+            font-weight: 900;
+            font-family: 'Catamaran', sans-serif;
+            text-transform: uppercase;
+        }
+        .card-header a.collapsed:after,
+        .card-header a:after {
+            content: "\f068";
+            font-family: fontawesome;
+            text-align: center;
+            position: absolute;
+            left: -20px;
+            top: 10px;
+            color: #fff;
+            background-color: rgb(5,162,198);
+            border: 5px solid #fff;
+            font-size: 15px;
+            width: 40px;
+            height: 40px;
+            line-height: 30px;
+            border-radius: 50%;
+            transition: all 0.3s ease 0s;
+        }
+        .card-header:hover a.collapsed:after,
+        .card-header:hover a:after {
+            transform: rotate(360deg);
+        }
+        .card-header a.collapsed:after {
+            content: "\f067";
+        }
+        .card-body {
+            background-color: #Fff;
+            line-height: 25px;
+            padding: 10px 25px 20px 35px;
+            border-top: none;
+            position: relative;
+        }
+    </style>
+
+{% endblock %}

@@ -1,0 +1,153 @@
+{% extends 'base/app-bloques.twig' %}
+
+{% set page_title = 'Honey Alonso' %}
+
+{% block content %}
+
+<div class="contaniner-fluid bg-rosa py-5 wow bounceInDown mb-5">
+    <div class="container">
+        <h2 class="titulobloque">Aprender a aprender</h2>
+    </div>
+</div>
+
+<div class="container wow fadeInUp">
+    <div class="row mt-5">
+        <div class="col-md-12">
+            <h1>Estilos de Aprendizaje Honey-Alonso ¿Cuál es el tuyo?</h1>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-md-10 mx-auto">
+            <p>Las investigaciones de Peter Honey acerca de los estilos de aprendizaje en el mundo empresarial fueron recogidos en España por Catalina Alonso en 1992, quién adoptó el cuestionario de estilos de aprendizaje al ámbito académico y al idioma español. Este cuestionario es uno de los más probados y refleja tus preferencias de aprendizaje.</p>
+            <img class="img-fluid d-block mx-auto" alt="CCH" src="/img/bloque2/b2_03_01.png">
+        </div>
+    </div>
+</div>
+<div class="container-fluid bg-rosa mt-5 responde  wow fadeInUp">
+    <div class="container">
+    <div class="responde-icon bg-rosa shadow text-white"><i class="far fa-2x fa-grin"></i></i></div>
+    <h5 class="text-white font-weight-bold">
+         &nbsp; Cuestionario...  </h5>
+    </div>
+</div>
+<div class="container mt-3 wow fadeInUp">
+    <div class="row">
+        <div class="col-md-11 offset-md-1">
+            <p class="rosa font-weight-bold">Lee atentamente los siguientes enunciados y marca en la casilla si corresponde o no con tu forma de ser. Recuerda que no hay respuestas correctas o incorrectas.</p>
+        </div>
+    </div>
+</div>
+
+    {% include 'bloques/bloque2/honeyAlonso.twig' %}
+
+
+
+<div class="container-fluid mt-5">
+    <div class="row minh-100">
+        <div class="col-12 ">
+            <nav aria-label="Page navigation example">
+              <ul class="pagination pagination-lg flex-wrap justify-content-center">
+                <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/estilos-de-aprendizaje"><i class="fas fa-angle-double-left"></i></a></li>
+                <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/que-es-aprender">1</a></li>
+                <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/estilos-de-aprendizaje">2</a></li>
+                <li class="page-item active"><a class="page-link" href="{{base_path()}}bloques/aprender/cuestionario-honey-alonso">3</a></li>
+                <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/estrategias-de-aprendizaje">4</a></li>
+                <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/tecnicas-de-estudio">5</a></li>
+                <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/busqueda-de-informacion">6</a></li>
+                <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/lectura">7</a></li>
+                <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/escritura">8</a></li>
+                <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/organizadores-graficos">9</a></li>
+                <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/habitos-de-estudio">10</a></li>
+                <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/estrategias-de-aprendizaje"><i class="fas fa-angle-double-right"></i></a></li>
+              </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<div id="HoneyError" class="modal fade">
+    <div class="modal-dialog modal-confirm modal-alerta">
+        <div class="modal-content">
+            <div class="modal-header justify-content-center">
+                <div class="icon-box">
+                    <i class="fas fa-exclamation-circle"></i>
+                </div>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body text-center">
+                <h4>¡Ups!</h4>
+                <p>Responde todas las preguntas para poder continuar.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+    {% if cuestionario3 == 1 %}
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+    <script>
+        var activo = {{cuestionario3.activo}};
+        var reflexivo = {{cuestionario3.reflexivo}};
+        var teorico = {{cuestionario3.teorico}};
+        var pragmatico = {{cuestionario3.pragmatico}};
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var ctx2 = document.getElementById('myChart2').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'radar',
+            data: {
+                labels: ['Activo', 'Reflexivo', 'Teorico', 'Pragmatico'],
+                datasets: [{
+                    data: [activo, reflexivo, teorico, pragmatico],
+                    label: "Honey-Alonso",
+                    backgroundColor: 'rgba(153, 102, 255, 0.2)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scale: {
+                    angleLines: {
+                        display: false
+                    }
+                }
+            }
+        });
+
+        new Chart(ctx2, {
+            type: 'polarArea',
+            data: {
+                labels: ['Activo', 'Reflexivo', 'Teorico', 'Pragmatico'],
+                datasets: [{
+                    data: [activo, reflexivo, teorico, pragmatico],
+                    backgroundColor: [
+                      'rgba(255, 99, 132, 0.2)',
+                      'rgba(54, 162, 235, 0.2)',
+                      'rgba(255, 206, 86, 0.2)',
+                      'rgba(75, 192, 192, 0.2)'
+                    ],
+                    borderColor: [
+                      'rgba(255, 99, 132, 1)',
+                      'rgba(54, 162, 235, 1)',
+                      'rgba(255, 206, 86, 1)',
+                      'rgba(75, 192, 192, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scale: {
+                    angleLines: {
+                        display: false
+                    }
+                }
+            }
+        });
+    </script>
+    {% else %}
+    <script>
+        $(function() {
+            $("#honeyAlonso").checkRadioHoney();
+        });
+    </script>
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,76 @@
+{% extends 'base/app-bloques.twig' %}
+
+{% set page_title = 'Lectura' %}
+
+{% block content %}
+
+    <div class="bg-rosa py-5 container-fluid wow bounceInDown">
+        <div class="container">
+
+            <h2 class="titulobloque">Aprender a aprender</h2>
+
+        </div>
+    </div>
+    <div class="container-fluid wow fadeInUp">
+        <div class="row">
+            <div class="col-lg-4 offset-lg-2">
+                <!-- CUSTOM BLOCKQUOTE -->
+                <div class="blockquote blockquote-custom bg-warning p-5 effect-1 rounded">
+                    <i class="fas fa-book fa-3x"></i>
+                    <span class="enfasis ">Lectura</span>
+                </div>
+                <!-- END -->
+            </div>
+        </div>
+    </div>
+    <div class="container wow fadeInUp">
+        <div class="row mt-5">
+            <div class="col-lg-10 mx-auto">
+                <p>Leer es un acto que le permite al ser humano enriquecerse de nuevos conocimientos fomentando hábitos como la reflexión, el análisis y el entretenimiento. La lectura influye de manera directa en tu proceso de aprendizaje. </p>
+            </div>
+        </div>
+    </div>
+    <div class=" container-fluid absoluto d-none d-md-block wow fadeInUp">
+        <div class="row color-fondo-objeto d-flex justify-content-center">
+            <div class="col-2">
+                <img class="img-fluid" alt="CCH" src="/img/bloque2/b2_07_01.png">
+            </div>
+        </div>
+    </div>
+    <div class="bg-rosa text-white text-center d-flex container-fluid mt-3 wow fadeInUp">
+        <div class="container p-3">
+            <div class=" text-white lead">A continuación te presentamos un método de lectura paso a paso:</div>
+            <div class="text-white d-none d-xl-block mt-3">
+                <i aria-hidden="true" class=" far fa-2x fa-arrow-alt-circle-down"></i>
+            </div>
+        </div>
+    </div>
+    <div class="container mb-5 wow fadeInUp">
+        <div class="col-md-10 mx-auto">
+            <img class="img-fluid" alt="Lectura" src="/img/bloque2/b2_07_02.jpg">
+        </div>
+    </div>
+    <div class="container-fluid mt-5">
+        <div class="row minh-100">
+            <div class="col-12 ">
+                <nav aria-label="Page navigation example">
+                  <ul class="pagination pagination-lg flex-wrap justify-content-center">
+                    <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/busqueda-de-informacion"><i class="fas fa-angle-double-left"></i></a></li>
+                    <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/que-es-aprender">1</a></li>
+                    <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/estilos-de-aprendizaje">2</a></li>
+                    <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/cuestionario-honey-alonso">3</a></li>
+                    <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/estrategias-de-aprendizaje">4</a></li>
+                    <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/tecnicas-de-estudio">5</a></li>
+                    <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/busqueda-de-informacion">6</a></li>
+                    <li class="page-item active"><a class="page-link" href="{{base_path()}}bloques/aprender/lectura">7</a></li>
+                    <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/escritura">8</a></li>
+                    <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/organizadores-graficos">9</a></li>
+                    <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/habitos-de-estudio">10</a></li>
+                    <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/escritura"><i class="fas fa-angle-double-right"></i></a></li>
+                  </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

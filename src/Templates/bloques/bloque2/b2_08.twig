@@ -1,0 +1,120 @@
+{% extends 'base/app-bloques.twig' %}
+
+{% set page_title = 'Escritura' %}
+
+{% block content %}
+
+    <div class="bg-rosa py-5 container-fluid wow bounceInDown">
+        <div class="container">
+
+            <h2 class="titulobloque">Aprender a aprender</h2>
+
+        </div>
+    </div>
+    <div class="container-fluid wow fadeInUp">
+        <div class="row">
+            <div class="col-lg-4 offset-lg-2">
+                <!-- CUSTOM BLOCKQUOTE -->
+                <div class="blockquote blockquote-custom bg-warning p-5 effect-1 rounded">
+                    <i class="fas fa-pen-alt fa-3x"></i>
+                    <span class="enfasis ">Escritura</span>
+                </div>
+                <!-- END -->
+            </div>
+        </div>
+    </div>
+    <div class="container wow fadeInUp">
+        <div class="row mt-5">
+            <div class="col-lg-10 mx-auto">
+            <p>Escribir es, después de leer, el acto de comunicación más importante que llevarás a cabo en la universidad.</p>
+            <p>La escritura no es un proceso mecánico en el que repites ideas de otros a través de apuntes o copiando textos de libros o del internet. Escribir es un acto creativo y un diálogo con tus compañeros y profesores que tiene como finalidad aprender,
+                comunicar ideas y reflexionar. Los trabajos escritos que realices cumplen un propósito y siguen reglas en su escritura.</p>
+            </div>
+        </div>
+    </div>
+        <div class=" container-fluid absoluto d-none d-md-block  wow fadeInUp">
+        <div class="row mt-1 color-fondo-objeto d-flex justify-content-center">
+            <div class="col-3">
+                <img class="img-fluid" alt="CCH" src="/img/bloque2/b2_10_01.png">
+            </div>
+        </div>
+    </div>
+    <div class="bg-rosa text-white text-center d-flex container-fluid mt-3  wow fadeInUp">
+        <div class="container p-3">
+            <div class=" text-white lead">Para que conozcas algunos de ellos revisa lo siguiente:</div>
+            <div class="text-white d-none d-xl-block mt-3">
+                <i aria-hidden="true" class=" far fa-2x fa-arrow-alt-circle-down"></i>
+            </div>
+        </div>
+    </div>
+    <div class="container mb-5 wow fadeInUp">
+        <div class="col-md-10 mx-auto">
+            <img class="img-fluid" alt="Lectura" src="/img/bloque2/b2_07_03.jpg">
+        </div>
+    </div>
+    <div class="bg-rosa text-white text-center d-flex container-fluid mt-3 wow fadeInUp">
+        <div class="container p-3">
+            <div class=" text-white lead">
+                <i class="fas fa-file-pdf"></i>
+                Para saber en qué consisten, haz clic en cada icono:</div>
+            <div class="text-white d-none d-xl-block mt-3">
+                <i aria-hidden="true" class=" far fa-2x fa-arrow-alt-circle-down"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-5 mb-5 wow fadeInUp">
+        <div class="col-lg-8 mx-auto">
+            <div class="row">
+                <div class="col">
+                    <a href="/doc/resumen.pdf" target="_blank" class="hvr-bob">
+                        <img class="img-fluid" alt="Resumen" src="/img/bloque2/b2_07_04.jpg"></a>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="/doc/resena.pdf" target="_blank" class="hvr-bob">
+                        <img class="img-fluid" alt="Reseña" src="/img/bloque2/b2_07_05.jpg"></a>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="/doc/articulo-opinion.pdf" target="_blank" class="hvr-bob">
+                        <img class="img-fluid" alt="Artículo de opinión" src="/img/bloque2/b2_07_06.jpg"></a>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="/doc/ensayo.pdf" target="_blank" class="hvr-bob">
+                        <img class="img-fluid" alt="Ensayo" src="/img/bloque2/b2_07_07.jpg"></a>
+                        </a>
+                </div>
+                <div class="col">
+                    <a href="/doc/citas-bibliografia.pdf" target="_blank" class="hvr-bob">
+                        <img class="img-fluid" alt="Citas" src="/img/bloque2/b2_07_08.jpg"></a>
+                    </a>
+                </div>
+                </div>
+        </div>
+    </div>
+    <div class="container-fluid mt-5">
+        <div class="row minh-100">
+            <div class="col-12 ">
+                <nav aria-label="Page navigation example">
+                  <ul class="pagination pagination-lg flex-wrap justify-content-center">
+                    <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/lectura"><i class="fas fa-angle-double-left"></i></a></li>
+                    <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/que-es-aprender">1</a></li>
+                    <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/estilos-de-aprendizaje">2</a></li>
+                    <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/cuestionario-honey-alonso">3</a></li>
+                    <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/estrategias-de-aprendizaje">4</a></li>
+                    <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/tecnicas-de-estudio">5</a></li>
+                    <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/busqueda-de-informacion">6</a></li>
+                    <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/lectura">7</a></li>
+                    <li class="page-item active"><a class="page-link" href="{{base_path()}}bloques/aprender/escritura">8</a></li>
+                    <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/organizadores-graficos">9</a></li>
+                    <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/habitos-de-estudio">10</a></li>
+                    <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/organizadores-graficos"><i class="fas fa-angle-double-right"></i></a></li>
+                  </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

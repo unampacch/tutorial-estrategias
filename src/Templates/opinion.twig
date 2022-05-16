@@ -1,0 +1,423 @@
+{% extends 'base/app-bloques.twig' %}
+
+{% set page_title = 'Cuestionario de opinión' %}
+
+{% block content %}
+
+<div class="bg-rosa py-3 container-fluid">
+    <div class="container">
+        <h1 class=" titulobloque wow bounceInUp delay-1s text-right">TEA
+            <span>| Tutorial de estrategias de aprendizaje</span></h1>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-7 mx-auto">
+            <!-- CUSTOM BLOCKQUOTE -->
+            <div class="blockquote blockquote-custom bg-warning p-5 effect-1 rounded">
+                <i class="fas fa-list-alt fa-3x"></i>
+                <span class="enfasis">Cuestionario de opinión</span>
+            </div>
+            <!-- END -->
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row mt-5">
+    <div class="col-md-10 mx-auto"><p class="lead">Tu opinión sobre el contenido del <span class="font-weight-bold">Tutorial de Estrategias de Aprendizaje del CCH</span> es muy significativa para la institución, con el objetivo de enriquecerlo en próximas versiones. </p>
+    <p class="lead rosa mt-5"><span class="font-weight-bold"><i class="fas fa-exclamation-circle"></i> IMPORTANTE - </span> Responde este cuestionario después de revisar todo el Tutorial, de modo que tus respuestas nos ayuden a mejorar. </p>
+    </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-morado mt-5 responde wow fadeInUp">
+        <div class="container">
+            <div class="responde-icon bg-morado shadow text-white"><i class="far fa-2x fa-grin"></i></i></div>
+            <h5 class="text-white font-weight-bold">
+                &nbsp; ¡Por favor responde estas preguntas de la manera más objetiva posible! </h5>
+        </div>
+    </div>
+    <div class="container mt-3 wow fadeInUp">
+        <div class="row">
+            <div class="col-md-11 offset-md-1">
+                <p class="morado font-weight-bold">Lee atentamente los enunciados y selecciona la casilla considerando la siguiente clave de respuesta: <span class="rosa">1 - nada; 2 - poco; 3 - regular; 4 - bastante; 5 - mucho.</span> No olvides enviar tus respuestas.</p>
+            </div>
+        </div>
+    </div>
+    <!--Insertar cuestionario aqui-->
+
+<div class="container wow fadeInUp my-5">
+    {% if opinion == 0%}
+    <form method="post" action="/cuestionario">
+        <div class="row mt-5">
+            <div class="col-7">
+                <label class="lead"><span class="rosa font-weight-bold">1 -</span> El tutorial me permitió conocer mejor al CCH</label>
+            </div>
+            <div class="col-5">
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r1p1" name="p1" class="form-check-input" value="1" required>
+                    <label class="custom-control-label morado font-weight-bold" for="r1p1">1</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r2p1" name="p1" class="form-check-input" value="2">
+                    <label class="custom-control-label  morado font-weight-bold" for="r2p1">2</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r3p1" name="p1" class="form-check-input" value="3">
+                    <label class="custom-control-label morado font-weight-bold" for="r3p1">3</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r4p1" name="p1" class="form-check-input" value="4">
+                    <label class="custom-control-label morado font-weight-bold" for="r4p1">4</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r5p1" name="p1" class="form-check-input" value="5">
+                    <label class="custom-control-label morado font-weight-bold" for="r5p1">5</label>
+                </div>
+            </div>
+        </div>
+        <hr data-content="-o-" class="hr-text">
+        <div class="row">
+            <div class="col-7">
+                <label class="lead"><span class="rosa font-weight-bold">2 -</span> Entiendo las características del Modelo Educativo del Colegio</label>
+            </div>
+            <div class="col-5">
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r1p2" name="p2" class="form-check-input" value="1" required>
+                    <label class="custom-control-label morado font-weight-bold" for="r1p2">1</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r2p2" name="p2" class="form-check-input" value="2">
+                    <label class="custom-control-label morado font-weight-bold" for="r2p2">2</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r3p2" name="p2" class="form-check-input" value="3">
+                    <label class="custom-control-label morado font-weight-bold" for="r3p2">3</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r4p2" name="p2" class="form-check-input" value="4">
+                    <label class="custom-control-label morado font-weight-bold" for="r4p2">4</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r5p2" name="p2" class="form-check-input" value="5">
+                    <label class="custom-control-label morado font-weight-bold" for="r5p2">5</label>
+                </div>
+            </div>
+        </div>
+        <hr data-content="-o-" class="hr-text">
+        <div class="row">
+            <div class="col-7">
+                <label class="lead"><span class="rosa font-weight-bold">3 -</span> Conozco mi estilo personal de aprendizaje</label>
+            </div>
+            <div class="col-5">
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r1p3" name="p3" class="form-check-input" value="1" required>
+                    <label class="custom-control-label morado font-weight-bold" for="r1p3">1</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r2p3" name="p3" class="form-check-input" value="2">
+                    <label class="custom-control-label morado font-weight-bold" for="r2p3">2</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r3p3" name="p3" class="form-check-input" value="3">
+                    <label class="custom-control-label morado font-weight-bold" for="r3p3">3</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r4p3" name="p3" class="form-check-input" value="4">
+                    <label class="custom-control-label morado font-weight-bold" for="r4p3">4</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r5p3" name="p3" class="form-check-input" value="5">
+                    <label class="custom-control-label morado font-weight-bold" for="r5p3">5</label>
+                </div>
+            </div>
+        </div>
+        <hr data-content="-o-" class="hr-text">
+        <div class="row">
+            <div class="col-7">
+                <label class="lead"><span class="rosa font-weight-bold">4 -</span> El tutorial me hizo reflexionar sobre mis estrategias de aprendizaje</label>
+            </div>
+            <div class="col-5">
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r1p4" name="p4" class="form-check-input" value="1" required>
+                    <label class="custom-control-label morado font-weight-bold" for="r1p4">1</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r2p4" name="p4" class="form-check-input" value="2">
+                    <label class="custom-control-label morado font-weight-bold" for="r2p4">2</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r3p4" name="p4" class="form-check-input" value="3">
+                    <label class="custom-control-label morado font-weight-bold" for="r3p4">3</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r4p4" name="p4" class="form-check-input" value="4">
+                    <label class="custom-control-label morado font-weight-bold" for="r4p4">4</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r5p4" name="p4" class="form-check-input" value="5">
+                    <label class="custom-control-label morado font-weight-bold" for="r5p4">5</label>
+                </div>
+            </div>
+        </div>
+        <hr data-content="-o-" class="hr-text">
+        <div class="row">
+            <div class="col-7">
+                <label class="lead"><span class="rosa font-weight-bold">5 -</span> Aprendí a realizar búsquedas en las bibliotecas del CCH</label>
+            </div>
+            <div class="col-5">
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r1p5" name="p5" class="form-check-input" value="1" required>
+                    <label class="custom-control-label morado font-weight-bold" for="r1p5">1</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r2p5" name="p5" class="form-check-input" value="2">
+                    <label class="custom-control-label morado font-weight-bold" for="r2p5">2</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r3p5" name="p5" class="form-check-input" value="3">
+                    <label class="custom-control-label morado font-weight-bold" for="r3p5">3</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r4p5" name="p5" class="form-check-input" value="4">
+                    <label class="custom-control-label morado font-weight-bold" for="r4p5">4</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r5p5" name="p5" class="form-check-input" value="5">
+                    <label class="custom-control-label morado font-weight-bold" for="r5p5">5</label>
+                </div>
+            </div>
+        </div>
+        <hr data-content="-o-" class="hr-text">
+        <div class="row">
+            <div class="col-7">
+                <label class="lead"><span class="rosa font-weight-bold">6 -</span> El tutorial me ofreció herramientas para fortalecer mis técnicas y hábitos de estudio</label>
+            </div>
+            <div class="col-5">
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r1p6" name="p6" class="form-check-input" value="1" required>
+                    <label class="custom-control-label morado font-weight-bold" for="r1p6">1</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r2p6" name="p6" class="form-check-input" value="2">
+                    <label class="custom-control-label morado font-weight-bold" for="r2p6">2</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r3p6" name="p6" class="form-check-input" value="3">
+                    <label class="custom-control-label morado font-weight-bold" for="r3p6">3</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r4p6" name="p6" class="form-check-input" value="4">
+                    <label class="custom-control-label morado font-weight-bold" for="r4p6">4</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r5p6" name="p6" class="form-check-input" value="5">
+                    <label class="custom-control-label morado font-weight-bold" for="r5p6">5</label>
+                </div>
+            </div>
+        </div>
+        <hr data-content="-o-" class="hr-text">
+        <div class="row">
+            <div class="col-7">
+                <label class="lead"><span class="rosa font-weight-bold">7 -</span> Los recursos en línea (enlaces) por área de conocimiento me permitirán armar estrategias de aprendizaje</label>
+            </div>
+            <div class="col-5">
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r1p7" name="p7" class="form-check-input" value="1" required>
+                    <label class="custom-control-label morado font-weight-bold" for="r1p7">1</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r2p7" name="p7" class="form-check-input" value="2">
+                    <label class="custom-control-label morado font-weight-bold" for="r2p7">2</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r3p7" name="p7" class="form-check-input" value="3">
+                    <label class="custom-control-label morado font-weight-bold" for="r3p7">3</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r4p7" name="p7" class="form-check-input" value="4">
+                    <label class="custom-control-label morado font-weight-bold" for="r4p7">4</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r5p7" name="p7" class="form-check-input" value="5">
+                    <label class="custom-control-label morado font-weight-bold" for="r5p7">5</label>
+                </div>
+            </div>
+        </div>
+        <hr data-content="-o-" class="hr-text">
+        <div class="row">
+            <div class="col-7">
+                <label class="lead"><span class="rosa font-weight-bold">8 -</span> Conocí aplicaciones tecnológicas (TIC) que facilitarán mi aprendizaje</label>
+            </div>
+            <div class="col-5">
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r1p8" name="p8" class="form-check-input" value="1" required>
+                    <label class="custom-control-label morado font-weight-bold" for="r1p8">1</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r2p8" name="p8" class="form-check-input" value="2">
+                    <label class="custom-control-label morado font-weight-bold" for="r2p8">2</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r3p8" name="p8" class="form-check-input" value="3">
+                    <label class="custom-control-label morado font-weight-bold" for="r3p8">3</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r4p8" name="p8" class="form-check-input" value="4">
+                    <label class="custom-control-label morado font-weight-bold" for="r4p8">4</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r5p8" name="p8" class="form-check-input" value="5">
+                    <label class="custom-control-label morado font-weight-bold" for="r5p8">5</label>
+                </div>
+            </div>
+        </div>
+        <hr data-content="-o-" class="hr-text">
+        <div class="row">
+            <div class="col-7">
+                <label class="lead"><span class="rosa font-weight-bold">9 -</span> Son útiles los servicios tecnológicos (internet, descarga de software, etc.) de la UNAM</label>
+            </div>
+            <div class="col-5">
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r1p9" name="p9" class="form-check-input" value="1" required>
+                    <label class="custom-control-label morado font-weight-bold" for="r1p9">1</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r2p9" name="p9" class="form-check-input" value="2">
+                    <label class="custom-control-label morado font-weight-bold" for="r2p9">2</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r3p9" name="p9" class="form-check-input" value="3">
+                    <label class="custom-control-label morado font-weight-bold" for="r3p9">3</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r4p9" name="p9" class="form-check-input" value="4">
+                    <label class="custom-control-label morado font-weight-bold" for="r4p9">4</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r5p9" name="p9" class="form-check-input" value="5">
+                    <label class="custom-control-label morado font-weight-bold" for="r5p9">5</label>
+                </div>
+            </div>
+        </div>
+        <hr data-content="-o-" class="hr-text">
+        <div class="row">
+            <div class="col-7">
+                <label class="lead"><span class="rosa font-weight-bold">10 -</span> Los contenidos temáticos del tutorial son relevantes</label>
+            </div>
+            <div class="col-5">
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r1p10" name="p10" class="form-check-input" value="1" required>
+                    <label class="custom-control-label morado font-weight-bold" for="r1p10">1</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r2p10" name="p10" class="form-check-input" value="2">
+                    <label class="custom-control-label morado font-weight-bold" for="r2p10">2</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r3p10" name="p10" class="form-check-input" value="3">
+                    <label class="custom-control-label morado font-weight-bold" for="r3p10">3</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r4p10" name="p10" class="form-check-input" value="4">
+                    <label class="custom-control-label morado font-weight-bold" for="r4p10">4</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r5p10" name="p10" class="form-check-input" value="5">
+                    <label class="custom-control-label morado font-weight-bold" for="r5p10">5</label>
+                </div>
+            </div>
+        </div>
+        <hr data-content="-o-" class="hr-text">
+        <div class="row">
+            <div class="col-7">
+                <label class="lead"><span class="rosa font-weight-bold">11 -</span> El diseño gráfico del tutorial es agradable y facilita su uso</label>
+            </div>
+            <div class="col-5">
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r1p11" name="p11" class="form-check-input" value="1" required>
+                    <label class="custom-control-label morado font-weight-bold" for="r1p11">1</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r2p11" name="p11" class="form-check-input" value="2">
+                    <label class="custom-control-label morado font-weight-bold" for="r2p11">2</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r3p11" name="p11" class="form-check-input" value="3">
+                    <label class="custom-control-label morado font-weight-bold" for="r3p11">3</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r4p11" name="p11" class="form-check-input" value="4">
+                    <label class="custom-control-label morado font-weight-bold" for="r4p11">4</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r5p11" name="p11" class="form-check-input" value="5">
+                    <label class="custom-control-label morado font-weight-bold" for="r5p11">5</label>
+                </div>
+            </div>
+        </div>
+        <hr data-content="-o-" class="hr-text">
+        <div class="row">
+            <div class="col-7">
+                <label class="lead"><span class="rosa font-weight-bold">12 -</span> Recomiendo el tutorial</label>
+            </div>
+            <div class="col-5">
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r1p12" name="p12" class="form-check-input" value="1" required>
+                    <label class="custom-control-label morado font-weight-bold" for="r1p12">1</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r2p12" name="p12" class="form-check-input" value="2">
+                    <label class="custom-control-label morado font-weight-bold" for="r2p12">2</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r3p12" name="p12" class="form-check-input" value="3">
+                    <label class="custom-control-label morado font-weight-bold" for="r3p12">3</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r4p12" name="p12" class="form-check-input" value="4">
+                    <label class="custom-control-label morado font-weight-bold" for="r4p12">4</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r5p12" name="p12" class="form-check-input" value="5">
+                    <label class="custom-control-label morado font-weight-bold" for="r5p12">5</label>
+                </div>
+            </div>
+        </div>
+        <hr data-content="-o-" class="hr-text">
+        <div class="row">
+            <div class="col-10">
+                <label class="lead"><span class="rosa font-weight-bold">13 -</span> Señala el bloque que más te gustó del Tutorial:</label>
+            </div>
+            </div>
+            <div class="row mt-3">
+            <div class="col-12">
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r1p13" name="p13" class="form-check-input" value="1" required>
+                    <label class="custom-control-label morado font-weight-bold" for="r1p13">El CCH y su modelo educativo</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r2p13" name="p13" class="form-check-input" value="2">
+                    <label class="custom-control-label morado font-weight-bold" for="r2p13">Aprender a aprender</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r3p13" name="p13" class="form-check-input" value="3">
+                    <label class="custom-control-label morado font-weight-bold" for="r3p13">Recursos para aprender</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="r4p13" name="p13" class="form-check-input" value="4">
+                    <label class="custom-control-label morado font-weight-bold" for="r4p13">TIC para aprender</label>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-6 text-center mx-auto">
+                <input type="submit" class="btn btn-rosa" value="Enviar respuestas" />
+             </div>
+        </div>
+    </form>
+    {% else %}
+        {% include 'partials/completado.twig' %}
+    {% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,88 @@
+<!doctype html>
+<html class="no-js" lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>{% if page_title is defined %} {{ page_title }} | {% endif %} TEA</title>
+    <meta name="description" content="En este tutorial encontrarás una breve descripción del Modelo educativo, asignaturas y áreas del CCH, así como estrategias de aprendizaje, técnicas de estudio y uso de las TIC que te ayudarán en tu paso por el bachillerato.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="image" content="https://tutorial.cch.unam.mx/img/homearriba-prov.png">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="Tutorial de estrategias de aprendizaje">
+    <meta itemprop="description" content="En este tutorial encontrarás una breve descripción del Modelo educativo, asignaturas y áreas del CCH, así como estrategias de aprendizaje, técnicas de estudio y uso de las TIC que te ayudarán en tu paso por el bachillerato.">
+    <meta itemprop="image" content="https://tutorial.cch.unam.mx/img/homearriba-prov.png">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="Tutorial de estrategias de aprendizaje">
+    <meta name="og:description" content="En este tutorial encontrarás una breve descripción del Modelo educativo, asignaturas y áreas del CCH, así como estrategias de aprendizaje, técnicas de estudio y uso de las TIC que te ayudarán en tu paso por el bachillerato.">
+    <meta name="og:image" content="https://tutorial.cch.unam.mx/img/homearriba-prov.png">
+    <meta name="og:url" content="https://tutorial.cch.unam.mx">
+    <meta name="og:site_name" content="Tutorial de estrategias de aprendizaje">
+    <meta name="og:locale" content="mx_ES">
+    <meta name="og:type" content="website">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;400;900&family=Open+Sans:ital,wght@0,300;0,400;0,800;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/vendor/animate.compat.css">
+    <link rel="stylesheet" href="/css/vendor/hover-min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/bloquescontenido.css">
+    <link rel="stylesheet" href="/css/menu.css">
+
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+    <!-- Add your site or application content here -->
+    {% include 'partials/header.twig' %}
+
+    <div class="main">
+        {% include 'partials/menu.twig' %}
+        {% block content %}
+
+        {% endblock %}
+    </div>
+
+    {% include 'partials/flash.twig' %}
+    <div class="preloader"></div>
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5d82af2561.js" crossorigin="anonymous"></script>
+    <script src="/js/vendor/wow.min.js"></script>
+    <script src="/js/checkRadioHoney.jquery.js"></script>
+    {% block scripts %} {% endblock %}
+    <script src="/js/plugins.js"></script>
+    <script src="/js/main.js"></script>
+
+    <!-- Matomo -->
+    <script type="text/javascript">
+        var _paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+            var u="https://estadisticas.cch.unam.mx/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '11']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+        })();
+    </script>
+    <!-- End Matomo Code -->
+
+</body>
+</html>

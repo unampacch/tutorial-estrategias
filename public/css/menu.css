@@ -1,0 +1,339 @@
+/** ======================  header ==============================**/
+/*.header {
+    background-color: #3c8dbc
+}
+
+.header .dropdown-menu {
+    position: absolute;
+    right: 0;
+    left: auto;
+    border-radius: 0px;
+}
+
+.header .user-image {
+    float: left;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: -2px;
+}
+
+.header .navbar-light .navbar-nav .nav-link {
+    color: #fff
+}
+
+.header .navbar-light .navbar-nav .nav-link:hover, .header .navbar-light .navbar-nav .nav-link:focus {
+    background: rgba(0, 0, 0, 0.1);
+    color: #f6f6f6;
+}
+
+.header .fa.fa-fw.fa-bars {
+    color: #fff;
+}
+
+.header .navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.header li>a>.label {
+    position: absolute;
+    top: 9px;
+    right: 7px;
+    text-align: center;
+    font-size: 9px;
+    padding: 2px 3px;
+    line-height: .9;
+    background-color: #333;
+    border-radius: .25em;
+}
+
+.header li>a:after {
+    display: none;
+}
+
+.header-ul {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: #ffffff;
+    padding: 7px 10px;
+    border-bottom: 1px solid #f4f4f4;
+    color: #333;
+    font-size: 14px;
+}
+
+.navbar-nav>.notifications-menu>.dropdown-menu, .navbar-nav>.messages-menu>.dropdown-menu, .navbar-nav>.tasks-menu>.dropdown-menu {
+    width: 280px;
+    padding: 0 0 0 0;
+    margin: 0;
+    top: 100%;
+}
+
+.navbar-nav>.messages-menu>.dropdown-menu li .menu>li>a>div>img {
+    margin: auto 10px auto auto;
+    width: 40px;
+    height: 40px;
+}
+
+.navbar-nav>.messages-menu>.dropdown-menu li .menu>li>a, .navbar-nav>.notifications-menu>.dropdown-menu li .menu>li>a {
+    margin: 0;
+    padding: 10px 10px;
+    display: block;
+    white-space: nowrap;
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.navbar-nav>.messages-menu>.dropdown-menu li .menu>li>a>h4 {
+    padding: 0;
+    margin: 0 0 0 45px;
+    color: #333;
+    font-size: 15px;
+    position: relative;
+}
+
+.navbar-nav>.messages-menu>.dropdown-menu li .menu>li>a>p {
+    margin: 0 0 0 45px;
+    font-size: 12px;
+    color: #888888;
+}
+
+.footer-ul a {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    font-size: 12px;
+    background-color: #fff;
+    padding: 7px 10px;
+    border-bottom: 1px solid #eeeeee;
+    color: #333;
+    display: block;
+}
+
+.dropdown-menu-over .menu {
+    max-height: 200px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow-x: hidden;
+}
+
+.navbar-nav>.notifications-menu>.dropdown-menu li .menu>li>a {
+    color: #444444;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 10px;
+}
+
+.navbar-nav>.notifications-menu>.dropdown-menu li .menu>li>a>.glyphicon, .navbar-nav>.notifications-menu>.dropdown-menu li .menu>li>a>.fa, .navbar-nav>.notifications-menu>.dropdown-menu li .menu>li>a>.ion {
+    width: 20px;
+}
+
+a.navbar-brand {
+    width: 165px;
+}
+*/
+.open-menu{
+    position: fixed;
+    top: 15px;
+    left: 50px;
+    z-index: 90;
+    padding: .5rem 1rem;
+    border: 0;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    box-shadow: 3px 3px 3px rgba(51, 51, 51, 0.2);
+}
+a.btn.open-menu:hover{
+    font-weight: normal;
+}
+
+.dismiss {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 26px;
+    right: 2px;
+    transition: all .3s;
+    /*background: #444;*/
+    border-radius: 4px;
+    text-align: center;
+    line-height: 35px;
+    cursor: pointer;
+    font-size: 1.3rem;
+    color: #FDCC52;
+}
+.dismiss:hover, .dismiss:focus {
+    /*background: #555;*/
+    color: #fff;
+}
+/***    left menu ****/
+/***********************  TOP Bar ********************/
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    position: fixed;
+    background-image: linear-gradient(to bottom, rgba(94,34,178,1), rgba(5,162,198,0.6));
+    transition: all 0.5s ease-in-out;
+    z-index: 100;
+}
+
+.bg-defoult {
+
+}
+
+.sidebar ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.sidebar li a, .sidebar li a.collapsed.active {
+    display: block;
+    padding: 8px 12px;
+    color: #fff;
+    border-left: 0px solid #dedede;
+    text-decoration: none;
+
+}
+
+.sidebar.fliph > ul > li > a{
+    padding: 8px 0  8px 12px;
+}
+
+
+.list-sidebar > li {
+    margin-bottom:12px;
+}
+
+.sub-menu{
+    font-size: 13px;
+}
+
+.sidebar li a.active {
+    /*background-color: #000;*/
+    border-left: 5px solid #dedede;
+    transition: all 0.5s ease-in-out
+}
+
+.sidebar li a:hover {
+    background-color: rgba(255, 255, 255, 0.32) !important;
+}
+
+.sidebar li a i {
+    padding-right: 5px;
+}
+
+.sidebar ul li .sub-menu li a {
+    position: relative
+}
+
+.sidebar ul li .sub-menu li a:before {
+    font-family: FontAwesome;
+    content: "\f30b";
+    display: inline-block;
+    padding-left: 0px;
+    padding-right: 10px;
+    vertical-align: middle;
+}
+
+.sidebar ul li .sub-menu li a:hover:after {
+    content: "";
+    position: absolute;
+    left: -5px;
+    top: 0;
+    width: 5px;
+    background-color: #5E22B2;
+    height: 100%;
+}
+
+.sidebar ul li .sub-menu li a:hover {
+    background-color: #222;
+    padding-left: 20px;
+    transition: all 0.5s ease-in-out
+}
+
+.sub-menu {
+    border-left: 5px solid #dedede;
+}
+
+.sidebar li a .nav-label, .sidebar li a .nav-label+span {
+    transition: all 0.5s ease-in-out
+}
+
+.sidebar.fliph li a .nav-label, .sidebar.fliph li a .nav-label+span {
+    display: none;
+    transition: all 0.5s ease-in-out
+}
+
+.sidebar.fliph {
+    width: 42px;
+    transition: all 0.5s ease-in-out;
+}
+
+.sidebar.fliph li {
+    position: relative
+}
+
+.sidebar.fliph .sub-menu {
+    position: absolute;
+    left: 39px;
+    top: 0;
+    background-color: hsla(264, 68%, 41%, 0.8);
+    width: 230px;
+    z-index: 100;
+}
+
+.user-panel {
+    clear: left;
+    display: block;
+    /*float: left;*/
+    color: #ffffff;
+    font-weight: 900;
+    font-family: 'Catamaran', sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.user-panel>.image>img {
+    width: 100%;
+    max-width: 45px;
+    height: auto;
+}
+
+.user-panel>.info, .user-panel>.info>a {
+    color: #fff;
+}
+
+.user-panel>.info>p {
+    font-weight: 600;
+    margin-bottom: 9px;
+}
+
+.user-panel {
+    clear: left;
+    display: block;
+    /*float: left;*/
+    width: 100%;
+
+    padding: 25px 15px;
+
+}
+
+.user-panel>.info {
+    padding: 5px 5px 5px 15px;
+    line-height: 1;
+    position: absolute;
+    left: 55px;
+}
+
+.fliph .user-panel {
+    display: none;
+}

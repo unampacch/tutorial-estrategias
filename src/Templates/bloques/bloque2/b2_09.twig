@@ -1,0 +1,103 @@
+{% extends 'base/app-bloques.twig' %}
+
+{% set page_title = 'Organizadores gráficos' %}
+
+{% block content %}
+
+    <div class="bg-rosa py-5 container-fluid wow bounceInDown">
+        <div class="container">
+
+            <h2 class="titulobloque">Aprender a aprender</h2>
+
+        </div>
+    </div>
+    <div class="container-fluid wow fadeInUp">
+        <div class="row">
+            <div class="col-lg-4 offset-lg-2">
+                <!-- CUSTOM BLOCKQUOTE -->
+                <div class="blockquote blockquote-custom bg-warning p-5 effect-1 rounded">
+                    <i class="fas fa-sitemap fa-3x"></i>
+                    <span class="enfasis ">Organización gráfica</span>
+                </div>
+                <!-- END -->
+            </div>
+        </div>
+    </div>
+    <div class="container wow fadeInUp">
+        <div class="row mt-5">
+            <div class="col-lg-10 mx-auto">
+                <p>La representación gráfica de la información obtenida de una lectura, es uno de los procedimientos que te permite estructurar y sintetizar la información visualmente. Facilita la comprensión, la memorización y el análisis. Cuando se representa la
+                    información, ya sea por medio de un mapa conceptual, mapa mental o un cuadro sinóptico, se organizan las ideas en jerarquías y categorías.</p>
+                <p>La principal fortaleza de los organizadores gráficos está en que permiten obtener una idea general clara del tema, para seleccionar y profundizar en los contenidos básicos y fijarlos mejor en la mente.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class=" container-fluid absoluto d-none d-md-block wow fadeInUp">
+        <div class="row mt-1 color-fondo-objeto d-flex justify-content-center">
+            <div class="col-4">
+                <img class="img-fluid" alt="CCH" src="/img/bloque2/b2_07_13.png">
+            </div>
+        </div>
+    </div>
+    <div class="bg-rosa text-white text-center d-flex container-fluid mt-3 wow fadeInUp">
+        <div class="container p-3">
+            <div class=" text-white lead">
+                <i class="fas fa-file-pdf"></i>
+                Revisa los siguientes documentos para que conozcas algunos organizadores gráficos que te serán de utilidad:</div>
+            <div class="text-white d-none d-xl-block mt-3">
+                <i aria-hidden="true" class=" far fa-2x fa-arrow-alt-circle-down"></i>
+            </div>
+        </div>
+    </div>
+
+<div class="container-fluid mt-5 mb-5 wow fadeInUp">
+    <div class="col-lg-7 mx-auto">
+        <div class="row">
+            <div class="col">
+                <a href="/doc/linea-del-tiempo.pdf" target="_blank" class="hvr-bob">
+                    <img class="img-fluid" alt="Línea del tiempo" src="/img/bloque2/b2_07_09.jpg"></a>
+            </a>
+        </div>
+        <div class="col">
+            <a href="/doc/mapa-mental.pdf" target="_blank" class="hvr-bob">
+                <img class="img-fluid" alt="Mapa mental" src="/img/bloque2/b2_07_10.jpg"></a>
+        </a>
+    </div>
+    <div class="col">
+        <a href="/doc/mapa-conceptual.pdf" target="_blank" class="hvr-bob">
+            <img class="img-fluid" alt="Mapa conceptual" src="/img/bloque2/b2_07_11.jpg"></a>
+    </a>
+</div>
+<div class="col">
+    <a href="/doc/cuadro-sinoptico.pdf" target="_blank" class="hvr-bob">
+        <img class="img-fluid" alt="Cuadro sinóptico" src="/img/bloque2/b2_07_12.jpg"></a>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="container-fluid mt-5">
+    <div class="row minh-100">
+        <div class="col-12 ">
+            <nav aria-label="Page navigation example">
+              <ul class="pagination pagination-lg flex-wrap justify-content-center">
+                <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/escritura"><i class="fas fa-angle-double-left"></i></a></li>
+                <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/que-es-aprender">1</a></li>
+                <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/estilos-de-aprendizaje">2</a></li>
+                <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/cuestionario-honey-alonso">3</a></li>
+                <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/estrategias-de-aprendizaje">4</a></li>
+                <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/tecnicas-de-estudio">5</a></li>
+                <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/busqueda-de-informacion">6</a></li>
+                <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/lectura">7</a></li>
+                <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/escritura">8</a></li>
+                <li class="page-item active"><a class="page-link" href="{{base_path()}}bloques/aprender/organizadores-graficos">9</a></li>
+                <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/habitos-de-estudio">10</a></li>
+                <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/habitos-de-estudio"><i class="fas fa-angle-double-right"></i></a></li>
+              </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,50 @@
+{% extends 'base/app-bloques.twig' %}
+
+{% set page_title = 'Ayuda' %}
+
+{% block content %}
+
+<div class="bg-azul py-3 container-fluid">
+    <div class="container">
+        <h1 class=" titulobloque wow bounceInUp delay-1s text-right">TEA
+            <span>| Tutorial de estrategias de aprendizaje</span></h1>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-8 mx-auto">
+            <!-- CUSTOM BLOCKQUOTE -->
+            <div class="blockquote blockquote-custom bg-warning p-5 effect-1 rounded">
+                <i class="fas fa-question fa-3x"></i>
+                <span class="enfasis ">Ayuda</span>
+            </div>
+            <!-- END -->
+        </div>
+    </div>
+</div>
+
+<div class="container  wow fadeInUp">
+    <div class="row">
+        <div class="col-lg-10 mx-auto">
+            <!-- CUSTOM BLOCKQUOTE -->
+            <div class="blockquote blockquote-custom p-5 effect-1 rounded">
+                <div class="blockquote-custom-icon bg-azul shadow-sm text-white"><i class="far fa-2x fa-grin-stars"></i></i></div>
+
+                <div class="row">
+                  <div class="col-lg-6 mt-5">
+                      <div class="pl-3">
+                          <p class="azul lead">Si tienes algún problema, duda o comentario, escribe un correo a: <a class="font-weight-bold" href="mailto:soportec@cch.unam.mx">soportec@cch.unam.mx</a> </p>
+                      </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <img src="/img/ayuda.jpg" alt="cch alumna" class="img-fluid">
+                  </div>
+                </div>
+
+            </div><!-- END -->
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,225 @@
+{% if cuestionario3 %}
+    <div class="container mt-5 wow fadeInUp">
+        <div class="row">
+            <div class="col-lg-6 col-sm-12 col-md-6">
+                <canvas id="myChart" width="400" height="400"></canvas>
+            </div>
+            <div class="col-lg-6 col-sm-12 col-md-6">
+                <canvas id="myChart2" width="400" height="400"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+          <div class="col-lg-12">
+            <p class="rosa font-weight-bold my-5 wow fadeInUp">Es muy probable que tus resultados tengan en mayor o menor medida características de un alumno activo, reflexivo, teórico o pragmático. Te invitamos a que revises la información de cada uno de ellos y compares tus resultados en las gráficas. ¿Qué tanto te indentificas con está reflexión?</p>
+              <ul id="tabs1" role="tablist" class="nav nav-tabs nav-pills with-arrow lined flex-column flex-sm-row text-center mt-5 wow fadeInUp">
+                  <li class="nav-item flex-sm-fill">
+                      <a data-toggle="tab" href="#tab-1" role="tab" aria-selected="true" class="nav-link  mr-sm-3 rounded-0 active">ALUMNOS ACTIVOS</a>
+                  </li>
+                  <li class="nav-item flex-sm-fill">
+                      <a data-toggle="tab" href="#tab-2" role="tab" aria-selected="false" class="nav-link mr-sm-3 rounded-0">ALUMNOS REFLEXIVOS</a>
+                  </li>
+                  <li class="nav-item flex-sm-fill">
+                      <a data-toggle="tab" href="#tab-3" role="tab" aria-selected="false" class="nav-link rounded-0">ALUMNOS TEÓRICOS</a>
+                  </li>
+                  <li class="nav-item flex-sm-fill">
+                      <a data-toggle="tab" href="#tab-4" role="tab" aria-selected="false" class="nav-link rounded-0">ALUMNOS PRAGMÁTICOS</a>
+                  </li>
+              </ul>
+              <div id="tabs1Content" class="tab-content wow fadeInUp">
+                  <div id="tab-1" role="tabpanel" aria-labelledby="home-tab" class="tab-pane fade px-4 py-5 show active bg-light">
+
+                      <p class="lead rosa">Características generales  </p>
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item">Los alumnos activos se involucran totalmente y sin prejuicios en las experiencias nuevas. </li>
+                          <li class="list-group-item">Disfrutan el momento presente y se dejan llevar por los acontecimientos. </li>
+                          <li class="list-group-item">Suelen ser entusiastas ante lo nuevo y tienden a actuar primero y pensar después en las consecuencias.  </li>
+                          <li class="list-group-item">Llenan sus días de actividades y tan pronto disminuye el encanto de una de ellas se lanzan a la siguiente. </li>
+                          <li class="list-group-item">Les aburre ocuparse de planes a largo plazo y consolidar los proyectos, les gusta trabajar rodeados de gente, pero siendo el centro de las actividades.  </li>
+                      </ul>
+
+
+                      <p class="text-center enfasis rosa my-5">La pregunta que quieren responder con el aprendizaje es <strong>¿Cómo?</strong></p>
+
+                      <p class="lead rosa">Aprenden mejor y peor cuando...</p>
+                      <div class="row">
+                        <div class="col-lg-6">
+                            <p class="lead rosa">Los activos aprenden mejor:</p>
+
+                            <ul class="pl-5">
+                                <li>Cuando se lanzan a una actividad que les presente un desafío.  </li>
+                                <li>Cuando realizan actividades cortas de resultado inmediato. </li>
+                                <li>Cuando hay emoción, drama y crisis.</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <p class="lead rosa">Les cuesta más trabajo Aprender:</p>
+                            <ul class="pl-5">
+                                <li>Cuando tienen que adoptar un papel pasivo.  </li>
+                                <li>Cuando tienen que asimilar, analizar e interpretar datos. </li>
+                                <li>Cuando tienen que trabajar solos.  </li>
+                            </ul>
+                        </div>
+                      </div>
+
+
+
+                  </div>
+                  <div id="tab-2" role="tabpanel" aria-labelledby="profile-tab" class="tab-pane fade px-4 py-5 bg-light">
+                      <p class="lead rosa">Características generales  </p>
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item">Los alumnos reflexivos tienden a adoptar la postura de un observador que analiza sus experiencias desde muchas perspectivas distintas. </li>
+                          <li class="list-group-item">Recogen datos y los analizan detalladamente antes de llegar a una conclusión. Para ellos lo más importante es la recolección de datos y su análisis concienzudo, así que procuran posponer las conclusiones todo lo que pueden.</li>
+                          <li class="list-group-item">Son precavidos y analizan todas las implicaciones de cualquier acción antes de ponerse en movimiento.  </li>
+                          <li class="list-group-item">En las reuniones observan y escuchan antes de hablar, procurando pasar desapercibidos. </li>
+                      </ul>
+
+
+                      <p class="text-center enfasis rosa my-5">La pregunta que quieren responder con el aprendizaje es <strong>¿Por qué?</strong>  </p>
+
+                      <p class="lead rosa">Aprenden mejor y peor cuando...</p>
+                        <div class="row">
+                          <div class="col-lg-6">
+                              <p class="lead rosa">Los reflexivos aprenden mejor:</p>
+
+                              <ul class="pl-5">
+                                  <li>Cuando pueden adoptar la postura del observador.</li>
+                                  <li>Cuando pueden ofrecer observaciones y analizar la situación.</li>
+                                  <li>Cuando pueden pensar antes de actuar.</li>
+                              </ul>
+                          </div>
+                          <div class="col-lg-6">
+                              <p class="lead rosa">Les cuesta más trabajo Aprender:</p>
+                              <ul class="pl-5">
+                                  <li>Cuando se les fuerza a convertirse en el centro de la atención. </li>
+                                  <li>Cuando se les apresura entre una actividad y otra. </li>
+                                  <li>Cuando tienen que actuar sin poder planificar previamente.</li>
+                              </ul>
+                          </div>
+                        </div>
+                  </div>
+                  <div id="tab-3" role="tabpanel" aria-labelledby="profile-tab" class="tab-pane fade px-4 py-5 bg-light">
+
+                  <p class="lead rosa">Características generales  </p>
+                  <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Los alumnos teóricos adaptan e integran las observaciones que realizan en teorías complejas y bien fundamentadas lógicamente. </li>
+                          <li class="list-group-item">Piensan de forma secuencial y paso a paso, integrando hechos dispares en teoría coherentes. </li>
+                          <li class="list-group-item">Les gusta analizar y sintetizar la información y su sistema de valores premia la lógica y la racionalidad. </li>
+                          <li class="list-group-item">Se sienten incómodos con los juicios subjetivos y las técnicas de pensamiento lateral y las actividades fuera de lógica clara.  </li>
+                      </ul>
+
+
+                    <p class="text-center enfasis rosa my-5">La pregunta que quieren responder con el aprendizaje es <strong>¿Qué?</strong>  </p>
+
+                      <p class="lead rosa">Aprenden mejor y peor cuando...</p>
+                    <div class="row">
+                     <div class="col-lg-6">
+                         <p class="lead rosa">Los teóricos aprenden mejor:</i></p>
+
+                          <ul class="pl-5">
+                             <li>A partir de modelos, teorías, sistemas con ideas y conceptos que presenten un desafío. </li>
+                             <li>Cuando tienen oportunidad de preguntar e indagar. </li>
+                         </ul>
+                     </div>
+                     <div class="col-lg-6">
+                         <p class="lead rosa">Les cuesta más trabajo Aprender:</i></p>
+                         <ul class="pl-5">
+                             <li>Con actividades que impliquen ambigüedad e incertidumbre. </li>
+                             <li>En situaciones que enfaticen las emociones y sentimientos. </li>
+                             <li>Cuando tienen que actuar sin un fundamento teórico.  </li>
+                         </ul>
+                     </div>
+                    </div>
+
+
+
+                  </div>
+                  <div id="tab-4" role="tabpanel" aria-labelledby="profile-tab" class="tab-pane fade px-4 py-5 bg-light">
+                      <p class="lead rosa">Características generales  </p>
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item">A los alumnos pragmáticos les gusta probar ideas, teorías y técnicas nuevas y comprobar si funcionan en la práctica.  </li>
+                          <li class="list-group-item">Les gusta buscar ideas y ponerlas en práctica. </li>
+                          <li class="list-group-item">Inmediatamente les aburren e impacientan las largas discusiones, sobre la misma idea de forma interminable.  </li>
+                          <li class="list-group-item">Son básicamente gente práctica, apegada a la realidad, a la que le gusta tomar decisiones y resolver problemas.  </li>
+                          <li class="list-group-item">Los problemas son un desafío y siempre están buscando una manera mejor de hacer las cosas.  </li>
+                      </ul>
+
+
+                      <p class="text-center enfasis rosa my-5">La pregunta que quieren responder con el aprendizaje es <strong>¿Qué pasaría si…?</strong>  </p>
+
+                      <p class="lead rosa">Aprenden mejor y peor cuando...</p>
+                      <div class="row">
+                        <div class="col-lg-6">
+                            <p class="lead rosa">Los pragmáticos aprenden mejor:</p>
+
+                             <ul class="pl-5">
+                                <li>Con actividades que relacionen la teoría y la práctica.</li>
+                                <li>Cuando ven a los demás hacer algo.</li>
+                                <li>Cuando tienen la posibilidad de poner en práctica inmediatamente lo que han aprendido.</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <p class="lead rosa">Les cuesta más trabajo Aprender:</p>
+                             <ul class="pl-5">
+                                <li>Cuando lo que aprenden no se relaciona en nada con sus necesidades inmediatas. </li>
+                                <li>Con aquellas actividades que no tienen una finalidad aparente. </li>
+                                <li>Cuando lo que hacen no está relacionado con la “realidad”. </li>
+                            </ul>
+                        </div>
+                      </div>
+
+
+
+                  </div>
+
+
+              </div>
+          </div>
+        </div>
+
+
+        <div>
+            <hr class="dashed">
+            <p>Referencia: Alonso C. y Honey P. (1994). Los estilos de aprendizaje: procedimientos de diagnóstico y mejora. Ediciones Mensajero, Bilbao, pp. 104-116.  </p>
+        </div>
+    </div>
+{% else %}
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+                </div>
+                <form id="honeyAlonso" method="post" action="{{base_path()}}bloques/aprender/cuestionario-honey-alonso">
+                    {% for key, pregunta in preguntas_honey_alonso %}
+                        {% if key in [1, 11, 21, 31, 41, 51, 61, 71] %}
+                            <div class="pagina">
+                        {% endif %}
+                            <div class="form-row mt-3">
+                                <div class="col-md-10 col-xs-12">
+                                    <label for="formGroupExampleInput">{{ key }}.- {{pregunta}}</label>
+                                </div>
+                                <div class="col-md-2 col-xs-12">
+                                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                        <label class="btn hvr-pop bg-rosa text-light">
+                                            <input type="radio" name="p{{ key }}" id="p{{ key }}" value="1" autocomplete="off"> Sí
+                                        </label>
+                                        <label class="btn hvr-pop bg-rosa text-light">
+                                            <input type="radio" name="p{{ key }}" id="p{{ key }}" value="0" autocomplete="off"> No
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        {% if key in [10, 20, 30, 40, 50, 60, 70, 80] %}
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                    <button id="avanzar" type="button" class="btn btn-outline-primary mt-5">Continuar</button>
+                    <input id="terminar" type="submit" class="btn btn-primary mt-5" value="Terminar" />
+                </form>
+            </div>
+        </div>
+    </div>
+{% endif %}

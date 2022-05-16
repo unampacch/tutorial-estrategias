@@ -1,0 +1,350 @@
+{% extends 'base/app-bloques.twig' %}
+
+{% set page_title = '¿Cómo estudias? Hábitos de estudio' %}
+
+{% block content %}
+
+    <div class="bg-rosa py-5 container-fluid wow bounceInDown">
+        <div class="container">
+
+            <h2 class="titulobloque">Aprender a aprender </h2>
+
+        </div>
+    </div>
+
+
+
+    <div class="container mt-5 wow fadeInUp">
+        <div class="row">
+          <div class="col-lg-12">
+              <h1>¿Cómo estudias? Hábitos de estudio</h1>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <p>Seguramente te has dado cuenta que es posible aprender de manera informal en la calle, en las redes sociales o estando con tus amigos; y que también puedes aprender formalmente en la escuela o en cualquier otra institución educativa, el aprendizaje que ocurre en estos lugares es de tipo académico, en donde se da el estudio.</p>
+                <p>Para lograr que el proceso de estudio te resulte exitoso es necesario que desarrolles una serie de técnicas de estudio eficientes acompañadas de ciertos hábitos, los cuales contribuirán a mejorar los resultados de aprendizaje obtenidos.</p>
+            </div>
+        </div>
+    </div>
+    <div class=" container-fluid absoluto d-none d-md-block  wow fadeInUp">
+      <div class="row mt-5 color-fondo-objeto d-flex justify-content-center ">
+          <div class="col-4">
+            <img class="img-fluid" alt="CCH" src="/img/bloque2/b2_10_02.png">
+          </div>
+      </div>
+    </div>
+
+<div class="container mt-5 wow fadeInUp">
+    <div class="row">
+      <div class="col-lg-12">
+        <p class="enfasis rosa">A continuación te presentamos algunos de esos hábitos:</p>
+        <div class="rounded-list pl-5 mt-5">
+            <ol>
+                <li><p>Planificar previamente el estudio.</p></li>
+                <li><p>Disponer de un tiempo y un lugar silencioso y ordenado.</p></li>
+                <li><p>Contar con el material necesario.</p></li>
+                <li><p>Pensar tus estrategias de aprendizaje.</p></li>
+                <li><p>Utilizar técnicas de estudio: subrayados, resúmenes, fichas, palabras claves, apuntes, esquemas, mapas conceptuales o cuadros.</p></li>
+                <li><p>Otro aspecto fundamental es crear buenas condiciones ambientales, un buen clima de estudio: estudiar sin ruidos, sentarse en una adecuada posición, sentirse a gusto con la iluminación y la temperatura del ambiente. También es importante contar con buenas condiciones psicofísicas: buenos hábitos de alimentación, de sueño y de higiene.</p></li>
+            </ol>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="container-fluid bg-rosa mt-5 responde  wow fadeInUp">
+    <div class="container">
+        <div class="responde-icon bg-rosa shadow text-white"><i class="far fa-2x fa-grin" aria-hidden="true"></i></div>
+        <h5 class="text-white font-weight-bold">&nbsp; Responde...</h5>
+    </div>
+</div>
+<div class="container-fluid  wow fadeInUp">
+    <div class="row">
+            <div class="col-lg-6 ml-5">
+                <!-- CUSTOM BLOCKQUOTE -->
+                <div class="blockquote blockquote-custom bg-azul p-3 effect-1 rounded">
+                    <i class="fas fa-cat fa-3x" aria-hidden="true"></i> <span class="enfasis ">Factores que inciden en los hábitos de estudio</span>
+                </div><!-- END -->
+            </div>
+    </div>
+</div
+<div class="container mt-5 wow fadeInUp">
+    <div class="col-lg-10 mx-auto">
+       <p class="rosa">Contesta los dos cuestionarios acerca de la forma en que organizas tu <span class="font-weight-bold">espacio</span> y <span class="font-weight-bold">tiempo</span> de estudio:</p>
+    </div>
+</div>
+<div class="container-fluid mt-5 wow fadeInUp">
+    <div class="row">
+        <div class="col-lg-11 mx-auto">
+            <form method="post" action="/bloques/aprender/habitos-de-estudio">
+                <div class="row justify-content-around">
+                <div class="col-lg-5">
+                    <h2 class="rosa">Espacio de estudio</h2>
+                    <p>El espacio donde estudias es uno de los elementos que va a incidir de manera positiva o negativa en la calidad de tu estudio. Verás que organizar tu ambiente facilitará tu estudio.</p>
+                    {% if cuestionario8 == 0 %}
+                    <div class="row">
+                        <div class="col-8">
+                          <label for="formGroupExampleInput">¿Estudias o trabajas siempre a la <strong>misma hora y todos los días</strong>?</label>
+                        </div>
+                        <div class="col-4">
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="p1r1" name="p1" class="form-check-input" value="1" required>
+                                <label class="custom-control-label" for="p1r1">Si</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="p1r2" name="p1" class="form-check-input" value="0">
+                                <label class="custom-control-label" for="p1r2">No</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-8">
+                          <label for="formGroupExampleInput">¿Programas  el estudio de acuerdo con las exigencias y la <strong>dificultad</strong> de cada materia? </label>
+                        </div>
+                        <div class="col-4">
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="p2r1" name="p2" class="form-check-input" value="1">
+                                <label class="custom-control-label" for="p2r1">Si</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="p2r2" name="p2" class="form-check-input" value="0">
+                                <label class="custom-control-label" for="p2r2">No</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-8">
+                          <label for="formGroupExampleInput">¿Estudias <strong>todos los días</strong> durante un poco de tiempo, en vez de estudiar mucho tiempo durante muy pocos días?</label>
+                        </div>
+                        <div class="col-4">
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="p3r1" name="p3" class="form-check-input" value="1">
+                                <label class="custom-control-label" for="p3r1">Si</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="p3r2" name="p3" class="form-check-input" value="0">
+                                <label class="custom-control-label" for="p3r2">No</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-8">
+                          <label for="formGroupExampleInput">¿Te pones de <strong>acuerdo con tu familia y los amigos</strong> para que no te interrumpan en el horario de estudio?</label>
+                        </div>
+                        <div class="col-4">
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="p4r1" name="p4" class="form-check-input" value="1">
+                                <label class="custom-control-label" for="p4r1">Si</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="p4r2" name="p4" class="form-check-input" value="0">
+                                <label class="custom-control-label" for="p4r2">No</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-8">
+                          <label for="formGroupExampleInput">¿<strong>Duermes</strong> 8 horas diarias? </label>
+                        </div>
+                        <div class="col-4">
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="p5r1" name="p5" class="form-check-input" value="1">
+                                <label class="custom-control-label" for="p5r1">Si</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="p5r2" name="p5" class="form-check-input" value="0">
+                                <label class="custom-control-label" for="p5r2">No</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-8">
+                          <label for="formGroupExampleInput">¿Tienes suficiente tiempo para <strong>actividades placenteras</strong>? </label>
+                        </div>
+                        <div class="col-4">
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="p6r1" name="p6" class="form-check-input" value="1">
+                                <label class="custom-control-label" for="p6r1">Si</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="p6r2" name="p6" class="form-check-input" value="0">
+                                <label class="custom-control-label" for="p6r2">No</label>
+                            </div>
+                        </div>
+                    </div>
+                    {% else %}
+                        <div class="retroalimentacion">
+                            <h2 class="rosa">Retroalimentación. </h2>
+                            <p>Uno de los factores importantes son las condiciones físicas de tu lugar de estudio: éste debe contar con ciertas características para que te sea mucho más fácil concentrarte y adquirir conocimiento.</p>
+                            <p>Procura estudiar en el mismo lugar para que logres crearte un hábito.  Elige uno tranquilo y sin ruidos.  De preferencia, uno que sea de luz natural, pero, si es artificial, que sea lo suficientemente potente para que no te cree sombras.</p>
+                            <p>Es importante tener un escritorio y la mesa con una amplitud y altura cómoda para trabajar; la silla con respaldo y con la altura necesaria para apoyar la planta de los pies sobre el piso. No se recomienda que estudies o hagas actividades escolares sobre la cama, pues resulta contraproducente. Ten a la mano el material que necesitas, de esta manera, al no necesitar levantarte a buscar algo, evitarás perder tiempo y concentración.</p>
+                        </div>
+                    {% endif %}
+
+                </div>
+                <div class="col-lg-5">
+                    <h2 class="rosa">Tiempo de estudio</h2>
+                    <p>La planificación y organización del tiempo constituyen uno de los factores más importantes y determinantes para que tu estudio resulte eficaz.</p>
+                    <p>Esto significa que tendrás que adaptar tus tiempos tanto al trabajo que se va a realizar, como a tu personalidad. Si organizas adecuadamente tu tiempo y lo planificas, te será posible distribuir equilibradamente tu jornada diaria y semanal para completar de manera eficaz tu trabajo escolar y dar tiempo a otras actividades que no tengan que ver precisamente con la escuela.</p>
+
+                    {% if cuestionario8 == 0 %}
+                    <div class="row">
+                        <div class="col-8">
+                          <label for="formGroupExampleInput">¿Tienes un <strong>lugar fijo</strong> de estudio?</label>
+                        </div>
+                        <div class="col-4">
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="p7r1" name="p7" class="form-check-input" value="1">
+                                <label class="custom-control-label" for="p7r1">Si</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="p7r2" name="p7" class="form-check-input" value="0">
+                                <label class="custom-control-label" for="p7r2">No</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-8">
+                          <label for="formGroupExampleInput">¿El lugar dónde estudias es <strong>cómodo</strong> y tiene el mínimo de <strong>distractores</strong>? </label>
+                        </div>
+                        <div class="col-4">
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="p8r1" name="p8" class="form-check-input" value="1">
+                                <label class="custom-control-label" for="p8r1">Si</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="p8r2" name="p8" class="form-check-input" value="0">
+                                <label class="custom-control-label" for="p8r2">No</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-8">
+                          <label for="formGroupExampleInput">¿Tu lugar de estudio está bien <strong>iluminado</strong>, con una <strong>temperatura</strong> ambiental y una <strong>ventilación</strong> adecuada?</label>
+                        </div>
+                        <div class="col-4">
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="p9r1" name="p9" class="form-check-input" value="1">
+                                <label class="custom-control-label" for="p9r1">Si</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="p9r2" name="p9" class="form-check-input" value="0">
+                                <label class="custom-control-label" for="p9r2">No</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-8">
+                          <label for="formGroupExampleInput">¿Cuentas con un <strong>escritorio</strong> o una <strong>mesa</strong> y <strong>silla</strong> cómoda?</label>
+                        </div>
+                        <div class="col-4">
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="p10r1" name="p10" class="form-check-input" value="1">
+                                <label class="custom-control-label" for="p10r1">Si</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="p10r2" name="p10" class="form-check-input" value="0">
+                                <label class="custom-control-label" for="p10r2">No</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-8">
+                          <label for="formGroupExampleInput">¿Tienes todo el <strong>material de estudio</strong> (útiles, diccionarios, libros, revistas, computadora, etc.) a la mano?</label>
+                        </div>
+                        <div class="col-4">
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="p11r1" name="p11" class="form-check-input" value="1">
+                                <label class="custom-control-label" for="p11r1">Si</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="p11r2" name="p11" class="form-check-input" value="0">
+                                <label class="custom-control-label" for="p11r2">No</label>
+                            </div>
+                        </div>
+                    </div>
+                    {% else %}
+                        <div class="retroalimentacion">
+                            <h2 class="rosa">Retroalimentación. </h2>
+                            <p>Ten presente que el éxito de la forma en que distribuyas el tiempo va a depender del cuidado con que planifiques dicha distribución. Debes hacerlo con un espíritu realista y objetivo; no debes planificar horarios ilusorios, que no se puedan cumplir debido al exceso de horas que proyectaste para el estudio, o a un número muy reducido de ellas. </p>
+                            <p>Debes planificar tu horario considerando factores como el horario de clases, las necesidades de preparación de cada asignatura, los periodos de descanso, las horas de comida, de sueño y, además, identificar cuáles son tus debilidades, fortalezas, habilidades y destrezas para que así logres alcanzar el dominio de tus materias de estudio.  </p>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+                {% if cuestionario8 == 0 %}
+                <div class="row">
+                    <div class="col-12 mt-2 mb-2 text-center">
+                        <input type="submit" class="btn btn-rosa" value="Enviar respuestas" />
+                    </div>
+                </div>
+                {% else %}
+                    {% include 'partials/completado.twig' %}
+                {% endif %}
+            </form>
+        </div>
+    </div>
+</div>
+<div class="bg-rosa text-white text-center container-fluid  wow fadeInUp">
+    <div class="row p-3">
+        <div class="col-lg-10 mx-auto">
+            <div class=" text-white lead">Una estrategia que conjunta ambos aspectos (tiempo y espacio) para realizar tus tareas, trabajos o actividades es la Técnica Pomodoro que a continuación te explicamos:</div>
+            <div class="text-white d-none d-xl-block mt-3"><i aria-hidden="true" class=" far fa-2x fa-arrow-alt-circle-down"></i></div>
+        </div>
+    </div>
+</div>
+<div class="container  wow fadeInUp">
+    <div class="col-lg-10 mx-auto">
+        <img class="img-fluid" alt="CCH" src="/img/bloque2/b2_10_02.jpg">
+    </div>
+</div>
+<div class="container mt-5  wow fadeInUp">
+    <div class="row">
+        <div class="col-lg-12">
+
+            <!-- CUSTOM BLOCKQUOTE -->
+            <div class="blockquote blockquote-custom p-5 effect-1 rounded">
+                <div class="blockquote-custom-icon bg-azul shadow-sm text-white"><i class="far fa-2x fa-grin-stars"></i></i></div>
+
+                <div class="row align-items-center">
+                  <div class="col-lg-8">
+                    <h1 class="azul">Recuerda que...</h1>
+                      <div class="pl-3 lead">
+                         <strong> No es posible conocer si no hay deseo de conocer</strong>, si no hay involucramiento con lo que se aprende. No es tan importante tener hábitos de estudio como tener gusto por el estudio, tener placer, generar placer, construir placer.
+                      </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <img src="/img/bloque1/b1_02_03.png" alt="cch alumna" class="img-fluid">
+                  </div>
+                </div>
+
+            </div><!-- END -->
+
+        </div>
+    </div>
+</div>
+<div class="container-fluid mt-5">
+    <div class="row minh-100">
+        <div class="col-12 ">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination pagination-lg flex-wrap justify-content-center">
+                    <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/organizadores-graficos"><i class="fas fa-angle-double-left"></i></a></li>
+                    <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/que-es-aprender">1</a></li>
+                    <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/estilos-de-aprendizaje">2</a></li>
+                    <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/cuestionario-honey-alonso">3</a></li>
+                    <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/estrategias-de-aprendizaje">4</a></li>
+                    <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/tecnicas-de-estudio">5</a></li>
+                    <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/busqueda-de-informacion">6</a></li>
+                    <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/lectura">7</a></li>
+                    <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/escritura">8</a></li>
+                    <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/organizadores-graficos">9</a></li>
+                    <li class="page-item active"><a class="page-link" href="{{base_path()}}bloques/aprender/habitos-de-estudio">10</a></li>
+                    <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/recursos/ciencias-experimentales"><i class="fas fa-angle-double-right"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
