@@ -1,0 +1,32 @@
+{
+  "name": "tutorial-estrategias",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unampacch/tutorial-estrategias.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/unampacch/tutorial-estrategias/issues"
+  },
+  "homepage": "https://github.com/unampacch/tutorial-estrategias#readme",
+  "devDependencies": {
+    "@babel/core": "^7.18.0",
+    "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.1",
+    "sass-loader": "^13.0.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.3"
+  }
+}
