@@ -1,8 +1,8 @@
-import "./css/menu.css";
-import "./css/bloquescontenido.css";
-import "./css/main.css";
+import "./assets/css/menu.css";
+import "./assets/css/bloquescontenido.css";
+import "./assets/css/main.css";
 
-import "./js/main.js";
-import "./js/plugins.js";
-import "./js/checkRadioHoney.jquery";
+import "./assets/js/main.js";
+import "./assets/js/plugins.js";
+import "./assets/js/checkRadioHoney.jquery";
 
