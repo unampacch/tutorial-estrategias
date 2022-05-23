@@ -322,9 +322,7 @@ a.btn.open-menu:hover{
     display: block;
     /*float: left;*/
     width: 100%;
-
     padding: 25px 15px;
-
 }
 
 .user-panel>.info {
