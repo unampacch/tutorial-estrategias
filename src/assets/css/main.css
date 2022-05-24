@@ -402,10 +402,12 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
     color: #2a2a2a;
 }
 
-
+.bcero{
+    height: 12vh !important;
+}
 
 .cajas {
-    height: 25vh;
+    height: 22vh;
     overflow: hidden;
 }
 .cajas a{
