@@ -25,15 +25,23 @@ module.exports = {
                 }
             },
             {
-                test: /\.(png|jpg|gif)$/i,
+                test: /\.jpe?g$|\.gif$|\.png$|\.PNG$|\.svg$/,
                 use: [
                   {
                     loader: 'url-loader',
                     options: {
                       limit: false,
+                      name: '../images/[name].[ext]'
                     },
                   },
                 ],
+            },
+            {
+              test: /\.woff(2)?$|\.ttf$|\.eot$/,
+              loader: 'file-loader',
+              options: {
+                name: '../fonts/[name].[ext]'
+              }
             },
         ],
     },
