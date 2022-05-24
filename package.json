@@ -32,7 +32,11 @@
     "webpack-cli": "^4.9.2"
   },
   "dependencies": {
-    "bootstrap": "^4.5.3",
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "animate.css": "^4.1.1",
+    "bootstrap": "4.5.3",
+    "hover.css": "^2.3.2",
+    "joshjs": "^1.0.8",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1"
   }
