@@ -2,3 +2,5 @@ vendor
 node_modules
 cache/*
 .env
+public/css/*
+public/js/*
