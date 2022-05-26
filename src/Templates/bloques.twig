@@ -7,11 +7,10 @@
     {% include 'partials/header.twig' %}
 
     <div id="bloques-container" class="container-fluid m-0 p-0">
-        <div class="position-absolute vh-100 w-75 d-none d-md-block wow bounceInLeft delay-1s" style="left:-23%; z-index:9999; ">
+        <div class="position-absolute vh-100 w-75 d-none d-md-block josh-js" data-josh-anim-name="bounceInLeft" data-josh-anim-delay="1s" style="left:-23%; z-index:9999; ">
             <div class="w-100 h-100 d-flex align-items-end pt-5">
                 <img class="img-fluid" alt="" src="/img/bloque3/bloquetres-int.png">
             </div>
-
         </div>
         <div class="d-flex flex-column ">
             <!--<div class="bcero bg-warning backInRight wow">
@@ -22,32 +21,32 @@
                         </div>
                     </div>
             </div>-->
-            <div class="bcero bg-warning cajas backInRight wow">
-                    <div class="row h-100 align-items-center">
-                        <div class="col-12 col-lg-6 offset-lg-6 ">
-                            <h2 class="text-dark smt-3 d-none d-xl-block my-auto">Selecciona el bloque que te gustaría revisar:</h2>
-                            <p class="text-dark smt-3 text-left d-lg-block d-xl-none ml-3 my-auto lead">Selecciona un bloque:</p>
-                        </div>
+            <div class="bcero bg-warning cajas josh-js" data-josh-anim-name="backInLeft">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12 col-lg-6 offset-lg-6 ">
+                        <h2 class="text-dark smt-3 d-none d-xl-block my-auto">Selecciona el bloque que te gustaría revisar:</h2>
+                        <p class="text-dark smt-3 text-left d-lg-block d-xl-none ml-3 my-auto lead">Selecciona un bloque:</p>
                     </div>
+                </div>
             </div>
-            <div class="buno bg-azul cajas hvr-bounce-to-right backInRight wow">
-                    <div class="row h-100 align-items-center">
-                        <div class="col-md-6 offset-md-6 ">
-                            <a href="{{base_path()}}bloques/el-cch/que-es-el-cch">
-                                <h2 class="titulobloque">El CCH y su modelo educativo</h2>
-                                <div class="text-center">
-                                    <i class="fas fa-hand-pointer fa-2x d-sm-block d-md-none"></i>
-                                </div>
-                                <ul class="temasbloque">
-                                    <li>El CCH</li>
-                                    <li>Modelo Educativo</li>
-                                    <li>Asignaturas y áreas</li>
-                                </ul>
-                            </a>
-                        </div>
+            <div class="buno bg-azul cajas hvr-bounce-to-right josh-js" data-josh-anim-name="backInRight">
+                <div class="row h-100 align-items-center">
+                    <div class="col-md-6 offset-md-6 ">
+                        <a href="{{base_path()}}bloques/el-cch/que-es-el-cch">
+                            <h2 class="titulobloque">El CCH y su modelo educativo</h2>
+                            <div class="text-center">
+                                <i class="fas fa-hand-pointer fa-2x d-sm-block d-md-none"></i>
+                            </div>
+                            <ul class="temasbloque">
+                                <li>El CCH</li>
+                                <li>Modelo Educativo</li>
+                                <li>Asignaturas y áreas</li>
+                            </ul>
+                        </a>
                     </div>
+                </div>
             </div>
-            <div class="bdos bg-rosa cajas hvr-bounce-to-left backInLeft wow">
+            <div class="bdos bg-rosa cajas hvr-bounce-to-left josh-js" data-josh-anim-name="backInLeft">
                 <div class="row h-100 align-items-center">
                     <div class="col-md-6 offset-md-6 ">
                         <a href="{{base_path()}}bloques/aprender/que-es-aprender">
@@ -79,10 +78,8 @@
                         </a>
                     </div>
                 </div>
-
-
             </div>
-            <div class="btres bg-verde cajas  hvr-bounce-to-right backInRight wow  ">
+            <div class="btres bg-verde cajas  hvr-bounce-to-right josh-js" data-josh-anim-name="backInRight">
                 <div class="row h-100 align-items-center">
                     <div class="col-md-6 offset-md-6 ">
                         <a href="{{base_path()}}bloques/recursos/ciencias-experimentales">
@@ -102,7 +99,8 @@
                     </div>
                 </div>
             </div>
-            <div class="bcuatro bg-morado cajas  hvr-bounce-to-left backInLeft wow">
+            <div class="bcuatro bg-morado cajas  hvr-bounce-to-left josh-js" data-josh-anim-name="backInLeft">
+
                 <div class="row h-100 align-items-center">
                     <div class="col-md-6 offset-md-6 ">
                         <a href="{{base_path()}}bloques/tic-aprender/que-son-las-tic">
