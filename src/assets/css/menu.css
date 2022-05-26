@@ -242,6 +242,7 @@ a.btn.open-menu:hover{
     padding-left: 0px;
     padding-right: 10px;
     vertical-align: middle;
+    font-weight: 900;
 }
 
 .sidebar ul li .sub-menu li a:hover:after {

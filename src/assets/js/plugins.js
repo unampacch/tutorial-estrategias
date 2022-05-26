@@ -26,11 +26,3 @@
 $(window).on("load", function (e) {
     $('.preloader').fadeOut('slow');
 });
-
-
-$(function() {
-    //Woo
-    new WOW().init();
-});
-
-// Shorthand for $( document ).ready()

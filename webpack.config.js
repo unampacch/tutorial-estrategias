@@ -14,8 +14,8 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.(css|sass)$/i,
-                use: [MiniCssExtractPlugin.loader, "css-loader"],
+                test: /\.(css|sass|scss)$/i,
+                use: [MiniCssExtractPlugin.loader, "css-loader", 'sass-loader'],
             },
             {
                 test: /\.(js|jsx)$/,
@@ -36,12 +36,17 @@ module.exports = {
                   },
                 ],
             },
-            {
+            /*{
               test: /\.woff(2)?$|\.ttf$|\.eot$/,
-              loader: 'file-loader',
+              loader: 'url-loader',
               options: {
                 name: '../fonts/[name].[ext]'
               }
+            },*/
+            //This rule is here to include dependencies inline
+            {
+                test: /\.(svg|eot|woff|woff2|ttf)$/,
+                type: 'asset/inline'
             },
         ],
     },

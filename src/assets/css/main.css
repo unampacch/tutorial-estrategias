@@ -494,7 +494,7 @@ ul.temasbloque li {
     border: none;
     padding: 20px 35px;
     font-size: 20px;
-    background-color: rgba(94,34,178);
+    background-color: rgba(94,34,178,1);
     font-weight: 600;
     position: relative;
     color: #fff;
@@ -507,7 +507,7 @@ ul.temasbloque li {
 .card-header a.collapsed:after,
 .card-header a:after {
     content: "\f068";
-    font-family: fontawesome;
+    font-family: "Font Awesome 5 Free";
     text-align: center;
     position: absolute;
     left: -20px;
@@ -521,6 +521,7 @@ ul.temasbloque li {
     line-height: 30px;
     border-radius: 50%;
     transition: all 0.3s ease 0s;
+    font-weight: 900;
 }
 .card-header:hover a.collapsed:after,
 .card-header:hover a:after {
@@ -643,14 +644,15 @@ input.btn-rosa:hover{
 /* checked mark aspect */
 [type="radio"]:not(:checked) + label:after,
 [type="radio"]:checked + label:after {
-    content: "\f00c";
-    font-family: fontawesome;
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
   position: absolute;
   top: .25em; left: .22em;
   font-size: 0.9em;
   line-height: 0.8;
   color: #09ad7e;
   transition: all .2s;
+  font-weight: 900;
 }
 /* checked mark aspect changes */
 [type="radio"]:not(:checked) + label:after {

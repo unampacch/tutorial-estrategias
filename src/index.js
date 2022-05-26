@@ -1,5 +1,5 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '@fortawesome/fontawesome-free/css/all.css';
+//import 'bootstrap/dist/css/bootstrap.min.css';
+import "./assets/sass/style.scss";
 import 'hover.css/css/hover-min.css';
 import 'animate.css/animate.min.css';
 import "./assets/css/menu.css";
