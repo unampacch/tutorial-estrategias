@@ -1,0 +1,43 @@
+{
+  "name": "tutorial-estrategias",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unampacch/tutorial-estrategias.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/unampacch/tutorial-estrategias/issues"
+  },
+  "homepage": "https://github.com/unampacch/tutorial-estrategias#readme",
+  "devDependencies": {
+    "@babel/core": "^7.18.0",
+    "babel-loader": "^8.2.5",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.7.1",
+    "file-loader": "^6.2.0",
+    "mini-css-extract-plugin": "^2.6.0",
+    "node-sass": "^7.0.1",
+    "sass-loader": "^13.0.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "animate.css": "^4.1.1",
+    "bootstrap": "4.5.3",
+    "hover.css": "^2.3.2",
+    "joshjs": "^1.0.8",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  }
+}

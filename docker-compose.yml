@@ -1,30 +1,25 @@
-version: '3'
+version: '3.1'
 
 services:
 
   #PHP Service
   app:
-    #build:
+    build: docker/php
     #  context: .
     #  dockerfile: Dockerfile
-    image: php:7.4-fpm
+    #image: php:7.4-fpm
     expose:
       - "9000"
     container_name: app
     restart: unless-stopped
     tty: true
-    working_dir: /var/www/html
     links:
-      - db
+      - mariadb
     environment:
       - PHP_FPM_ENABLE=1
       - PHP_FPM_SERVER_ADDR=php
       - PHP_FPM_SERVER_PORT=9000
       - PHP_FPM_TIMEOUT=${HTTPD_TIMEOUT_TO_PHP_FPM:-180}
-      - DB_HOST=mysql
-      - DB_NAME=tea
-      - DB_USER=root
-      - DB_PASS=
     volumes:
       - ./:/var/www/html
     networks:
@@ -45,6 +40,7 @@ services:
       - app
     depends_on:
       - app
+      - mariadb
     volumes:
       - ./:/var/www/html
       - ./docker/nginx/conf.d:/etc/nginx/conf.d
@@ -52,17 +48,19 @@ services:
       - app-network
 
   #MySQL Service
-  db:
+  mariadb:
     image: mariadb:10.5.5-focal
-    container_name: db
+    container_name: mariadb
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: base2020
     tty: true
     ports:
       - "3306:3306"
+    command: --init-file /data/application/tea.sql
     volumes:
       - my-data:/var/lib/mysql
+      - ./tea.sql:/data/application/tea.sql
     networks:
       - app-network
 
@@ -72,15 +70,16 @@ services:
     container_name: phpmyadmin
     restart: always
     links:
-      - db
+      - mariadb
     tty: true
     ports:
       - "8080:80"
     environment:
+      - PMA_HOST=mariadb
+      - PMA_PORT=3306
       - PMA_USER=root
       - PMA_PASSWORD=base2020
       - PHP_UPLOAD_MAX_FILESIZE=100MB
-      #- PMA_ARBITRARY=1
     networks:
       - app-network
 

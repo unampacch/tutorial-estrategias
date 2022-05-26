@@ -1,11 +1,16 @@
 {
     "require": {
-        "slim/slim": "4.*",
-        "slim/psr7": "^1.2",
+        "slim/slim": "4.8.1",
+        "slim/psr7": "^1.1",
         "php-di/php-di": "^6.2",
         "slim/twig-view": "^3.1",
-        "vlucas/phpdotenv": "^5.2",
-        "illuminate/database": "^5.8"
+        "bryanjhv/slim-session": "~4.0",
+        "respect/validation": "^2.0",
+        "slim/flash": "^0.4.0",
+        "vlucas/phpdotenv": "^5.1",
+        "slim/csrf": "^1.0",
+        "selective/basepath": "^1.0",
+        "illuminate/database": "~5.8"
     },
     "autoload": {
         "psr-4": {
