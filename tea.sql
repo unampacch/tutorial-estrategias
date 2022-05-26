@@ -567,6 +567,9 @@ TRUNCATE TABLE `usuarios`;
 
 INSERT INTO `usuarios` (`id`, `usuario`, `password`, `nombre`, `apellidos`, `correo`, `genero`, `plantel`, `turno`, `grupo`, `generacion`, `tipo`, `creacion`, `actualizacion`) VALUES
 (5, 'basj850331631', '851788', 'Jonathan', 'Bailon', 'jonn59@gmail.com', 'H', 40702, 2, '401', 2022, 'P', '2022-05-19 20:31:12', '2022-05-19 20:31:12');
+INSERT INTO `usuarios` (`id`, `usuario`, `password`, `nombre`, `apellidos`, `correo`, `genero`, `plantel`, `turno`, `grupo`, `generacion`, `tipo`, `creacion`, `actualizacion`) VALUES
+(6, 'aipj840407v55', '847702', 'Rodrigo', 'Aizpuru', 'rodrigoaiz@gmail.com', 'H', 40702, 2, '401', 2022, 'P', '2022-05-19 20:31:12', '2022-05-19 20:31:12');
+
 
 -- --------------------------------------------------------
 
