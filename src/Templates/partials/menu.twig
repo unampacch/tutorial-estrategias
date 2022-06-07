@@ -10,50 +10,108 @@
             <li class="open-menu-int"> <a href="#"><i class="fa fa-bars"></i> <!--<span class="nav-label">Menú</span>--></a></li>
             <li> <a href="{{base_path()}}bloques"><i class="fa fa-home"></i> <span class="nav-label">Inicio</span></a> </li>
 
-            <li> <a href="#" data-toggle="collapse" data-target="#nav-bloque1" class="collapsed"><i class="fa fa-dice-one "></i><i class="fas fa-caret-right"></i> <span class="nav-label">El CCH</span> <span class="fa fa-chevron-down pull-right"></span> </a>
+            <li class="{{ 'el-cch' in current_url() ? 'active' : '' }}">
+                <a href="{{base_path()}}bloques/el-cch" data-toggle="collapse" data-target="#nav-bloque1" class="collapsed"><i class="fa fa-dice-one "></i><i class="fas fa-caret-right"></i> <span class="nav-label">El CCH</span> <span class="fa fa-chevron-down pull-right"></span> </a>
                 <ul class="sub-menu collapse" data-parent="#menu-izquierdo" id="nav-bloque1">
-                    <li ><a href="{{base_path()}}bloques/el-cch/que-es-el-cch">El CCH</a></li>
-                    <li><a href="{{base_path()}}bloques/el-cch/modelo-educativo">Modelo Educativo</a></li>
-                    <li><a href="{{base_path()}}bloques/el-cch/asignaturas-areas">Asignaturas y áreas</a></li>
+                    <li class="{{ 'que-es-el-cch' in current_url() ? 'active' : '' }}">
+                        <a href="{{base_path()}}bloques/el-cch/que-es-el-cch">El CCH</a>
+                    </li>
+                    <li class="{{ 'modelo-educativo' in current_url() ? 'active' : '' }}">
+                        <a href="{{base_path()}}bloques/el-cch/modelo-educativo">Modelo Educativo</a>
+                    </li>
+                    <li class="{{ 'asignaturas-areas' in current_url() ? 'active' : '' }}">
+                        <a href="{{base_path()}}bloques/el-cch/asignaturas-areas">Asignaturas y áreas</a>
+                    </li>
                 </ul>
             </li>
-            <li> <a href="#" data-toggle="collapse" data-target="#nav-bloque2" class="collapsed"><i class="fa fa-dice-two "></i><i class="fas fa-caret-right"></i><span class="nav-label">Aprender</span> <span class="fa fa-chevron-down pull-right"></span> </a>
+            <li class="{{ 'aprender' in current_url() ? 'active' : '' }}">
+                <a href="#" data-toggle="collapse" data-target="#nav-bloque2" class="collapsed"><i class="fa fa-dice-two "></i><i class="fas fa-caret-right"></i><span class="nav-label">Aprender</span> <span class="fa fa-chevron-down pull-right"></span> </a>
                 <ul class="sub-menu collapse" data-parent="#menu-izquierdo" id="nav-bloque2">
-                <li><a href="{{base_path()}}bloques/aprender/que-es-aprender">¿Qué es aprender?</a></li>
-                <li><a href="{{base_path()}}bloques/aprender/estilos-de-aprendizaje">Estilos de aprendizaje</a></li>
-                <li><a href="{{base_path()}}bloques/aprender/cuestionario-honey-alonso">Cuestionario Honey-Alonso</a></li>
-                <li><a href="{{base_path()}}bloques/aprender/estrategias-de-aprendizaje">Estrategias de aprendizaje</a></li>
-                <li><a href="{{base_path()}}bloques/aprender/tecnicas-de-estudio">Técnicas de estudio</a></li>
-                <li><a href="{{base_path()}}bloques/aprender/busqueda-de-informacion">Búsqueda de información</a></li>
-                <li><a href="{{base_path()}}bloques/aprender/lectura">Lectura</a></li>
-                <li><a href="{{base_path()}}bloques/aprender/escritura">Escritura</a></li>
-                <li><a href="{{base_path()}}bloques/aprender/organizadores-graficos">Organizadores gráficos</a></li>
-                <li><a href="{{base_path()}}bloques/aprender/habitos-de-estudio">Hábitos de estudio</a></li>
+                <li class="{{ 'que-es-aprender' in current_url() ? 'active' : '' }}">
+                    <a href="{{base_path()}}bloques/aprender/que-es-aprender">¿Qué es aprender?</a>
+                </li>
+                <li class="{{ 'estilos-de-aprendizaje' in current_url() ? 'active' : '' }}">
+                    <a href="{{base_path()}}bloques/aprender/estilos-de-aprendizaje">Estilos de aprendizaje</a>
+                </li>
+                <li class="{{ 'cuestionario-honey-alonso' in current_url() ? 'active' : '' }}">
+                    <a href="{{base_path()}}bloques/aprender/cuestionario-honey-alonso">Cuestionario Honey-Alonso</a>
+                </li>
+                <li class="{{ 'estrategias-de-aprendizaje' in current_url() ? 'active' : '' }}">
+                    <a href="{{base_path()}}bloques/aprender/estrategias-de-aprendizaje">Estrategias de aprendizaje</a>
+                </li>
+                <li class="{{ 'tecnicas-de-estudio' in current_url() ? 'active' : '' }}">
+                    <a href="{{base_path()}}bloques/aprender/tecnicas-de-estudio">Técnicas de estudio</a>
+                </li>
+                <li class="{{ 'busqueda-de-informacion' in current_url() ? 'active' : '' }}">
+                    <a href="{{base_path()}}bloques/aprender/busqueda-de-informacion">Búsqueda de información</a>
+                </li>
+                <li class="{{ 'lectura' in current_url() ? 'active' : '' }}">
+                    <a href="{{base_path()}}bloques/aprender/lectura">Lectura</a>
+                </li>
+                <li class="{{ 'escritura' in current_url() ? 'active' : '' }}">
+                    <a href="{{base_path()}}bloques/aprender/escritura">Escritura</a>
+                </li>
+                <li class="{{ 'organizadores-graficos' in current_url() ? 'active' : '' }}">
+                    <a href="{{base_path()}}bloques/aprender/organizadores-graficos">Organizadores gráficos</a>
+                </li>
+                <li class="{{ 'habitos-de-estudio' in current_url() ? 'active' : '' }}">
+                    <a href="{{base_path()}}bloques/aprender/habitos-de-estudio">Hábitos de estudio</a>
+                </li>
                 </ul>
             </li>
-            <li> <a href="#" data-toggle="collapse" data-target="#nav-bloque3" class="collapsed"><i class="fa fa-dice-three "></i><i class="fas fa-caret-right"></i><span class="nav-label">Recursos</span> <span class="fa fa-chevron-down pull-right"></span> </a>
+            <li class="{{ 'recursos' in current_url() ? 'active' : '' }}">
+                <a href="#" data-toggle="collapse" data-target="#nav-bloque3" class="collapsed"><i class="fa fa-dice-three "></i><i class="fas fa-caret-right"></i><span class="nav-label">Recursos</span> <span class="fa fa-chevron-down pull-right"></span> </a>
                 <ul class="sub-menu collapse" data-parent="#menu-izquierdo" id="nav-bloque3">
-                    <li><a href="{{base_path()}}bloques/recursos/ciencias-experimentales">Ciencias Experimentales</a></li>
-                    <li><a href="{{base_path()}}bloques/recursos/matematicas">Matemáticas</a></li>
-                    <li><a href="{{base_path()}}bloques/recursos/talleres">Talleres</a></li>
-                    <li><a href="{{base_path()}}bloques/recursos/historico-social">Histórico-social</a></li>
-                    <li><a href="{{base_path()}}bloques/recursos/idiomas">Idiomas</a></li>
+                    <li <li class="{{ 'ciencias-experimentales' in current_url() ? 'active' : '' }}">>
+                        <a href="{{base_path()}}bloques/recursos/ciencias-experimentales">Ciencias Experimentales</a>
+                    </li>
+                    <li <li class="{{ 'matematicas' in current_url() ? 'active' : '' }}">>
+                        <a href="{{base_path()}}bloques/recursos/matematicas">Matemáticas</a>
+                    </li>
+                    <li <li class="{{ 'talleres' in current_url() ? 'active' : '' }}">>
+                        <a href="{{base_path()}}bloques/recursos/talleres">Talleres</a>
+                    </li>
+                    <li <li class="{{ 'historico-social' in current_url() ? 'active' : '' }}">>
+                        <a href="{{base_path()}}bloques/recursos/historico-social">Histórico-social</a>
+                    </li>
+                    <li <li class="{{ 'idiomas' in current_url() ? 'active' : '' }}">>
+                        <a href="{{base_path()}}bloques/recursos/idiomas">Idiomas</a>
+                    </li>
                 </ul>
             </li>
-            <li> <a href="#" data-toggle="collapse" data-target="#nav-bloque4" class="collapsed"><i class="fa fa-dice-four "></i><i class="fas fa-caret-right"></i><span class="nav-label">TIC</span> <span class="fa fa-chevron-down pull-right"></span> </a>
+            <li class="{{ 'tic-aprender' in current_url() ? 'active' : '' }}">
+                <a href="#" data-toggle="collapse" data-target="#nav-bloque4" class="collapsed"><i class="fa fa-dice-four "></i><i class="fas fa-caret-right"></i><span class="nav-label">TIC</span> <span class="fa fa-chevron-down pull-right"></span> </a>
                 <ul class="sub-menu collapse" data-parent="#menu-izquierdo" id="nav-bloque4">
-                    <li><a href="{{base_path()}}bloques/tic-aprender/que-son-las-tic">Las TIC</a></li>
-                    <li><a href="{{base_path()}}bloques/tic-aprender/almacenar-informacion">Almacenar información</a></li>
-                    <li><a href="{{base_path()}}bloques/tic-aprender/trabajo-colaborativo">Trabajo colaborativo</a></li>
+                    <li class="{{ 'que-son-las-tic' in current_url() ? 'active' : '' }}">
+                        <a href="{{base_path()}}bloques/tic-aprender/que-son-las-tic">Las TIC</a>
+                    </li>
+                    <li class="{{ 'almacenar-informacion' in current_url() ? 'active' : '' }}">
+                        <a href="{{base_path()}}bloques/tic-aprender/almacenar-informacion">Almacenar información</a>
+                    </li>
+                    <li class="{{ 'trabajo-colaborativo' in current_url() ? 'active' : '' }}">
+                        <a href="{{base_path()}}bloques/tic-aprender/trabajo-colaborativo">Trabajo colaborativo</a>
+                    </li>
                 </ul>
             </li>
-            <li> <a href="{{base_path()}}cuestionario"><i class="fa fa-list-alt"></i> <span class="nav-label">Cuestionario de opinion</span></a> </li>
-            <li> <a href="{{base_path()}}bibliografia"><i class="fa fa-book-open"></i> <span class="nav-label">Bibliografía</span></a> </li>
-            <li> <a href="{{base_path()}}creditos"><i class="fa fa-user-edit"></i> <span class="nav-label">Créditos</span></a> </li>
-            <li> <a href="{{base_path()}}aviso-legal"><i class="fa fa-file-contract"></i> <span class="nav-label">Aviso legal</span></a> </li>
-            <li> <a href="{{base_path()}}directorio"><i class="fa fa-address-book"></i> <span class="nav-label">Directorio</span></a> </li>
+            <li class="{{ 'cuestionario' in current_url() ? 'active' : '' }}">
+                 <a href="{{base_path()}}cuestionario"><i class="fa fa-list-alt"></i> <span class="nav-label">Cuestionario de opinion</span></a>
+            </li>
+            <li class="{{ 'bibliografia' in current_url() ? 'active' : '' }}">
+                 <a href="{{base_path()}}bibliografia"><i class="fa fa-book-open"></i> <span class="nav-label">Bibliografía</span></a>
+            </li>
+            <li class="{{ 'creditos' in current_url() ? 'active' : '' }}">
+                 <a href="{{base_path()}}creditos"><i class="fa fa-user-edit"></i> <span class="nav-label">Créditos</span></a>
+            </li>
+            <li class="{{ 'aviso-legal' in current_url() ? 'active' : '' }}">
+                 <a href="{{base_path()}}aviso-legal"><i class="fa fa-file-contract"></i> <span class="nav-label">Aviso legal</span></a>
+            </li>
+            <li class="{{ 'directorio' in current_url() ? 'active' : '' }}">
+                <a href="{{base_path()}}directorio"><i class="fa fa-address-book"></i> <span class="nav-label">Directorio</span></a>
+            </li>
             <li> <a href="https://www.cch.unam.mx/calendario-escolar" target="_blank"><i class="fa fa-calendar-alt"></i> <span class="nav-label">Calendario</span></a> </li>
-            <li> <a href="{{base_path()}}ayuda"><i class="fa fa-question"></i> <span class="nav-label">Ayuda</span></a> </li>
+            <li class="{{ 'ayuda' in current_url() ? 'active' : '' }}">
+                 <a href="{{base_path()}}ayuda"><i class="fa fa-question"></i> <span class="nav-label">Ayuda</span></a>
+            </li>
         </ul>
     </div>
 </aside>
