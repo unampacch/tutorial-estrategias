@@ -50,10 +50,11 @@
         </form>
         <p><strong>Alumno</strong>: El usuario es tu número de cuenta sin guiones y la contraseña es tu fecha de nacimiento en formato DDMMAAAA (Ejemplo: 31122005).</p>
         <p><strong>Profesor</strong>: El usuario es su RFC (con homoclave y sin guiones), y la contraseña es su número de trabajador de la UNAM.</p>
-        <!--<hr>
-        <form class="form-signin">
+        <hr>
+        <form class="form-signin" action="/entrar" method="post">
+            <input type="hidden" name="guest" value="TeaGuest">
             <button class="btn  btn-secondary btn-sm  btn-block" type="submit">Ingresar como invitado</button>
-        </form>-->
+        </form>
     </div>
 </div>
 

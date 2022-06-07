@@ -20,6 +20,11 @@ class Auth {
 		return isset($session->id);
 	}
 
+    public function is_guest() {
+		$session = new \SlimSession\Helper();
+		return $session->id == 'guest' ? true: false;
+	}
+
 	public function attempt($username, $password) {
 
 		$session = new \SlimSession\Helper();

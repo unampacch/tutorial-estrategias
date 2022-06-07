@@ -22,9 +22,13 @@ class CuestionariosController extends BaseController{
         $p2 = $data['p2'];
         $p3 = $data['p3'];
 
-        Cuestionario_b1_03::guardaRespuestas($this->session->id, $p1, $p2, $p3);
 
-        $this->flash->addMessage('exito', "Tus respuestas han sido enviadas con éxito.");
+        if(!$this->auth->is_guest()){
+            Cuestionario_b1_03::guardaRespuestas($this->session->id, $p1, $p2, $p3);
+            $this->flash->addMessage('exito', "Las respuestas han sido guardadas con exito");
+        }else{
+            $this->flash->addMessage('advertencia', "Eres un usuario Anonimo, por lo cual tus respuestas no se registran");
+        }
 
         return $response->withHeader('Location', $this->router->urlFor('asignaturas-areas'));
     }

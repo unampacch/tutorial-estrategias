@@ -11,8 +11,8 @@ import "./assets/css/main.css";
 import 'bootstrap';
 //import '@fortawesome/fontawesome-free/js/all.js';
 import Josh from "joshjs/dist/josh.min.js";
-import "./assets/js/main.js";
 import "./assets/js/plugins.js";
 import "./assets/js/checkRadioHoney.jquery";
+import "./assets/js/main.js";
 
 const josh = new Josh();
