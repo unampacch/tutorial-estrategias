@@ -1,16 +1,22 @@
 {% extends 'base/app-bloques.twig' %}
 
-{% set page_title = '¿Cuáles son las “estrategias de aprendizaje?' %}
+{% set page_title = 'Estrategias de aprendizaje' %}
 
 {% block content %}
 
-    <div class="bg-rosa py-5 container-fluid josh-js" data-josh-anim-name="bounceInDown">
-        <div class="container">
-
-            <h2 class="titulobloque">Aprender a aprender</h2>
-
-        </div>
+<div class="bg-rosa py-2 container-fluid  josh-js" data-josh-anim-name="bounceInDown">
+    <div class="container">
+        <h2 class="titulo__pantalla">{{page_title}}</h2>
     </div>
+</div>
+<div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="" href="{{base_path()}}bloques/aprender">Aprender a aprender</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{page_title}}</li>
+        </ol>
+    </nav>
+</div>
     <div class=" container-fluid absoluto d-none d-md-block josh-js" data-josh-anim-name="fadeInUp">
 
       <div class="row mt-5 color-fondo-objeto d-flex justify-content-center ">

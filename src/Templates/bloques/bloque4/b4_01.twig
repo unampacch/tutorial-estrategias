@@ -1,10 +1,10 @@
 {% extends 'base/app-bloques.twig' %}
 
-{% set page_title = '¿Qué son las TIC' %}
+{% set page_title = 'Las TIC' %}
 
 {% block content %}
 
-<div class="bg-morado container-fluid py-3 josh-js" data-josh-anim-name="bounceInDown">
+    <!--<div class="bg-morado container-fluid py-3 josh-js" data-josh-anim-name="bounceInDown">
         <div class="row">
             <div class="col-lg-4 d-md-none d-lg-block d-none d-sm-block d-sm-none d-md-block">
                 <img class="img-fluid" alt="" src="/img/bloque4/bloquecuatro-int.png">
@@ -30,6 +30,20 @@
             <div class="enfasis text-white">Descúbrelo a continuación...</div>
         </div>
     </div>
+-->
+<div class="bg-morado py-2 container-fluid  josh-js" data-josh-anim-name="bounceInDown">
+    <div class="container">
+        <h2 class="titulo__pantalla">{{page_title}}</h2>
+    </div>
+</div>
+<div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="" href="{{base_path()}}bloques/tic-aprender">Tic para aprender</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{page_title}}</li>
+        </ol>
+    </nav>
+</div>
     <div class="container-fluid josh-js" data-josh-anim-name="fadeInUp">
         <div class="row mt-5">
             <div class="col-11 mx-auto">

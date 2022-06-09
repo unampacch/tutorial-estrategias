@@ -1,23 +1,29 @@
 {% extends 'base/app-bloques.twig' %}
 
-{% set page_title = '¿Cómo estudias? Hábitos de estudio' %}
+{% set page_title = 'Hábitos de estudio' %}
 
 {% block content %}
 
-    <div class="bg-rosa py-5 container-fluid josh-js" data-josh-anim-name="bounceInDown">
-        <div class="container">
-
-            <h2 class="titulobloque">Aprender a aprender </h2>
-
-        </div>
+<div class="bg-rosa py-2 container-fluid  josh-js" data-josh-anim-name="bounceInDown">
+    <div class="container">
+        <h2 class="titulo__pantalla">{{page_title}}</h2>
     </div>
+</div>
+<div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="" href="{{base_path()}}bloques/aprender">Aprender a aprender</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{page_title}}</li>
+        </ol>
+    </nav>
+</div>
 
 
 
     <div class="container mt-5 josh-js" data-josh-anim-name="fadeInUp">
         <div class="row">
           <div class="col-lg-12">
-              <h1>¿Cómo estudias? Hábitos de estudio</h1>
+              <h1>¿Cómo estudias?</h1>
           </div>
         </div>
         <div class="row">

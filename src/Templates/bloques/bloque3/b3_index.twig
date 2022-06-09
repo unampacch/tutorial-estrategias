@@ -1,7 +1,43 @@
 {% extends 'base/app-bloques.twig' %}
 
-{% set page_title = 'El CCH' %}
+{% set page_title = 'Recursos para aprender' %}
 
 {% block content %}
     <!-- aqui va el codigo html -->
+<div class="indexbloque d-flex bg-verde">
+    <div class="container-fluid align-self-center  josh-js" data-josh-anim-name="bounceInDown">
+        <div class="row d-flex align-items-center justify-content-center align-items-center">
+            <div class="col-8 col-md-5 col-lg-5">
+                <img class="img-fluid" alt="" src="/img/bloque3/bloquetres-int.png">
+            </div>
+            <div class="col-11 col-lg-5">
+                <h2 class="titulobloque">Recursos para aprender</h2>
+                <div class="proposito mt-3"> El Colegio de Ciencias y Humanidades tiene un enfoque innovador que integra los conocimientos de varias disciplinas en cuatro áreas. En este bloque te presentamos una serie de recursos en línea para que aprendas de manera autónoma.</div>
+                <ul class="preguntas mt-5 mb-5">
+                    <li>
+                        <i class="fas fa-long-arrow-alt-right "></i>
+                        &nbsp;&nbsp; ¿Para qué estudiar Ciencias Experimentales?</li>
+                    <li>
+                        <i class="fas fa-long-arrow-alt-right"></i>
+                        &nbsp;&nbsp; ¿Para qué las Matemáticas?</li>
+                    <li>
+                        <i class="fas fa-long-arrow-alt-right "></i>
+                        &nbsp;&nbsp; ¿Para qué estudiar Historia y Ciencias Sociales? </li>
+                    <li>
+                        <i class="fas fa-long-arrow-alt-right "></i>
+                        &nbsp;&nbsp; ¿Para qué los Talleres de Lenguaje y Comunicación?</li>
+                    <li>
+                        <i class="fas fa-long-arrow-alt-right "></i>
+                        &nbsp;&nbsp; ¿Para qué aprender una lengua extranjera? </li>
+                    <li>
+                        <i class="fas fa-long-arrow-alt-right"></i>
+                        &nbsp;&nbsp; ¿Qué es el Portal Académico?  </li>
+                </ul>
+                <div class="enfasis morado mt-3 text-center" style="font-size: 1.8rem;">Descubre las respuestas y más a continuación... <a href="{{base_path()}}bloques/recursos/ciencias-experimentales" class="btn btn-lg bg-amarillo btn-block my-3 hvr-glow w-75 mx-auto">Vamos</a></div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
 {% endblock %}

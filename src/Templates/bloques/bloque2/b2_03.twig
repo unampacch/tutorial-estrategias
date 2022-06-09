@@ -1,18 +1,26 @@
 {% extends 'base/app-bloques.twig' %}
 
-{% set page_title = 'Honey Alonso' %}
+{% set page_title = 'Cuestionario Honey-Alonso' %}
 
 {% block content %}
-<div class="contaniner-fluid bg-rosa py-5 josh-js mb-5" data-josh-anim-name="bounceInDown">
+<div class="bg-rosa py-2 container-fluid  josh-js" data-josh-anim-name="bounceInDown">
     <div class="container">
-        <h2 class="titulobloque">Aprender a aprender</h2>
+        <h2 class="titulo__pantalla">{{page_title}}</h2>
     </div>
+</div>
+<div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="" href="{{base_path()}}bloques/aprender">Aprender a aprender</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{page_title}}</li>
+        </ol>
+    </nav>
 </div>
 
 <div class="container josh-js" data-josh-anim-name="fadeInUp">
     <div class="row mt-5">
         <div class="col-md-12">
-            <h1>Estilos de Aprendizaje Honey-Alonso ¿Cuál es el tuyo?</h1>
+            <h1>Descubre cual es tu estilo</h1>
         </div>
     </div>
     <div class="row mt-3">

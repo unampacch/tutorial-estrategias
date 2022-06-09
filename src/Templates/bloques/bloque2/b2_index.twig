@@ -1,7 +1,43 @@
 {% extends 'base/app-bloques.twig' %}
 
-{% set page_title = 'El CCH' %}
+{% set page_title = 'Aprender a aprender' %}
 
 {% block content %}
     <!-- aqui va el codigo html -->
+<div class="indexbloque d-flex bg-rosa">
+    <div class="container-fluid align-self-center  josh-js" data-josh-anim-name="bounceInDown">
+        <div class="row d-flex align-items-center justify-content-center align-items-center">
+            <div class="col-8 col-md-5 col-lg-5">
+                <img class="img-fluid" alt="" src="/img/bloque2/bloquedos-int.png">
+            </div>
+            <div class="col-11 col-lg-5">
+                <h2 class="titulobloque">Aprender a aprender</h2>
+                <div class="proposito mt-3">El Colegio de Ciencias y Humanidades propone un modelo educativo y una forma de enseñar y aprender distintos de otros sistemas de Educación Media Superior. Descubre sus principios y lo que se espera de ti alumno de nuevo ingreso.</div>
+                <ul class="preguntas mt-5 mb-5">
+                    <li>
+                        <i class="fas fa-long-arrow-alt-right azul-claro"></i>
+                        &nbsp;&nbsp; ¿Cómo aprendemos?</li>
+                    <li>
+                        <i class="fas fa-long-arrow-alt-right azul-claro"></i>
+                        &nbsp;&nbsp; ¿Eres un alumno activo, reflexivo, teórico o pragmático?</li>
+                    <li>
+                        <i class="fas fa-long-arrow-alt-right azul-claro"></i>
+                        &nbsp;&nbsp; ¿Qué es el efecto mariposa? </li>
+                    <li>
+                        <i class="fas fa-long-arrow-alt-right azul-claro"></i>
+                        &nbsp;&nbsp; ¿Cómo se explica el amor en términos biológicos? </li>
+                    <li>
+                        <i class="fas fa-long-arrow-alt-right azul-claro"></i>
+                        &nbsp;&nbsp; ¿Cómo consultar libros en la biblioteca digital del CCH? </li>
+                    <li>
+                        <i class="fas fa-long-arrow-alt-right azul-claro"></i>
+                        &nbsp;&nbsp; ¿Cuáles son tus hábitos de estudio? </li>
+                </ul>
+                <div class="font-weight-light amarillo mt-3 text-center" style="font-size: 1.8rem;">Descubre tu estilo de aprendizaje y reflexiona acerca de tus estrategias, técnicas y hábitos para aprender... <a href="{{base_path()}}bloques/aprender/que-es-aprender" class="btn btn-lg bg-amarillo btn-block my-3 hvr-glow w-75 mx-auto">Vamos</a></div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
 {% endblock %}

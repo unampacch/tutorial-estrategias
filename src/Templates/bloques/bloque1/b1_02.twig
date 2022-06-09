@@ -3,14 +3,21 @@
 {% set page_title = 'Modelo educativo' %}
 
 {% block content %}
-
-    <div class="bg-azul py-5 container-fluid  josh-js" data-josh-anim-name="bounceInDown">
-        <div class="container">
-
-            <h2 class="titulobloque">El CCH y su modelo educativo</h2>
-
-        </div>
+<div class="bg-azul py-2 container-fluid  josh-js" data-josh-anim-name="bounceInDown">
+    <div class="container">
+        <h2 class="titulo__pantalla">{{page_title}}</h2>
     </div>
+</div>
+<div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="" href="{{base_path()}}bloques/el-cch">El CCH y su modelo educativo</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{page_title}}</li>
+        </ol>
+    </nav>
+</div>
+
+
     <div class="container josh-js" data-josh-anim-name="fadeInUp">
         <div class="row">
             <div class="col-lg-8 mx-auto">

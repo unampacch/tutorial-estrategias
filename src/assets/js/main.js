@@ -9,6 +9,20 @@ $(function() {
         $('.flecha').toggleClass('flecha-open');
     });
 
+/* Opción sin jQuery
+    let toggle = document.getElementById("toggler");
+    let flecha = document.getElementById("flecha");
+    let menuInt = document.getElementsByClassName("open-menu-int")[0];
+    let sideBar = document.getElementsByClassName("sidebar")[0];
+
+    toggle.addEventListener("click", menuCierre);
+    function menuCierre() {
+        toggle.classList.toggle('toggler-open');
+        flecha.classList.toggle('flecha-open');
+        menuInt.classList.toggle('d-none');
+        sideBar.classList.toggle('fliph');
+        };
+*/
     /**-------------------------------------------------
      Codigo para poner en modal los videos
      -------------------------------------------*/
