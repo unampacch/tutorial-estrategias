@@ -39,9 +39,13 @@ class CuestionariosController extends BaseController{
         $p1 = $data['p1'];
         $p2 = $data['p2'];
 
-        Cuestionario_b2_01::guardaRespuestas($this->session->id, $p1, $p2);
 
-        $this->flash->addMessage('exito', "Tus respuestas han sido enviadas con éxito.");
+        if(!$this->auth->is_guest()){
+            Cuestionario_b2_01::guardaRespuestas($this->session->id, $p1, $p2);
+            $this->flash->addMessage('exito', "Tus respuestas han sido enviadas con éxito.");
+        }else{
+            $this->flash->addMessage('advertencia', "Eres un usuario Anonimo, por lo cual tus respuestas no se registran");
+        }
 
         return $response->withHeader('Location', $this->router->urlFor('aprender'));
     }
@@ -51,9 +55,13 @@ class CuestionariosController extends BaseController{
 
         $calculo=$this->calcula_honey($datos);
 
-        Cuestionario_b2_03::guardaRespuestas($this->session->id, $datos, $calculo);
 
-        $this->flash->addMessage('exito', "Tus respuestas han sido enviadas con éxito. Puedes consultar tus resultados en las siguientes graficas.");
+        if(!$this->auth->is_guest()){
+            Cuestionario_b2_03::guardaRespuestas($this->session->id, $datos, $calculo);
+            $this->flash->addMessage('exito', "Tus respuestas han sido enviadas con éxito. Puedes consultar tus resultados en las siguientes graficas.");
+        }else{
+            $this->flash->addMessage('advertencia', "Eres un usuario Anonimo, por lo cual tus respuestas no se registran");
+        }
 
         return $response->withHeader('Location', $this->router->urlFor('honey-alonso'));
     }
@@ -64,9 +72,13 @@ class CuestionariosController extends BaseController{
         $p1 = $data['p1'];
         $p2 = $data['p2'];
 
-        Cuestionario_b2_04::guardaRespuestas($this->session->id, $p1, $p2);
 
-        $this->flash->addMessage('exito', "Tus respuestas han sido enviadas con éxito, revisa la retroalimentación que recibiste antes de ir a la siguiente pantalla");
+        if(!$this->auth->is_guest()){
+            Cuestionario_b2_04::guardaRespuestas($this->session->id, $p1, $p2);
+            $this->flash->addMessage('exito', "Tus respuestas han sido enviadas con éxito, revisa la retroalimentación que recibiste antes de ir a la siguiente pantalla");
+        }else{
+            $this->flash->addMessage('advertencia', "Eres un usuario Anonimo, por lo cual tus respuestas no se registran");
+        }
 
         return $response->withHeader('Location', $this->router->urlFor('estrategias-aprendizaje'));
     }
