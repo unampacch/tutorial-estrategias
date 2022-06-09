@@ -14,7 +14,9 @@ class Bloque3Controller extends BaseController{
            return $response->withHeader('Location', $this->router->urlFor('home'));
         }
 
-        Avance::registra($this->session->id, 'b3_01');
+        if(!$this->auth->is_guest()){
+            Avance::registra($this->session->id, 'b3_01');
+        }
 
         return $this->view->render($response,'/bloques/bloque3/b3_01.twig');
     }
@@ -25,7 +27,9 @@ class Bloque3Controller extends BaseController{
            return $response->withHeader('Location', $this->router->urlFor('home'));
         }
 
-        Avance::registra($this->session->id, 'b3_02');
+        if(!$this->auth->is_guest()){
+            Avance::registra($this->session->id, 'b3_02');
+        }
 
         return $this->view->render($response,'/bloques/bloque3/b3_02.twig');
     }
@@ -36,7 +40,9 @@ class Bloque3Controller extends BaseController{
            return $response->withHeader('Location', $this->router->urlFor('home'));
         }
 
-        Avance::registra($this->session->id, 'b3_03');
+        if(!$this->auth->is_guest()){
+            Avance::registra($this->session->id, 'b3_03');
+        }
 
         return $this->view->render($response,'/bloques/bloque3/b3_03.twig');
     }
@@ -47,7 +53,9 @@ class Bloque3Controller extends BaseController{
            return $response->withHeader('Location', $this->router->urlFor('home'));
         }
 
-        Avance::registra($this->session->id, 'b3_04');
+        if(!$this->auth->is_guest()){
+            Avance::registra($this->session->id, 'b3_04');
+        }
 
         return $this->view->render($response,'/bloques/bloque3/b3_04.twig');
     }
@@ -58,7 +66,9 @@ class Bloque3Controller extends BaseController{
            return $response->withHeader('Location', $this->router->urlFor('home'));
         }
 
-        Avance::registra($this->session->id, 'b3_05');
+        if(!$this->auth->is_guest()){
+            Avance::registra($this->session->id, 'b3_05');
+        }
 
         return $this->view->render($response,'/bloques/bloque3/b3_05.twig');
     }

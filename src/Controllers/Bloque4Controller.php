@@ -14,7 +14,9 @@ class Bloque4Controller extends BaseController{
            return $response->withHeader('Location', $this->router->urlFor('home'));
         }
 
-        Avance::registra($this->session->id, 'b4_01');
+        if(!$this->auth->is_guest()){
+            Avance::registra($this->session->id, 'b4_01');
+        }
 
         return $this->view->render($response,'/bloques/bloque4/b4_01.twig');
     }
@@ -24,7 +26,9 @@ class Bloque4Controller extends BaseController{
            return $response->withHeader('Location', $this->router->urlFor('home'));
         }
 
-        Avance::registra($this->session->id, 'b4_02');
+        if(!$this->auth->is_guest()){
+            Avance::registra($this->session->id, 'b4_02');
+        }
 
         return $this->view->render($response,'/bloques/bloque4/b4_02.twig');
     }
@@ -34,7 +38,9 @@ class Bloque4Controller extends BaseController{
            return $response->withHeader('Location', $this->router->urlFor('home'));
         }
 
-        Avance::registra($this->session->id, 'b4_03');
+        if(!$this->auth->is_guest()){
+            Avance::registra($this->session->id, 'b4_03');
+        }
 
         return $this->view->render($response,'/bloques/bloque4/b4_03.twig');
     }
