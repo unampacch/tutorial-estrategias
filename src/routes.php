@@ -38,6 +38,7 @@ $app->post('/cuestionario', OpinionController::class.':guardar');
 
 $app->get('/bloques', Bloque1Controller::class.':bloques')->setName('bloques');
 $app->group('/bloques/el-cch', function (RouteCollectorProxy $group) {
+    $group->get('', Bloque1Controller::class.':bloque1');
     $group->get('/que-es-el-cch', Bloque1Controller::class.':el_cch');
     $group->get('/modelo-educativo', Bloque1Controller::class.':modelo_educativo');
     $group->get('/asignaturas-areas', Bloque1Controller::class.':asignaturas')->setName('asignaturas-areas');
@@ -45,6 +46,7 @@ $app->group('/bloques/el-cch', function (RouteCollectorProxy $group) {
 });
 
 $app->group('/bloques/aprender', function (RouteCollectorProxy $group) {
+    $group->get('', Bloque2Controller::class.':bloque2');
     $group->get('/que-es-aprender', Bloque2Controller::class.':aprender')->setName('aprender');
     $group->post('/que-es-aprender', CuestionariosController::class.':cuestionario_b2_01');
     $group->get('/estilos-de-aprendizaje', Bloque2Controller::class.':estilos_de_aprendizaje');
@@ -63,6 +65,7 @@ $app->group('/bloques/aprender', function (RouteCollectorProxy $group) {
 });
 
 $app->group('/bloques/recursos', function (RouteCollectorProxy $group) {
+    $group->get('', Bloque3Controller::class.':bloque3');
     $group->get('/ciencias-experimentales', Bloque3Controller::class.':area_ciencias_experimentales');
     $group->get('/matematicas', Bloque3Controller::class.':area_matematicas');
     $group->get('/talleres', Bloque3Controller::class.':area_talleres');
@@ -71,6 +74,7 @@ $app->group('/bloques/recursos', function (RouteCollectorProxy $group) {
 });
 
 $app->group('/bloques/tic-aprender', function (RouteCollectorProxy $group) {
+    $group->get('', Bloque4Controller::class.':bloque4');
     $group->get('/que-son-las-tic', Bloque4Controller::class.':las_tic');
     $group->get('/almacenar-informacion', Bloque4Controller::class.':almacenar_informacion');
     $group->get('/trabajo-colaborativo', Bloque4Controller::class.':trabajo_colaborativo');

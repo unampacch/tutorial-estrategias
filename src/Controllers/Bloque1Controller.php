@@ -18,13 +18,15 @@ class Bloque1Controller extends BaseController{
 
         return $this->view->render($response,'/bloques.twig');
     }
+
     public function bloque1($request, $response){
         if(!$this->auth->check()){
            $this->flash->addMessage('error', $this->mensaje);
            return $response->withHeader('Location', $this->router->urlFor('home'));
         }
-        return $this->view->render($response,'/bloques/bloque1/portada.twig');
+        return $this->view->render($response,'/bloques/bloque1/b1_index.twig');
     }
+
     public function el_cch($request, $response){
         if(!$this->auth->check()){
            $this->flash->addMessage('error', $this->mensaje);
