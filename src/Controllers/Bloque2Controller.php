@@ -8,6 +8,14 @@ class Bloque2Controller extends BaseController{
 
     private $mensaje = 'Por favor ingresa tu usuario y contraseña (es probable que tu sesión haya caducado por inactividad) - Si no eres alumno o profesor del CCH, ingresa como invitado.';
 
+    public function bloque2($request, $response){
+        if(!$this->auth->check()){
+           $this->flash->addMessage('error', $this->mensaje);
+           return $response->withHeader('Location', $this->router->urlFor('home'));
+        }
+        return $this->view->render($response,'/bloques/bloque2/b2_index.twig');
+    }
+
     public function aprender($request, $response){
         if(!$this->auth->check()){
             $this->flash->addMessage('error', $this->mensaje);

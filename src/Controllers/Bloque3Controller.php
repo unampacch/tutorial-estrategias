@@ -8,6 +8,14 @@ class Bloque3Controller extends BaseController{
 
     private $mensaje = 'Por favor ingresa tu usuario y contraseña (es probable que tu sesión haya caducado por inactividad) - Si no eres alumno o profesor del CCH, ingresa como invitado.';
 
+    public function bloque3($request, $response){
+        if(!$this->auth->check()){
+           $this->flash->addMessage('error', $this->mensaje);
+           return $response->withHeader('Location', $this->router->urlFor('home'));
+        }
+        return $this->view->render($response,'/bloques/bloque3/b3_index.twig');
+    }
+
     public function area_ciencias_experimentales($request, $response){
         if(!$this->auth->check()){
            $this->flash->addMessage('error', $this->mensaje);
