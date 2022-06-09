@@ -13,7 +13,9 @@ class OpinionController extends BaseController{
            return $response->withHeader('Location', $this->router->urlFor('home'));
         }
 
-        Avance::registra($this->session->id, 'b5_00');
+        if(!$this->auth->is_guest()){
+            Avance::registra($this->session->id, 'b5_00');
+        }
         return $this->view->render($response,'opinion.twig');
     }
 

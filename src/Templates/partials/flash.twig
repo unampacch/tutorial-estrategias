@@ -37,3 +37,22 @@
     	</div>
     </div>
 {% endif %}
+
+{% if flash.getMessage('advertencia') %}
+    <div id="myModalError" class="flash-modal modal fade">
+    	<div class="modal-dialog modal-confirm modal-advertencia">
+    		<div class="modal-content">
+    			<div class="modal-header justify-content-center">
+    				<div class="icon-box">
+                        <i class="fas fa-exclamation-triangle"></i>
+    				</div>
+    				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    			</div>
+    			<div class="modal-body text-center">
+    				<h4>¡Cuidado!</h4>
+    				<p>{{ flash.getMessage('advertencia') | first }}</p>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+{% endif %}
