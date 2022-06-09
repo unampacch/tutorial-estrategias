@@ -1,10 +1,12 @@
 $(function() {
 
     //Apertura y cierre del Menu lateral
-    $('.open-menu, .dismiss, .open-menu-int').click(function(){
+    $('.open-menu, .toggler, .open-menu-int').click(function(){
         $('.sidebar').toggleClass('fliph');
         $('.open-menu-int').toggleClass('d-none');
         $('.fa-caret-right').toggleClass('d-none');
+        $('.toggler').toggleClass('toggler-open');
+        $('.flecha').toggleClass('flecha-open');
     });
 
     /**-------------------------------------------------
