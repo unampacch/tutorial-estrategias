@@ -43,6 +43,7 @@ $app->group('/bloques/el-cch', function (RouteCollectorProxy $group) {
     $group->get('/modelo-educativo', Bloque1Controller::class.':modelo_educativo');
     $group->get('/asignaturas-areas', Bloque1Controller::class.':asignaturas')->setName('asignaturas-areas');
     $group->post('/asignaturas-areas', CuestionariosController::class.':cuestionario_b1_03');
+    $group->post('/asignaturas-areas/js', CuestionariosController::class.':cuestionario_b1_03_put');
 });
 
 $app->group('/bloques/aprender', function (RouteCollectorProxy $group) {

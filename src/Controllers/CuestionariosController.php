@@ -32,6 +32,32 @@ class CuestionariosController extends BaseController{
 
         return $response->withHeader('Location', $this->router->urlFor('asignaturas-areas'));
     }
+    public function cuestionario_b1_03_put($request, $response){
+        //$data = $request->post('p1');
+        $headers = $request->getHeaders();
+foreach ($headers as $name => $values) {
+    echo $name . ": " . implode(", ", $values);
+}
+
+
+        //$data = $request->getParsedBody();
+        /*$p1 = $data['p1'];
+        $p2 = $data['p2'];
+        $p3 = $data['p3'];*/
+
+       // $data = array('name' => 'Bob', 'age' => 40);
+        $payload = json_encode($data);
+
+        $response->getBody()->write($payload);
+        if(!$this->auth->is_guest()){
+            //Cuestionario_b1_03::guardaRespuestas($this->session->id, $p1, $p2, $p3);
+            return $response->withHeader('Content-type', 'application/json')->withStatus(201);
+        }else{
+            return $response->withJson(['fail' => true]);
+        }
+
+        //return $response->withHeader('Location', $this->router->urlFor('asignaturas-areas'));
+    }
 
     public function cuestionario_b2_01($request, $response){
         $data = $request->getParsedBody();

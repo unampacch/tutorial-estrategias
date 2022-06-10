@@ -10,7 +10,7 @@ module.exports = {
         filename: 'main.js',
         path: path.resolve(__dirname, 'public/js'),
     },
-    //watch: true,
+    watch: true,
     module: {
         rules: [
             {
