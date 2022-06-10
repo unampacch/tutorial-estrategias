@@ -66,6 +66,21 @@ class CuestionariosController extends BaseController{
         return $response->withHeader('Location', $this->router->urlFor('honey-alonso'));
     }
 
+    public function cuestionario_b2_03_put($request, $response){
+        $datos = $request->getParsedBody();
+
+        $calculo=$this->calcula_honey($datos);
+
+
+        if(!$this->auth->is_guest()){
+            Cuestionario_b2_03::guardaRespuestas($this->session->id, $datos, $calculo);
+            return $response->withJson(['success' => true]);
+        }else{
+            return $response->withJson(['fail' => true]);
+        }
+
+    }
+
     public function cuestionario_b2_04($request, $response){
         $data = $request->getParsedBody();
 
