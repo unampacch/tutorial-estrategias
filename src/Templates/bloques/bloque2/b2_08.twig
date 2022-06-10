@@ -4,20 +4,26 @@
 
 {% block content %}
 
-    <div class="bg-rosa py-5 container-fluid josh-js" data-josh-anim-name="bounceInDown">
-        <div class="container">
-
-            <h2 class="titulobloque">Aprender a aprender</h2>
-
-        </div>
+<div class="bg-rosa py-2 container-fluid  josh-js" data-josh-anim-name="bounceInDown">
+    <div class="container">
+        <h2 class="titulo__pantalla">{{page_title}}</h2>
     </div>
+</div>
+<div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="" href="{{base_path()}}bloques/aprender">Aprender a aprender</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{page_title}}</li>
+        </ol>
+    </nav>
+</div>
     <div class="container-fluid josh-js" data-josh-anim-name="fadeInUp">
         <div class="row">
-            <div class="col-lg-4 offset-lg-2">
+            <div class="col-lg-8 offset-lg-2">
                 <!-- CUSTOM BLOCKQUOTE -->
                 <div class="blockquote blockquote-custom bg-warning p-5 effect-1 rounded">
                     <i class="fas fa-pen-alt fa-3x"></i>
-                    <span class="enfasis ">Escritura</span>
+                    <span class="enfasis ">Escribir es, después de leer, el acto de comunicación más importante que llevarás a cabo en la universidad.</span>
                 </div>
                 <!-- END -->
             </div>
@@ -26,7 +32,6 @@
     <div class="container josh-js" data-josh-anim-name="fadeInUp">
         <div class="row mt-5">
             <div class="col-lg-10 mx-auto">
-            <p>Escribir es, después de leer, el acto de comunicación más importante que llevarás a cabo en la universidad.</p>
             <p>La escritura no es un proceso mecánico en el que repites ideas de otros a través de apuntes o copiando textos de libros o del internet. Escribir es un acto creativo y un diálogo con tus compañeros y profesores que tiene como finalidad aprender,
                 comunicar ideas y reflexionar. Los trabajos escritos que realices cumplen un propósito y siguen reglas en su escritura.</p>
             </div>

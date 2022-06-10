@@ -3,8 +3,21 @@
 {% set page_title = '¿Qué es aprender?' %}
 
 {% block content %}
+<div class="bg-rosa py-2 container-fluid  josh-js" data-josh-anim-name="bounceInDown">
+    <div class="container">
+        <h2 class="titulo__pantalla">{{page_title}}</h2>
+    </div>
+</div>
+<div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="" href="{{base_path()}}bloques/aprender">Aprender a aprender</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{page_title}}</li>
+        </ol>
+    </nav>
+</div>
 
-    <div class="bg-rosa container-fluid py-3  josh-js" data-josh-anim-name="bounceInDown">
+    <!--<div class="bg-rosa container-fluid py-3  josh-js" data-josh-anim-name="bounceInDown">
         <div class="row">
             <div class="col-lg-4 d-md-none d-lg-block d-none d-sm-block d-sm-none d-md-block">
                 <img class="img-fluid" alt="" src="/img/bloque2/bloquedos-int.png">
@@ -38,11 +51,10 @@
         <div class="container text-center">
             <div class="enfasis amarillo">Descubre tu estilo de aprendizaje y reflexiona acerca de tus estrategias, técnicas y hábitos para aprender...</div>
         </div>
-    </div>
+    </div>-->
     <div class="container josh-js" data-josh-anim-name="fadeInUp">
         <div class="row mt-5">
             <div class="col-12">
-            <h1>¿Qué es aprender?</h1>
                 <div class="col-lg-10 mx-auto">
                     <p>Tal vez en algún momento de tu vida te has hecho alguna de estas preguntas: <strong>¿Por qué cuando estudio siento que no aprendo o que me cuesta mucho trabajo retener la información? ¿Para qué tengo que ir a la escuela? ¿Para qué me va a servir lo que aprendo? ¿Qué sentido tiene saber toda la información que me ofrecen en la escuela?</strong></p>
                     <p>Si alguna vez en tu trayectoria escolar te has hecho mínimo una de esas preguntas, queremos decirte que tiene sentido formulártelas. No sólo tú, sino muchas personas involucradas en el ámbito educativo critican que la escuela tradicional tenga prácticas que entrañan una visión del aprendizaje que no responde a las necesidades de desarrollo integral del ser humano. Algunos investigadores se han cuestionado si la manera en que aprendemos a resolver un problema matemático tiene un “principio cognitivo” similar a la resolución de un problema práctico. </p>

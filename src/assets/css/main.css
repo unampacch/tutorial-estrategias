@@ -434,7 +434,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
     font-family: 'Catamaran', sans-serif;
     font-weight: 900;
     color: #FFFFFF;
-    font-size: 1.6rem;
+    font-size: 2.6rem;
     text-align: left;
 }
 ul.temasbloque {
@@ -1124,4 +1124,48 @@ color: #fff;
 /* -----Bibliografia----- */
 #bibliografia .list-group-flush > .list-group-item {
     overflow: hidden;
+}
+
+/*
+*
+* ==========================================
+* Pantallas bloques
+* ==========================================
+*
+*/
+
+.indexbloque{
+    min-height:100vh;
+    width: 100%;
+}
+.indexbloque__h1{
+    color: white;
+    font-size: 3rem;
+}
+
+/*
+*
+* ==========================================
+* Breadcrumbs y titulos
+* ==========================================
+*
+*/
+
+.titulo__pantalla{
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 900;
+    color: #FFFFFF;
+    font-size: 3rem;
+    text-align: left;
+}
+@media (max-width: 767px) {
+
+    .titulo__pantalla{
+        font-size: 2.6rem;
+    }
+}
+
+.breadcrumb{
+    background: none;
+    justify-content: end;
 }
