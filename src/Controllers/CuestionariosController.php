@@ -32,6 +32,35 @@ class CuestionariosController extends BaseController{
 
         return $response->withHeader('Location', $this->router->urlFor('asignaturas-areas'));
     }
+    public function cuestionario_b1_03_put($request, $response){
+
+        $form_data = $request->getParsedBody();
+
+        $p1 = $form_data['p1'];
+        $p2 = $form_data['p2'];
+        $p3 = $form_data['p3'];
+        $data['respuesta'] = 'error';
+        $data['p1'] = $p1;
+        $data['p2'] = $p2;
+        $data['p3'] = $p3;
+
+
+        //$payload = json_encode($data);
+
+
+
+        if(!$this->auth->is_guest()){
+            Cuestionario_b1_03::guardaRespuestas($this->session->id, $p1, $p2, $p3);
+            $data['respuesta'] = 'exito';
+            $response->getBody()->write(json_encode($data));
+            return $response->withHeader('Content-type', 'application/json')->withStatus(201);
+        }else{
+            $response->getBody()->write(json_encode($data));
+            return $response->withHeader('Content-type', 'application/json')->withStatus(203);
+        }
+
+        //return $response->withHeader('Location', $this->router->urlFor('asignaturas-areas'));
+    }
 
     public function cuestionario_b2_01($request, $response){
         $data = $request->getParsedBody();
@@ -64,6 +93,21 @@ class CuestionariosController extends BaseController{
         }
 
         return $response->withHeader('Location', $this->router->urlFor('honey-alonso'));
+    }
+
+    public function cuestionario_b2_03_put($request, $response){
+        $datos = $request->getParsedBody();
+
+        $calculo=$this->calcula_honey($datos);
+
+
+        if(!$this->auth->is_guest()){
+            Cuestionario_b2_03::guardaRespuestas($this->session->id, $datos, $calculo);
+            return $response->withJson(['success' => true]);
+        }else{
+            return $response->withJson(['fail' => true]);
+        }
+
     }
 
     public function cuestionario_b2_04($request, $response){

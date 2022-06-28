@@ -76,6 +76,26 @@
                     }
                 });
 
+                $(this.element).on( "submit", function(event){
+                    event.preventDefault();
+
+                    var datastring = $("#preview_form").serialize();
+                    $.ajax({
+                       type: "PUT",
+                       url: "/bloques/aprender/cuestionario-honey-alonso",
+                       data: $(this.element).serialize(),
+                       /*success: function(data) {
+                            alert('Data send');
+                       }*/
+                    }).done(function () {
+                        console.log('SUCCESS');
+                    }).fail(function (msg) {
+                        console.log('FAIL');
+                    }).always(function (msg) {
+                        console.log('ALWAYS');
+                    });
+                });
+
 			},
             getRadioButton: function(element) {
                 var name = $(element).attr("name");
