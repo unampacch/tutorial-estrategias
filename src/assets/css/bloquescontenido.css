@@ -1,4 +1,8 @@
 /* ========= INICIO BLOQUE UNO ========== */
+#myModalError{
+    z-index: 20500 !important;
+}
+
 
 .bunoini {
     background: #05A2C6;
