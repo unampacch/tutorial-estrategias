@@ -3,8 +3,8 @@
 {% set page_title = 'Área de Ciencias Experimentales' %}
 
 {% block content %}
-
-    <div class="bg-verde container-fluid py-3 wow bounceInDown">
+<!--
+    <div class="bg-verde container-fluid py-3 josh-js" data-josh-anim-name="bounceInDown">
         <div class="row">
             <div class="col-lg-4 d-md-none d-lg-block d-none d-sm-block d-sm-none d-md-block">
                 <img class="img-fluid" alt="" src="/img/bloque3/bloquetres-int.png">
@@ -39,10 +39,24 @@
             <div class="enfasis morado">Descubre las respuestas y más a continuación...</div>
         </div>
     </div>
-    <div class="container wow fadeInUp">
+-->
+<div class="bg-verde py-2 container-fluid  josh-js" data-josh-anim-name="bounceInDown">
+    <div class="container">
+        <h2 class="titulo__pantalla">{{page_title}}</h2>
+    </div>
+</div>
+<div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="" href="{{base_path()}}bloques/recursos">Recursos para aprender</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{page_title}}</li>
+        </ol>
+    </nav>
+</div>
+    <div class="container josh-js" data-josh-anim-name="fadeInUp">
         <div class="row mt-5">
             <div class="col-12">
-            <h1>¿Qué se aprende en el área de Ciencias Experimentales?</h1>
+            <h1>¿Qué se aprende?</h1>
                 <div class="row">
                   <div class="col-lg-10 mx-auto">
                     <p>El consumo de productos modificados genéticamente (transgénicos), la utilidad de invertir en una agencia espacial mexicana y el uso del maíz para generar biocombustibles en lugar de alimentos, entre otros, son temas controvertidos en los que la mayoría quiere dar una opinión o participar en un debate apasionado en la sobremesa. Sin embargo, cuando se trata de temas científicos, frecuentemente tanto las ideas como las palabras se nos escapan. Aunque la confianza y el interés de las personas en la ciencia y la tecnología han aumentado no ha pasado lo mismo con la <em>comprensión</em> que se tiene sobre los conocimientos científicos básicos. </p>
@@ -51,14 +65,14 @@
             </div>
         </div>
         </div>
-        <div class=" container-fluid absoluto d-none d-md-block wow fadeInUp">
+        <div class=" container-fluid absoluto d-none d-md-block josh-js" data-josh-anim-name="fadeInUp">
           <div class="row color-fondo-objeto d-flex justify-content-center">
            <div class="col-4">
               <img class="img-fluid" alt="CCH" src="/img/bloque3/b3_01_01.png">
               </div>
           </div>
         </div>
-        <div class="container wow fadeInUp">
+        <div class="container josh-js" data-josh-anim-name="fadeInUp">
         <div class="row mt-3">
             <div class="col-12">
                 <div class="accordion mt-4" id="acordeon1">
@@ -246,7 +260,7 @@
         </div>
     </div>
 
-    <div class="container my-3 wow fadeInUp">
+    <div class="container my-3 josh-js" data-josh-anim-name="fadeInUp">
         <div class="row">
           <div class="col-lg-10 mx-auto">
             <p class="enfasis rosa text-center"> ¿Qué recursos tengo a mi disposición para aprender ciencia en el Colegio? </p>
@@ -254,7 +268,7 @@
         </div>
     </div>
 
-    <div class="bg-rosa text-white container-fluid wow fadeInUp">
+    <div class="bg-rosa text-white container-fluid josh-js" data-josh-anim-name="fadeInUp">
             <div class="row p-3 text-center">
                 <div class="col-lg-11 mx-auto">
                     <div class=" text-white lead w-100">Haz clic en las imágenes para conocer diferentes recursos que puedes usar para tus investigaciones en las materias de ciencias.</div>
@@ -262,7 +276,7 @@
                 </div>
             </div>
     </div>
-<div class="container-fluid" id="ligas-logos wow fadeInUp">
+<div class="container-fluid" id="ligas-logos josh-js" data-josh-anim-name="fadeInUp">
     <div class="row">
         <div class="col-lg-11 mx-auto mt-5">
             <div class="row justify-content-between align-items-center mr-auto">
@@ -273,7 +287,7 @@
                 </a>
               </div>
               <div class="col-lg-3 p-1 text-center  hvr-bob">
-                <a href="https://www.saber.unam.mx/" target="_blank">
+                    <a href="https://www.saber.unam.mx:6061/saber/faces/home/home.jsp" target="_blank">
                     <img class="img-fluid" alt="CCH" src="/img/bloque3/b3_01_01.jpg">
                     <div class="blockquote-footer mx-auto text-center">Sistema de autoevaluación para que pruebes tus habilidades en Ciencias Experimentales.</div>
                 </a>
@@ -320,7 +334,7 @@
         </div>
     </div>
 </div>
-<div class="container mt-5 d-none d-md-block wow fadeInUp">
+<div class="container mt-5 d-none d-md-block josh-js" data-josh-anim-name="fadeInUp">
     <div class="row">
         <div class="col-lg-10 mx-auto">
 

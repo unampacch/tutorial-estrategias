@@ -3,27 +3,32 @@
 {% set page_title = 'Organizadores gráficos' %}
 
 {% block content %}
-
-    <div class="bg-rosa py-5 container-fluid wow bounceInDown">
-        <div class="container">
-
-            <h2 class="titulobloque">Aprender a aprender</h2>
-
-        </div>
+<div class="bg-rosa py-2 container-fluid  josh-js" data-josh-anim-name="bounceInDown">
+    <div class="container">
+        <h2 class="titulo__pantalla">{{page_title}}</h2>
     </div>
-    <div class="container-fluid wow fadeInUp">
+</div>
+<div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="" href="{{base_path()}}bloques/aprender">Aprender a aprender</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{page_title}}</li>
+        </ol>
+    </nav>
+</div>
+    <div class="container-fluid josh-js" data-josh-anim-name="fadeInUp">
         <div class="row">
-            <div class="col-lg-4 offset-lg-2">
+            <div class="col-lg-8 offset-lg-2">
                 <!-- CUSTOM BLOCKQUOTE -->
                 <div class="blockquote blockquote-custom bg-warning p-5 effect-1 rounded">
                     <i class="fas fa-sitemap fa-3x"></i>
-                    <span class="enfasis ">Organización gráfica</span>
+                    <span class="enfasis ">¿Cómo organizar la información de manera visual?</span>
                 </div>
                 <!-- END -->
             </div>
         </div>
     </div>
-    <div class="container wow fadeInUp">
+    <div class="container josh-js" data-josh-anim-name="fadeInUp">
         <div class="row mt-5">
             <div class="col-lg-10 mx-auto">
                 <p>La representación gráfica de la información obtenida de una lectura, es uno de los procedimientos que te permite estructurar y sintetizar la información visualmente. Facilita la comprensión, la memorización y el análisis. Cuando se representa la
@@ -33,14 +38,14 @@
             </div>
         </div>
     </div>
-    <div class=" container-fluid absoluto d-none d-md-block wow fadeInUp">
+    <div class=" container-fluid absoluto d-none d-md-block josh-js" data-josh-anim-name="fadeInUp">
         <div class="row mt-1 color-fondo-objeto d-flex justify-content-center">
             <div class="col-4">
                 <img class="img-fluid" alt="CCH" src="/img/bloque2/b2_07_13.png">
             </div>
         </div>
     </div>
-    <div class="bg-rosa text-white text-center d-flex container-fluid mt-3 wow fadeInUp">
+    <div class="bg-rosa text-white text-center d-flex container-fluid mt-3 josh-js" data-josh-anim-name="fadeInUp">
         <div class="container p-3">
             <div class=" text-white lead">
                 <i class="fas fa-file-pdf"></i>
@@ -51,7 +56,7 @@
         </div>
     </div>
 
-<div class="container-fluid mt-5 mb-5 wow fadeInUp">
+<div class="container-fluid mt-5 mb-5 josh-js" data-josh-anim-name="fadeInUp">
     <div class="col-lg-7 mx-auto">
         <div class="row">
             <div class="col">

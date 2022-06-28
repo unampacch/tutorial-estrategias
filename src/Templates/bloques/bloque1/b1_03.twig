@@ -4,12 +4,20 @@
 
 {% block content %}
 
-    <div class="contaniner-fluid bg-azul py-5 wow bounceInDown">
-        <div class="container">
-            <h2 class="titulobloque">El CCH y su modelo educativo</h2>
-        </div>
+<div class="bg-azul py-2 container-fluid  josh-js" data-josh-anim-name="bounceInDown">
+    <div class="container">
+        <h2 class="titulo__pantalla">{{page_title}}</h2>
     </div>
-    <div class="container wow fadeInUp">
+</div>
+<div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="" href="{{base_path()}}bloques/el-cch">El CCH y su modelo educativo</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{page_title}}</li>
+        </ol>
+    </nav>
+</div>
+    <div class="container josh-js" data-josh-anim-name="fadeInUp">
         <div class="row mt-5">
             <div class="col-md-12">
                 <h1>¿Qué asignaturas vas a cursar en el CCH?</h1>
@@ -26,7 +34,7 @@
             </div>
         </div>
         </div>
-        <div class="container wow fadeInUp">
+        <div class="container josh-js" data-josh-anim-name="fadeInUp">
         <div class="row">
             <div class="col-md-12">
                 <h3 class="rosa">¿Cómo se agrupan y se encuentran distribuidas las asignaturas que cursarás en el CCH?</h3>
@@ -62,7 +70,7 @@
         </div>
     </div>
 </div>
-<div class="container-fluid bg-rosa mb-5  wow fadeInUp">
+<div class="container-fluid bg-rosa mb-5  josh-js" data-josh-anim-name="fadeInUp">
     <div class="row">
         <div class="col-8 mx-auto">
             <div class="p-2 text-white lead">
@@ -73,7 +81,7 @@
         </div>
     </div>
 </div>
-<div class="container wow fadeInUp">
+<div class="container josh-js" data-josh-anim-name="fadeInUp">
     <div class="row mt-5">
         <div class="col-md-12">
             <h3 class="rosa">A su vez las asignaturas se agrupan en cuatro ÁREAS DE CONOCIMIENTO:</h3>
@@ -150,14 +158,14 @@
         </div>
     </div>
 </div>
-<div class="container-fluid bg-rosa mt-5 responde  wow fadeInUp">
+<div class="container-fluid bg-rosa mt-5 responde  josh-js" data-josh-anim-name="fadeInUp">
     <div class="container">
     <div class="responde-icon bg-rosa shadow text-white"><i class="far fa-2x fa-grin"></i></i></div>
     <h5 class="text-white font-weight-bold">
          &nbsp; Ahora responde...  </h5>
     </div>
 </div>
-<div class="container mt-3 wow fadeInUp">
+<div class="container mt-3 josh-js" data-josh-anim-name="fadeInUp">
     <div class="row">
         <div class="col-md-11 offset-md-1">
             <p class="rosa font-weight-bold">Selecciona la opción que corresponda. No olvides enviar tus respuestas.</p>
@@ -167,7 +175,7 @@
 <!-- CUESTIONARIO INICIO -->
 
 {% if cuestionario1 == 0 %}
-<div class="container mt-5  wow fadeInUp">
+<div class="container mt-5  josh-js" data-josh-anim-name="fadeInUp">
     <form id="areas" action="{{base_path()}}bloques/el-cch/asignaturas-areas" method="post" class="field">
         <div class="form-row">
             <label class="col-md-12">1. ¿Cuál es tu área favorita?</label>

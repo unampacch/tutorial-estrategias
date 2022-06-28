@@ -1,17 +1,23 @@
 {% extends 'base/app-bloques.twig' %}
 
-{% set page_title = '¿Cuáles son las “estrategias de aprendizaje?' %}
+{% set page_title = 'Estrategias de aprendizaje' %}
 
 {% block content %}
 
-    <div class="bg-rosa py-5 container-fluid wow bounceInDown">
-        <div class="container">
-
-            <h2 class="titulobloque">Aprender a aprender</h2>
-
-        </div>
+<div class="bg-rosa py-2 container-fluid  josh-js" data-josh-anim-name="bounceInDown">
+    <div class="container">
+        <h2 class="titulo__pantalla">{{page_title}}</h2>
     </div>
-    <div class=" container-fluid absoluto d-none d-md-block wow fadeInUp">
+</div>
+<div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="" href="{{base_path()}}bloques/aprender">Aprender a aprender</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{page_title}}</li>
+        </ol>
+    </nav>
+</div>
+    <div class=" container-fluid absoluto d-none d-md-block josh-js" data-josh-anim-name="fadeInUp">
 
       <div class="row mt-5 color-fondo-objeto d-flex justify-content-center ">
           <div class="col-4">
@@ -19,7 +25,7 @@
           </div>
       </div>
     </div>
-    <div class="container mt-5 wow fadeInUp">
+    <div class="container mt-5 josh-js" data-josh-anim-name="fadeInUp">
         <div class="col-lg-12">
             <h1>¿Cuáles son las “estrategias de aprendizaje”?</h1>
             <div class="row mb-5">
@@ -45,10 +51,10 @@
                     </div>
                 </div>
             </div><!-- END -->
-            <p class="lead morado mt-5 wow fadeInUp">Las buenas estrategias de aprendizaje siempre comienzan con preguntas que ordenan nuestro pensamiento y conducta hacia el aprendizaje:</p>
+            <p class="lead morado mt-5 josh-js" data-josh-anim-name="fadeInUp">Las buenas estrategias de aprendizaje siempre comienzan con preguntas que ordenan nuestro pensamiento y conducta hacia el aprendizaje:</p>
         </div>
     </div>
-    <div class="container paso-paso wow fadeInUp">
+    <div class="container paso-paso josh-js" data-josh-anim-name="fadeInUp">
         <div class="col-lg-10 mx-auto">
             <ol>
                         <li>
@@ -70,7 +76,7 @@
                     </ol>
         </div>
      </div>
-<div class="container wow fadeInUp">
+<div class="container josh-js" data-josh-anim-name="fadeInUp">
     <div class="row">
       <div class="col-lg-10 mx-auto">
         <p>La selección de las estrategias de aprendizaje es individual porque cada quien es único y debes valorar tus habilidades y conocimientos para cada una de las materias. También depende de una serie de factores externos como las exigencias de la materia y el <strong>contenido</strong> temático, el contexto y los objetivos de estudio.</p>
@@ -78,13 +84,13 @@
       </div>
     </div>
 </div>
-<div class="bg-rosa text-white text-center d-flex container-fluid wow fadeInUp">
+<div class="bg-rosa text-white text-center d-flex container-fluid josh-js" data-josh-anim-name="fadeInUp">
     <div class="container p-3">
         <div class=" text-white lead">Da clic en cada verbo para revisar su definición:</div>
         <div class="text-white d-none d-xl-block mt-3"><i aria-hidden="true" class=" far fa-2x fa-arrow-alt-circle-down"></i></div>
     </div>
 </div>
-<div class="container text-center wow fadeInUp">
+<div class="container text-center josh-js" data-josh-anim-name="fadeInUp">
     <div class="container my-5">
         <div class="row">
             <div class="col-lg-6">
@@ -247,7 +253,7 @@
         </div>
     </div>
 </div>
-<div class="container wow fadeInUp">
+<div class="container josh-js" data-josh-anim-name="fadeInUp">
     <div class="row">
       <div class="col-lg-10 mx-auto">
         <p>Una vez identificado el objetivo, podrás armar una estrategia para tratar de alcanzarlo o cumplirlo. Es importante tener claro qué solicita el profesor o la tarea porque es muy distinto analizar, describir, explicar, identificar o valorar un fenómeno humano o natural; asimismo las estrategias para lograr identificar las características de un sistema político son probablemente diferentes de las estrategias que nos posibilitan comparar tres sistemas políticos.</p>
@@ -276,14 +282,14 @@
       </div>
     </div>
 </div>
-<div class="container-fluid bg-rosa mt-5 responde wow fadeInUp">
+<div class="container-fluid bg-rosa mt-5 responde josh-js" data-josh-anim-name="fadeInUp">
     <div class="container">
     <div class="responde-icon bg-rosa shadow text-white"><i class="far fa-2x fa-grin" aria-hidden="true"></i></div>
     <h5 class="text-white font-weight-bold">
          &nbsp; Realiza el siguiente ejercicio...  </h5>
     </div>
 </div>
-<div class="container mt-5 wow fadeInUp">
+<div class="container mt-5 josh-js" data-josh-anim-name="fadeInUp">
     <div class="col-lg-10 mx-auto">
       <h1 class="rosa">¿Cuáles son las estrategias de aprendizaje más adecuadas?</h1>
        <p class="rosa font-weight-bold">Con la siguiente actividad identificarás las estrategias más adecuadas para lograr los objetivos de aprendizaje que dos profesores te plantean.</p>
@@ -292,7 +298,7 @@
 </div>
 
 
-<div class="container-fluid mt-5 wow fadeInUp">
+<div class="container-fluid mt-5 josh-js" data-josh-anim-name="fadeInUp">
     <div class="row">
         <div class="col-lg-11 mx-auto">
             <form id="b2_04" method="post" action="/bloques/aprender/estrategias-de-aprendizaje">

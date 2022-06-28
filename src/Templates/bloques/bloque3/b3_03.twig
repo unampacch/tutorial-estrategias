@@ -1,22 +1,30 @@
 {% extends 'base/app-bloques.twig' %}
 
-{% set page_title = 'Área de Talleres' %}
+{% set page_title = 'Área de Talleres de Lenguaje y Comunicación' %}
 
 {% block content %}
 
-    <div class="contaniner-fluid bg-verde py-5 wow bounceInDown">
-        <div class="container">
-            <h2 class="titulobloque">Recursos para aprender</h2>
-        </div>
+<div class="bg-verde py-2 container-fluid  josh-js" data-josh-anim-name="bounceInDown">
+    <div class="container">
+        <h2 class="titulo__pantalla">{{page_title}}</h2>
     </div>
-    <div class="container wow fadeInUp">
+</div>
+<div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="" href="{{base_path()}}bloques/recursos">Recursos para aprender</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{page_title}}</li>
+        </ol>
+    </nav>
+</div>
+    <div class="container josh-js" data-josh-anim-name="fadeInUp">
         <div class="row mt-5">
             <div class="col-md-12">
-                <h1>¿Qué se aprende en el área de Talleres de Lenguaje y Comunicación?</h1>
+                <h1>¿Qué se aprende?</h1>
             </div>
         </div>
     </div>
-    <div class="container wow fadeInUp">
+    <div class="container josh-js" data-josh-anim-name="fadeInUp">
         <div class="row mt-3">
             <div class="col-md-10 mx-auto">
                 <p>Tu lengua materna, el español, es objeto de estudio desde que iniciaste tu escolaridad, te has preguntado <strong>¿por qué se enseña la lengua materna si es algo que ya sabes?</strong> Es válido preguntarse por qué hasta en los programas de bachillerato mencionan que te enseñarán a comunicarte en tu propia lengua. Si está comprobado que tú sabes hablar y escribir, entonces <strong>¿por qué la enseñanza de la lengua?</strong></p>
@@ -24,7 +32,7 @@
             </div>
         </div>
     </div>
-<div class="container-fluid my-5 wow fadeInUp">
+<div class="container-fluid my-5 josh-js" data-josh-anim-name="fadeInUp">
     <div class="row">
         <div class="col-lg-11 mx-auto">
           <div class="row justify-content-between align-items-center">
@@ -64,14 +72,14 @@
         </div>
     </div>
 </div>
-<div class="bg-morado mt-5 mb-5 container-fluid wow fadeInUp">
+<div class="bg-morado mt-5 mb-5 container-fluid josh-js" data-josh-anim-name="fadeInUp">
     <div class="container">
         <div class="p-2 text-white lead">
             <i class="fas fa-film" aria-hidden="true"></i>
             &nbsp;&nbsp; Ahora observa este video y reflexiona: ¿cuál es tu palabra favorita de la lengua en que expresas tus ideas, tus pensamientos, tus emociones?</div>
     </div>
 </div>
-<div class="container wow fadeInUp">
+<div class="container josh-js" data-josh-anim-name="fadeInUp">
     <div class="row">
         <div class="col-lg-10 mx-auto">
             <div class="embed-responsive embed-responsive-16by9">
@@ -84,7 +92,7 @@
 
     </div>
 </div>
-<div class="container mt-5 wow fadeInUp">
+<div class="container mt-5 josh-js" data-josh-anim-name="fadeInUp">
     <div class="row">
       <div class="col-lg-10 mx-auto">
         <p>La propuesta de los Talleres de Lectura, Redacción e Iniciación a la Investigación Documental no es enseñarte a hablar, pues es algo que tú ya sabes hacer, sino darte las herramientas para expresarte de forma efectiva en el plano oral y escrito, tanto en tu vida cotidiana como en la vida académica. Por otro lado, se busca fomentar el hábito de la lectura de textos literarios porque en la visión del Colegio se procura formar un sujeto que sepa apreciar obras artísticas mediante el goce estético.</p>
@@ -92,14 +100,14 @@
       </div>
     </div>
 </div>
-<div class=" container-fluid absoluto d-none d-md-block wow fadeInUp">
+<div class=" container-fluid absoluto d-none d-md-block josh-js" data-josh-anim-name="fadeInUp">
   <div class="row color-fondo-objeto d-flex justify-content-center">
       <div class="col-4">
       <img class="img-fluid" alt="CCH" src="/img/bloque3/b3_03_01.png">
       </div>
   </div>
 </div>
-<div class="bg-rosa text-white container-fluid wow fadeInUp">
+<div class="bg-rosa text-white container-fluid josh-js" data-josh-anim-name="fadeInUp">
     <div class="row p-3 text-center">
         <div class="col-lg-11 mx-auto">
             <div class=" text-white lead w-100">A continuación te presentamos algunas preguntas que te puedes hacer para armar tus propias estrategias de estudio. Éstas te remiten a materiales del Portal Académico del CCH.</div>
@@ -109,7 +117,7 @@
         </div>
     </div>
 </div>
-<div class="container wow fadeInUp">
+<div class="container josh-js" data-josh-anim-name="fadeInUp">
     <div class="row mt-3">
         <div class="col-12">
             <div class="accordion mt-4" id="acordeon1">
@@ -377,7 +385,7 @@
     </div>
 
 </div>
-<div class="container wow fadeInUp">
+<div class="container josh-js" data-josh-anim-name="fadeInUp">
     <div class="row mt-5">
         <div class="col-lg-12">
 

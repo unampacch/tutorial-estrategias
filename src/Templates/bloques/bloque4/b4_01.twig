@@ -1,10 +1,10 @@
 {% extends 'base/app-bloques.twig' %}
 
-{% set page_title = '¿Qué son las TIC' %}
+{% set page_title = 'Las TIC' %}
 
 {% block content %}
 
-    <div class="bg-morado container-fluid py-3 wow bounceInDown">
+    <!--<div class="bg-morado container-fluid py-3 josh-js" data-josh-anim-name="bounceInDown">
         <div class="row">
             <div class="col-lg-4 d-md-none d-lg-block d-none d-sm-block d-sm-none d-md-block">
                 <img class="img-fluid" alt="" src="/img/bloque4/bloquecuatro-int.png">
@@ -30,7 +30,21 @@
             <div class="enfasis text-white">Descúbrelo a continuación...</div>
         </div>
     </div>
-    <div class="container-fluid wow fadeInUp">
+-->
+<div class="bg-morado py-2 container-fluid  josh-js" data-josh-anim-name="bounceInDown">
+    <div class="container">
+        <h2 class="titulo__pantalla">{{page_title}}</h2>
+    </div>
+</div>
+<div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="" href="{{base_path()}}bloques/tic-aprender">Tic para aprender</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{{page_title}}</li>
+        </ol>
+    </nav>
+</div>
+    <div class="container-fluid josh-js" data-josh-anim-name="fadeInUp">
         <div class="row mt-5">
             <div class="col-11 mx-auto">
 
@@ -70,21 +84,21 @@
             </div>
         </div>
     </div>
-    <div class=" container-fluid absoluto d-none d-md-block wow fadeInUp">
+    <div class=" container-fluid absoluto d-none d-md-block josh-js" data-josh-anim-name="fadeInUp">
       <div class="row color-fondo-objeto d-flex justify-content-center">
           <div class="col-4">
           <img class="img-fluid" alt="CCH" src="/img/bloque4/b4_01_01.png">
           </div>
       </div>
     </div>
-<div class="container-fluid wow fadeInUp">
+<div class="container-fluid josh-js" data-josh-anim-name="fadeInUp">
     <div class="row">
         <div class="col-lg-12">
             <p class="enfasis rosa text-center"> ¿Cómo aprovechar las nuevas tecnologías para aprender dentro de la UNAM? </p>
         </div>
     </div>
 </div>
-    <div class="container my-3 wow fadeInUp">
+    <div class="container my-3 josh-js" data-josh-anim-name="fadeInUp">
         <div class="row">
           <div class="col-lg-11 mx-auto">
 
@@ -100,14 +114,14 @@
           </div>
         </div>
     </div>
-    <div class="bg-morado mt-5 mb-5 container-fluid wow fadeInUp">
+    <div class="bg-morado mt-5 mb-5 container-fluid josh-js" data-josh-anim-name="fadeInUp">
         <div class="container">
             <div class="p-2 text-white lead">
                 <i class="fas fa-film" aria-hidden="true"></i>
                 &nbsp;&nbsp; Para que sepas cómo obtener tu correo institucional ve el siguiente video:</div>
         </div>
     </div>
-    <div class="container wow fadeInUp">
+    <div class="container josh-js" data-josh-anim-name="fadeInUp">
     <div class="row">
         <div class="col-lg-10 mx-auto">
             <div class="embed-responsive embed-responsive-16by9">
@@ -121,7 +135,7 @@
 
 
 
-<div class="container-fluid mt-5 d-none d-md-block wow fadeInUp">
+<div class="container-fluid mt-5 d-none d-md-block josh-js" data-josh-anim-name="fadeInUp">
     <div class="row">
         <div class="col-lg-10 mx-auto">
 

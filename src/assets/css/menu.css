@@ -160,7 +160,7 @@ a.btn.open-menu:hover{
     position: absolute;
     top: 26px;
     right: 2px;
-    transition: all .3s;
+    transition: all 0.5s ease-in-out;
     /*background: #444;*/
     border-radius: 4px;
     text-align: center;
@@ -177,7 +177,7 @@ a.btn.open-menu:hover{
 /***********************  TOP Bar ********************/
 .sidebar {
     width: 220px;
-    height: 100vh;
+    min-height: 100vh;
     position: fixed;
     background-image: linear-gradient(to bottom, rgba(94,34,178,1), rgba(5,162,198,0.6));
     transition: all 0.5s ease-in-out;
@@ -335,4 +335,70 @@ a.btn.open-menu:hover{
 
 .fliph .user-panel {
     display: none;
+}
+#menu-izquierdo > ul > li.active > a{
+
+    border-bottom: 2px solid rgb(231, 171, 211);
+    background-color: rgba(226, 19, 153, 0.7);
+
+
+}
+#menu-izquierdo > ul > li.active ul > li.active > a{
+
+    border-bottom: 2px solid rgb(231, 171, 211);
+    background-color: rgba(226, 19, 153, 0.7);
+}
+.toggler{
+
+    min-height: 100vh;
+    position: fixed;
+    left: 2.6rem;
+    z-index: 9;
+    overflow: hidden;
+    width: 2rem;
+    transition: all 0.5s ease-in-out;
+    cursor:pointer;
+}
+.toggler-open{
+    left: 13.75rem;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.toggler__interior{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    transition: all 0.5s ease-in-out;
+
+}
+
+.toggler_circulo{
+    background: rgba(238,183,17,1);
+    position: relative;
+    z-index: 10;
+    min-width: 2rem;
+    min-height: 3.5rem;
+    border-radius: 20%;
+    left: -0.5rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.flecha{
+    color: #ffffff;
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left:0.5rem;
+    z-index:11;
+
+}
+.flecha i{
+    transform: rotate(0deg);
+    transition: all 0.5s ease-in-out;
+}
+.flecha-open i{
+     transform: rotate(180deg);
+     transition: all 0.5s ease-in-out;
 }

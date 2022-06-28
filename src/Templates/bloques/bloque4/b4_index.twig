@@ -1,7 +1,32 @@
 {% extends 'base/app-bloques.twig' %}
 
-{% set page_title = 'El CCH' %}
+{% set page_title = 'Las TIC para aprender' %}
 
 {% block content %}
     <!-- aqui va el codigo html -->
+<div class="indexbloque d-flex bg-morado">
+    <div class="container-fluid align-self-center  josh-js" data-josh-anim-name="bounceInDown">
+        <div class="row d-flex align-items-center justify-content-center align-items-center">
+            <div class="col-8 col-md-5 col-lg-5">
+                <img class="img-fluid" alt="" src="/img/bloque4/bloquecuatro-int.png">
+            </div>
+            <div class="col-11 col-lg-5">
+                <h2 class="titulobloque">Las TIC para aprender</h2>
+                <div class="proposito mt-3"> Además de los recursos de internet que te ofrece el Colegio de Ciencias y Humanidades, existen muchos otros que facilitan tu aprendizaje,  pues te ayudan a buscar información, almacenarla y compartirla,  así como  a estar en contacto con tus profesores y compañeros.</div>
+                <ul class="preguntas mt-5 mb-5">
+                    <li>
+                        <i class="fas fa-long-arrow-alt-right "></i>
+                        &nbsp;&nbsp; ¿Cómo aprovechar las redes sociales para tu aprendizaje?</li>
+                    <li>
+                        <i class="fas fa-long-arrow-alt-right"></i>
+                        &nbsp;&nbsp; ¿Dónde puedes almacenar información en línea?</li>
+                    <li>
+                        <i class="fas fa-long-arrow-alt-right "></i>
+                        &nbsp;&nbsp; ¿Qué recursos en internet te ayudan? </li>
+                </ul>
+                <div class="enfasis morado mt-3 text-center" style="font-size: 1.8rem;">Descúbrelo a continuación... <a href="{{base_path()}}bloques/tic-aprender/que-son-las-tic" class="btn btn-lg bg-amarillo btn-block my-3 hvr-glow w-75 mx-auto">Vamos</a></div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
