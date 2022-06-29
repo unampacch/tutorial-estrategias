@@ -21,7 +21,7 @@
                     </li>
                 </ul>
             </li>
-            <li class="{{ 'aprender' in current_url() ? 'active' : '' }}">
+            <li class="{{ '//bloques/aprender' in current_url() ? 'active' : '' }}">
                 <a href="#" data-toggle="collapse" data-target="#nav-bloque2" class="collapsed"><i class="fa fa-dice-two "></i><i class="fas fa-caret-right"></i><span class="nav-label">Aprender</span> <span class="fa fa-chevron-down pull-right"></span> </a>
                 <ul class="sub-menu collapse" data-parent="#menu-izquierdo" id="nav-bloque2">
                 <li class="{{ 'que-es-aprender' in current_url() ? 'active' : '' }}">
@@ -30,7 +30,7 @@
                 <li class="{{ 'estilos-de-aprendizaje' in current_url() ? 'active' : '' }}">
                     <a href="{{base_path()}}bloques/aprender/estilos-de-aprendizaje">Estilos de aprendizaje</a>
                 </li>
-                <li class="{{ 'cuestionario-honey-alonso' in current_url() ? 'active' : '' }}">
+                <li class="{{ '//bloques/aprender/cuestionario-honey-alonso' in current_url() ? 'active' : '' }}">
                     <a href="{{base_path()}}bloques/aprender/cuestionario-honey-alonso">Cuestionario Honey-Alonso</a>
                 </li>
                 <li class="{{ 'estrategias-de-aprendizaje' in current_url() ? 'active' : '' }}">
@@ -90,7 +90,7 @@
                     </li>
                 </ul>
             </li>
-            <li class="{{ 'cuestionario' in current_url() ? 'active' : '' }}">
+            <li class="{{ '//cuestionario' in current_url() ? 'active' : '' }}">
                  <a href="{{base_path()}}cuestionario"><i class="fa fa-list-alt"></i> <span class="nav-label">Cuestionario de opinion</span></a>
             </li>
             <li class="{{ 'bibliografia' in current_url() ? 'active' : '' }}">
