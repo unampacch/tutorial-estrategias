@@ -1,13 +1,30 @@
 $(function() {
 
     //Apertura y cierre del Menu lateral
-    $('.open-menu, .toggler, .open-menu-int').click(function(){
+    $('.open-menu, .toggler, .open-menu-int').on('click', function() {
+        if (localStorage.getItem("abierto") === null) {
+            localStorage.setItem('abierto', 'true');
+        }else if (localStorage.getItem("abierto") == 'true' ){
+            localStorage.setItem('abierto', 'false');
+        }else if (localStorage.getItem("abierto") == 'false' ){
+            localStorage.setItem('abierto', 'true');
+        }
         $('.sidebar').toggleClass('fliph');
         $('.open-menu-int').toggleClass('d-none');
         $('.fa-caret-right').toggleClass('d-none');
         $('.toggler').toggleClass('toggler-open');
         $('.flecha').toggleClass('flecha-open');
+        
+
     });
+
+    if (localStorage.getItem("abierto") == 'true') {
+        $('.sidebar').toggleClass('fliph');
+        $('.open-menu-int').toggleClass('d-none');
+        $('.fa-caret-right').toggleClass('d-none');
+        $('.toggler').toggleClass('toggler-open');
+        $('.flecha').toggleClass('flecha-open');
+    }
 
 /* Opción sin jQuery
     let toggle = document.getElementById("toggler");
@@ -28,7 +45,7 @@ $(function() {
      -------------------------------------------*/
     // Gets the video src from the data-src on each button
     var $videoSrc;
-    $('.video-btn').click(function() {
+    $('.video-btn').on( 'click', function() {
         $videoSrc = $(this).data( "src" );
     });
 
