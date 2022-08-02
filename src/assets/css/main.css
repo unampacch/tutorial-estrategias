@@ -1169,3 +1169,50 @@ color: #fff;
     background: none;
     justify-content: end;
 }
+
+
+/*
+*
+* ==========================================
+* Seccion para tutor
+* ==========================================
+*
+*/
+.seccion-tutor{
+    background-color: #FDCC52;
+}
+  .seccion-tutor  a:link{
+        text-decoration: none;
+        color: #7c612e;
+    }
+    .seccion-tutor a:hover{
+        color: #5E22B2;
+    }
+.seccion-tutor i{
+    font-size: 3em;
+}
+/*
+*
+* ==========================================
+* Boton vamos
+* ==========================================
+*
+*/
+.frase{
+    font-size: 2em;
+}
+
+.btn-vamos{
+    background-color: #FDCC52;
+}
+.btn-vamos:hover{
+    background-color: #927427;
+}
+a.btn-vamos{
+    color: #7c612e;
+    text-decoration: none;
+}
+a.btn-vamos:hover{
+    color: #e9e6ee;
+
+}
