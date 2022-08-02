@@ -176,7 +176,7 @@
 
     {% if cuestionario2 == 0 %}
     <div class="container mt-5  josh-js" data-josh-anim-name="fadeInUp">
-        <form id="areas" action="{{base_path()}}bloques/aprender/que-es-aprender" method="post" class="field">
+        <form id="b2_01" action="{{base_path()}}bloques/aprender/que-es-aprender" method="post" class="field">
             <div class="form-row">
                 <label class="col-md-12">1. ¿Dónde has aprendido más en tu vida?</label>
                 <div class="form-group">
@@ -216,9 +216,11 @@
             </div>
         </form>
     </div>
-    {% else %}
-        {% include 'partials/completado.twig' %}
+
     {% endif %}
+    
+    {% include 'partials/completado.twig' with {'bandera': cuestionario2} only %}
+
 
     <div class="container-fluid mt-5">
         <div class="row minh-100">
