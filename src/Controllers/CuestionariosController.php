@@ -142,6 +142,27 @@ class CuestionariosController extends BaseController{
         return $response->withHeader('Location', $this->router->urlFor('estrategias-aprendizaje'));
     }
 
+    public function cuestionario_b2_04_js($request, $response){
+        $form_data = $request->getParsedBody();
+
+        $p1 = $form_data['p1'];
+        $p2 = $form_data['p2'];
+        $data['respuesta'] = 'error';
+        $data['p1'] = $p1;
+        $data['p2'] = $p2;
+
+
+        if(!$this->auth->is_guest()){
+            Cuestionario_b2_04::guardaRespuestas($this->session->id, $p1, $p2);
+            $data['respuesta'] = 'exito';
+            $response->getBody()->write(json_encode($data));
+            return $response->withHeader('Content-type', 'application/json')->withStatus(201);
+        }else{
+            $response->getBody()->write(json_encode($data));
+            return $response->withHeader('Content-type', 'application/json')->withStatus(203);
+        }
+    }
+
 
 
     public function cuestionario_b2_06($request, $response){

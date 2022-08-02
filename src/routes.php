@@ -57,6 +57,7 @@ $app->group('/bloques/aprender', function (RouteCollectorProxy $group) {
     $group->put('/cuestionario-honey-alonso', CuestionariosController::class.':cuestionario_b2_03_put');
     $group->get('/estrategias-de-aprendizaje', Bloque2Controller::class.':estrategias_de_aprendizaje')->setName('estrategias-aprendizaje');
     $group->post('/estrategias-de-aprendizaje', CuestionariosController::class.':cuestionario_b2_04');
+    $group->post('/estrategias-de-aprendizaje/js', CuestionariosController::class.':cuestionario_b2_04_js');
     $group->get('/tecnicas-de-estudio', Bloque2Controller::class.':tecnicas_de_estudio');
     $group->get('/busqueda-de-informacion', Bloque2Controller::class.':busqueda_de_informacion')->setName('busqueda-informacion');
     $group->post('/busqueda-de-informacion', CuestionariosController::class.':cuestionario_b2_06');

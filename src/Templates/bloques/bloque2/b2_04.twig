@@ -552,11 +552,10 @@
                         <div class="col-md-12 mx-auto text-center mt-5">
                             <input class="btn btn-rosa" type="submit" value="Enviar respuestas" />
                         </div>
-                    {% else %}
-                        {% include 'partials/completado.twig' %}
                     {% endif %}
                 </div>
             </form>
+            {% include 'partials/completado.twig' with {'bandera': cuestionario4} only %}
         </div>
     </div>
 </div>
