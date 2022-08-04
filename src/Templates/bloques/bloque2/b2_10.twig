@@ -83,19 +83,19 @@
 <div class="container-fluid mt-5 josh-js" data-josh-anim-name="fadeInUp">
     <div class="row">
         <div class="col-lg-11 mx-auto">
-            <form method="post" action="/bloques/aprender/habitos-de-estudio">
+            <form id="b2_10" method="post" action="/bloques/aprender/habitos-de-estudio">
                 <div class="row justify-content-around">
                 <div class="col-lg-5">
                     <h2 class="rosa">Espacio de estudio</h2>
                     <p>El espacio donde estudias es uno de los elementos que va a incidir de manera positiva o negativa en la calidad de tu estudio. Verás que organizar tu ambiente facilitará tu estudio.</p>
                     {% if cuestionario8 == 0 %}
-                    <div class="row">
+                    <div class="row col-preguntas">
                         <div class="col-8">
                           <label for="formGroupExampleInput">¿Estudias o trabajas siempre a la <strong>misma hora y todos los días</strong>?</label>
                         </div>
                         <div class="col-4">
                             <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="p1r1" name="p1" class="form-check-input" value="1" required>
+                                <input type="radio" id="p1r1" name="p1" class="form-check-input" value="1">
                                 <label class="custom-control-label" for="p1r1">Si</label>
                             </div>
                             <div class="custom-control custom-radio custom-control-inline">
@@ -179,14 +179,15 @@
                             </div>
                         </div>
                     </div>
-                    {% else %}
-                        <div class="retroalimentacion">
-                            <h2 class="rosa">Retroalimentación. </h2>
-                            <p>Uno de los factores importantes son las condiciones físicas de tu lugar de estudio: éste debe contar con ciertas características para que te sea mucho más fácil concentrarte y adquirir conocimiento.</p>
-                            <p>Procura estudiar en el mismo lugar para que logres crearte un hábito.  Elige uno tranquilo y sin ruidos.  De preferencia, uno que sea de luz natural, pero, si es artificial, que sea lo suficientemente potente para que no te cree sombras.</p>
-                            <p>Es importante tener un escritorio y la mesa con una amplitud y altura cómoda para trabajar; la silla con respaldo y con la altura necesaria para apoyar la planta de los pies sobre el piso. No se recomienda que estudies o hagas actividades escolares sobre la cama, pues resulta contraproducente. Ten a la mano el material que necesitas, de esta manera, al no necesitar levantarte a buscar algo, evitarás perder tiempo y concentración.</p>
-                        </div>
                     {% endif %}
+
+                    <div class="retroalimentacion d-none {% if cuestionario8 == 1 %}d-block{% endif %}">
+                        <h2 class="rosa">Retroalimentación. </h2>
+                        <p>Uno de los factores importantes son las condiciones físicas de tu lugar de estudio: éste debe contar con ciertas características para que te sea mucho más fácil concentrarte y adquirir conocimiento.</p>
+                        <p>Procura estudiar en el mismo lugar para que logres crearte un hábito.  Elige uno tranquilo y sin ruidos.  De preferencia, uno que sea de luz natural, pero, si es artificial, que sea lo suficientemente potente para que no te cree sombras.</p>
+                        <p>Es importante tener un escritorio y la mesa con una amplitud y altura cómoda para trabajar; la silla con respaldo y con la altura necesaria para apoyar la planta de los pies sobre el piso. No se recomienda que estudies o hagas actividades escolares sobre la cama, pues resulta contraproducente. Ten a la mano el material que necesitas, de esta manera, al no necesitar levantarte a buscar algo, evitarás perder tiempo y concentración.</p>
+                    </div>
+                   
 
                 </div>
                 <div class="col-lg-5">
@@ -195,7 +196,7 @@
                     <p>Esto significa que tendrás que adaptar tus tiempos tanto al trabajo que se va a realizar, como a tu personalidad. Si organizas adecuadamente tu tiempo y lo planificas, te será posible distribuir equilibradamente tu jornada diaria y semanal para completar de manera eficaz tu trabajo escolar y dar tiempo a otras actividades que no tengan que ver precisamente con la escuela.</p>
 
                     {% if cuestionario8 == 0 %}
-                    <div class="row">
+                    <div class="row col-preguntas">
                         <div class="col-8">
                           <label for="formGroupExampleInput">¿Tienes un <strong>lugar fijo</strong> de estudio?</label>
                         </div>
@@ -270,13 +271,13 @@
                             </div>
                         </div>
                     </div>
-                    {% else %}
-                        <div class="retroalimentacion">
-                            <h2 class="rosa">Retroalimentación. </h2>
-                            <p>Ten presente que el éxito de la forma en que distribuyas el tiempo va a depender del cuidado con que planifiques dicha distribución. Debes hacerlo con un espíritu realista y objetivo; no debes planificar horarios ilusorios, que no se puedan cumplir debido al exceso de horas que proyectaste para el estudio, o a un número muy reducido de ellas. </p>
-                            <p>Debes planificar tu horario considerando factores como el horario de clases, las necesidades de preparación de cada asignatura, los periodos de descanso, las horas de comida, de sueño y, además, identificar cuáles son tus debilidades, fortalezas, habilidades y destrezas para que así logres alcanzar el dominio de tus materias de estudio.  </p>
-                        </div>
                     {% endif %}
+                    <div class="retroalimentacion d-none {% if cuestionario8 == 1 %}d-block{% endif %}">
+                        <h2 class="rosa">Retroalimentación. </h2>
+                        <p>Ten presente que el éxito de la forma en que distribuyas el tiempo va a depender del cuidado con que planifiques dicha distribución. Debes hacerlo con un espíritu realista y objetivo; no debes planificar horarios ilusorios, que no se puedan cumplir debido al exceso de horas que proyectaste para el estudio, o a un número muy reducido de ellas. </p>
+                        <p>Debes planificar tu horario considerando factores como el horario de clases, las necesidades de preparación de cada asignatura, los periodos de descanso, las horas de comida, de sueño y, además, identificar cuáles son tus debilidades, fortalezas, habilidades y destrezas para que así logres alcanzar el dominio de tus materias de estudio.  </p>
+                    </div>
+
                 </div>
             </div>
                 {% if cuestionario8 == 0 %}
@@ -285,10 +286,8 @@
                         <input type="submit" class="btn btn-rosa" value="Enviar respuestas" />
                     </div>
                 </div>
-                {% else %}
-                    {% include 'partials/completado.twig' %}
                 {% endif %}
-            </form>
+                {% include 'partials/completado.twig' with {'bandera': cuestionario8} only %}
         </div>
     </div>
 </div>
@@ -349,6 +348,23 @@
                     <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/recursos/ciencias-experimentales"><i class="fas fa-angle-double-right"></i></a></li>
                 </ul>
             </nav>
+        </div>
+    </div>
+</div>
+
+<div id="HoneyError" class="modal fade">
+    <div class="modal-dialog modal-confirm modal-alerta">
+        <div class="modal-content">
+            <div class="modal-header justify-content-center">
+                <div class="icon-box">
+                    <i class="fas fa-exclamation-circle"></i>
+                </div>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body text-center">
+                <h4>¡Ups!</h4>
+                <p>Responde todas las preguntas para poder continuar.</p>
+            </div>
         </div>
     </div>
 </div>

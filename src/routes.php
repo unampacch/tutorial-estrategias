@@ -61,11 +61,13 @@ $app->group('/bloques/aprender', function (RouteCollectorProxy $group) {
     $group->get('/tecnicas-de-estudio', Bloque2Controller::class.':tecnicas_de_estudio');
     $group->get('/busqueda-de-informacion', Bloque2Controller::class.':busqueda_de_informacion')->setName('busqueda-informacion');
     $group->post('/busqueda-de-informacion', CuestionariosController::class.':cuestionario_b2_06');
+    $group->post('/busqueda-de-informacion/js', CuestionariosController::class.':cuestionario_b2_06_js');
     $group->get('/lectura', Bloque2Controller::class.':lectura');
     $group->get('/escritura', Bloque2Controller::class.':escritura');
     $group->get('/organizadores-graficos', Bloque2Controller::class.':organizadores_graficos');
     $group->get('/habitos-de-estudio', Bloque2Controller::class.':habitos_de_estudio')->setName('habitos-estudio');
     $group->post('/habitos-de-estudio', CuestionariosController::class.':cuestionario_b2_10');
+    $group->post('/habitos-de-estudio/js', CuestionariosController::class.':cuestionario_b2_10_js');
 });
 
 $app->group('/bloques/recursos', function (RouteCollectorProxy $group) {
