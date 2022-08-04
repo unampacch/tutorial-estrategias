@@ -4,9 +4,9 @@
 
 {% block content %}
     <!-- aqui va el codigo html -->
-<div class="indexbloque d-flex bg-rosa">
-    <div class="container-fluid align-self-center  josh-js" data-josh-anim-name="bounceInDown">
-        <div class="row d-flex align-items-center justify-content-center align-items-center">
+<div class="indexbloque justify-content-between d-flex flex-column bg-rosa">
+    <div class="container-fluid d-flex h-100 mt-3 josh-js" data-josh-anim-name="bounceInDown">
+        <div class="row d-flex align-items-center justify-content-center">
             <div class="col-8 col-md-5 col-lg-5">
                 <img class="img-fluid" alt="" src="/img/bloque2/bloquedos-int.png">
             </div>
@@ -33,11 +33,41 @@
                         <i class="fas fa-long-arrow-alt-right azul-claro"></i>
                         &nbsp;&nbsp; ¿Cuáles son tus hábitos de estudio? </li>
                 </ul>
-                <div class="font-weight-light amarillo mt-3 text-center" style="font-size: 1.8rem;">Descubre tu estilo de aprendizaje y reflexiona acerca de tus estrategias, técnicas y hábitos para aprender... <a href="{{base_path()}}bloques/aprender/que-es-aprender" class="btn btn-lg bg-amarillo btn-block my-3 hvr-glow w-75 mx-auto">Vamos</a></div>
+                <div class="mt-3 text-center frase"><span class="amarillo font-weight-light">Descubre tu estilo de aprendizaje y reflexiona acerca de tus estrategias, técnicas y hábitos para aprender...</span> <a href="{{base_path()}}bloques/aprender/que-es-aprender"" class="btn-vamos p-2 btn-block my-3 w-75 mx-auto">Vamos</a></div>
             </div>
         </div>
     </div>
-
+    {%if usuario.tipo == "P" %}
+        <div class="container-fluid josh-js seccion-tutor mt-5" data-josh-anim-name="bounceInUp">
+            <div class="container">
+                <h3 class="font-weight-bold mt-5">Hola {{usuario.nombre}} {{usuario.apellidos}}</h3>
+                <div class="row mt-3">
+                    <div class="col-12 col-lg-6 ">
+                        <p>A continuación te mostramos algunas sugerencias para que puedas vincular la información de este bloque con las actividades que se encuentran en el cuadernillo “<a href="https://www.cch.unam.mx/sites/default/files/PAT1.pdf" target="_blank">Programa de Acción tutoral de primer semestre</a >”, y así complementar y reforzar tus acciones como tutor(a).</p>
+                        <div class="row d-flex justify-content-center align-items-center mb-5">
+                            <div class="col-2 d-flex justify-content-end">
+                                <a href="#"><i class="fas fa-file-pdf"></i></a>
+                            </div>
+                            <div class="col-8">
+                                <a href="#" target="_blank" class="lead">Bloque 2. Guía para tutoría</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 ">
+                        <p>También te invitamos a revisar el documento “Estilos de aprendizaje y Tutoria” donde te explicamos la importancia de conocer el estilo de aprendizaje de las y los estudiantes, y cómo esto complementa tu labor como tutor(a): </p>
+                        <div class="row d-flex justify-content-center align-items-center">
+                            <div class="col-2 d-flex justify-content-end">
+                                <a href="/doc/bloque_2_tutores.pdf" target="_blank" class="hvr-bob"><i class="fas fa-file-pdf"></i></a>
+                            </div>
+                            <div class="col-8">
+                                <a href="/doc/bloque_2_tutores.pdf" target="_blank" class="lead">Estilos de aprendizaje y Tutoría</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endif %}
 
 </div>
 {% endblock %}

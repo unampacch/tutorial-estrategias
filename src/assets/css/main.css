@@ -11,10 +11,10 @@ body {
    ========================================================================== */
 @media (max-width: 575.98px) {
     .container{
-        padding-left: 55px !important;
+        padding-left: 2em !important;
     }
     .container-fluid{
-        padding-left: 55px !important;
+        padding-left: 2em !important;
     }
     #bloques-container{
         padding-left: 0 !important;
@@ -1183,4 +1183,89 @@ color: #fff;
 .breadcrumb{
     background: none;
     justify-content: end;
+}
+
+
+/*
+*
+* ==========================================
+* Seccion para tutor
+* ==========================================
+*
+*/
+.seccion-tutor{
+    background-color: #FDCC52;
+    margin-top: 1rem;
+}
+@media only screen and (max-width: 991px)  {
+    .seccion-tutor{
+        margin-top: 5rem;
+    }
+}
+
+.seccion-tutor-icono{
+    font-size: 1.5em;
+    position: absolute;
+    position: absolute;
+    top: -2em;
+    right: 5em;
+    color:#eeaf0f ;
+    font-weight: 900;
+    overflow: hidden;
+}
+@media only screen and (max-width: 991px)  {
+    .seccion-tutor-icono{
+        right: 2em;
+    }
+}
+
+.seccion-tutor-icono i{
+    font-size: 2em;
+    margin-right:0.1em ;
+}
+@media only screen and (max-width: 360px)  {
+    .seccion-tutor-icono{
+        left:4rem;
+        font-size: 1.1rem;
+    }w
+    .seccion-tutor-icono i{
+        left:4rem;
+        font-size:1rem;
+    }
+}
+  .seccion-tutor  a:link{
+        text-decoration: none;
+        color: #7c612e;
+    }
+    .seccion-tutor a:hover{
+        color: #5E22B2;
+    }
+.seccion-tutor i{
+    font-size: 3em;
+}
+/*
+*
+* ==========================================
+* Boton vamos
+* ==========================================
+*
+*/
+.frase{
+    font-size: 2em;
+}
+
+.btn-vamos{
+    background-color: #FDCC52;
+}
+.btn-vamos:hover{
+    background-color: #eeaf0f;
+}
+a.btn-vamos{
+    color: #1b1b1a !important
+    ;
+    text-decoration: none;
+}
+a.btn-vamos:hover{
+    color: #e9e6ee !important
+    ;
 }
