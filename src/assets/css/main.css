@@ -11,10 +11,10 @@ body {
    ========================================================================== */
 @media (max-width: 575.98px) {
     .container{
-        padding-left: 2em !important;
+        padding-left: 3em !important;
     }
     .container-fluid{
-        padding-left: 2em !important;
+        padding-left: 3em !important;
     }
     #bloques-container{
         padding-left: 0 !important;
@@ -88,7 +88,7 @@ section h2 {
 @keyframes spin {
     to { transform: rotate(360deg);}
 }
-.spinner {        
+.spinner {
     border: 8px solid rgba(0, 0, 0, 0.1);
     border-left-color: #22a6b3;
     border-radius: 50%;
@@ -339,6 +339,9 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 
 .amarillo {
     color: #FDCC52;
+}
+.bg-amarillo-verde{
+    background-color: #D9D874;
 }
 
 .bg-amarillo {
@@ -1268,4 +1271,142 @@ a.btn-vamos{
 a.btn-vamos:hover{
     color: #e9e6ee !important
     ;
+}
+/*
+*
+* ==========================================
+* botones honeyAlonso
+* ==========================================
+*
+*/
+
+.preguntas-honey-alonso{
+    justify-content: center;
+}
+.preguntas-honey-alonso__pregunta{
+    width: 100%;
+}
+
+@media (min-width: 991px) {
+    .preguntas-honey-alonso{
+
+        justify-content: space-between;
+    }
+    .preguntas-honey-alonso__pregunta{
+        max-width: 75%;
+    }
+}
+
+
+/*
+*
+*
+/* With arrow tabs */
+/* DEMO GENERAL ============================== */
+/*********************** Demo - 8 *******************/
+.box8 .icon,
+.box8 .title {
+    margin: 0;
+    position: absolute
+}
+
+.box8 {
+    overflow: hidden;
+    width: 100%;
+    min-height: 5rem;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+    position: relative
+}
+
+@media only screen and (max-width:430px){
+    .box8 {
+
+        min-height: 10rem;
+
+    }
+}
+
+.box8 img {
+    width: 100%;
+    height: auto
+}
+
+.box8 .box-content {
+    color: white;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: perspective(400px) rotateX(-90deg);
+    transform-origin: center top 0;
+    transition: all .5s ease 0s
+}
+
+.box8 .icon li a,
+.box8 .title {
+    background: none;
+    font-size: 28px;
+    color: #FFFFFF
+}
+
+.box8:hover .box-content {
+    opacity: 1;
+    transform: perspective(400px) rotateX(0)
+}
+
+.box8 .title {
+    padding: 5px 7px;
+    border-radius: 5px;
+    font-weight: 200;
+    bottom: 20px;
+    left: 20px;
+    transition: all .9s ease 0s
+}
+
+.box8 .icon li a,
+.box9 .box-content,
+.box9 .icon li,
+.box9 img {
+    transition: all .35s ease 0s
+}
+
+.box8:hover .title {
+    bottom: -40px
+}
+
+.box8 .icon {
+    list-style: none;
+    padding: 0;
+    top: 42%;
+    left: 0;
+    right: 0
+}
+
+.box8 .icon li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    margin-right: 7px
+}
+
+.box9 .icon,
+.box9 .title {
+    width: 100%;
+    font-size: 22px
+}
+
+.box8 .icon li a:hover {
+    background: #fff;
+    color: #000
+}
+
+@media only screen and (max-width:990px) {
+    .box8 {
+        margin-bottom: 20px
+    }
 }
