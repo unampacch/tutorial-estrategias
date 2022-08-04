@@ -43,27 +43,31 @@ $app->group('/bloques/el-cch', function (RouteCollectorProxy $group) {
     $group->get('/modelo-educativo', Bloque1Controller::class.':modelo_educativo');
     $group->get('/asignaturas-areas', Bloque1Controller::class.':asignaturas')->setName('asignaturas-areas');
     $group->post('/asignaturas-areas', CuestionariosController::class.':cuestionario_b1_03');
-    $group->post('/asignaturas-areas/js', CuestionariosController::class.':cuestionario_b1_03_put');
+    $group->post('/asignaturas-areas/js', CuestionariosController::class.':cuestionario_b1_03_js');
 });
 
 $app->group('/bloques/aprender', function (RouteCollectorProxy $group) {
     $group->get('', Bloque2Controller::class.':bloque2');
     $group->get('/que-es-aprender', Bloque2Controller::class.':aprender')->setName('aprender');
     $group->post('/que-es-aprender', CuestionariosController::class.':cuestionario_b2_01');
+    $group->post('/que-es-aprender/js', CuestionariosController::class.':cuestionario_b2_01_js');
     $group->get('/estilos-de-aprendizaje', Bloque2Controller::class.':estilos_de_aprendizaje');
     $group->get('/cuestionario-honey-alonso', Bloque2Controller::class.':cuestionatio_honey_alonso')->setName('honey-alonso');
     $group->post('/cuestionario-honey-alonso', CuestionariosController::class.':cuestionario_b2_03');
     $group->put('/cuestionario-honey-alonso', CuestionariosController::class.':cuestionario_b2_03_put');
     $group->get('/estrategias-de-aprendizaje', Bloque2Controller::class.':estrategias_de_aprendizaje')->setName('estrategias-aprendizaje');
     $group->post('/estrategias-de-aprendizaje', CuestionariosController::class.':cuestionario_b2_04');
+    $group->post('/estrategias-de-aprendizaje/js', CuestionariosController::class.':cuestionario_b2_04_js');
     $group->get('/tecnicas-de-estudio', Bloque2Controller::class.':tecnicas_de_estudio');
     $group->get('/busqueda-de-informacion', Bloque2Controller::class.':busqueda_de_informacion')->setName('busqueda-informacion');
     $group->post('/busqueda-de-informacion', CuestionariosController::class.':cuestionario_b2_06');
+    $group->post('/busqueda-de-informacion/js', CuestionariosController::class.':cuestionario_b2_06_js');
     $group->get('/lectura', Bloque2Controller::class.':lectura');
     $group->get('/escritura', Bloque2Controller::class.':escritura');
     $group->get('/organizadores-graficos', Bloque2Controller::class.':organizadores_graficos');
     $group->get('/habitos-de-estudio', Bloque2Controller::class.':habitos_de_estudio')->setName('habitos-estudio');
     $group->post('/habitos-de-estudio', CuestionariosController::class.':cuestionario_b2_10');
+    $group->post('/habitos-de-estudio/js', CuestionariosController::class.':cuestionario_b2_10_js');
 });
 
 $app->group('/bloques/recursos', function (RouteCollectorProxy $group) {

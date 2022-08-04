@@ -113,12 +113,12 @@
                 {% if cuestionario5 == 0 %}
                 <div class="row">
                     <div class="col-lg-9 mx-auto">
-                        <form class="field ficha" action="/bloques/aprender/busqueda-de-informacion" method="post">
+                        <form id="b2_06_1" class="field ficha" action="/bloques/aprender/busqueda-de-informacion" method="post">
                             <div class="row">
                                 <div class="col-md-3">
                                     <p class="lead">Plantel</p>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="p1" id="a1p1r1" value="31" required>
+                                        <input class="form-check-input" type="radio" name="p1" id="a1p1r1" value="31" >
                                         <label class="form-check-label" for="a1p1r1">
                                             Azcapotzalco
                                         </label>
@@ -151,7 +151,7 @@
                                 <div class="col-md-5">
                                     <p class="lead">Título</p>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="p2" id="a1p2r1" value="1" required>
+                                        <input class="form-check-input" type="radio" name="p2" id="a1p2r1" value="1" >
                                         <label class="form-check-label" for="a1p2r1">
                                             Las Batallas en el Desierto
                                         </label>
@@ -171,7 +171,7 @@
                                 </div>
                                 <div class="col-md-4">
                                     <p class="lead">Clasificación</p>
-                                    <input name="p3" type="text" class="fic upper w-100" value="" maxlength="30" required>
+                                    <input id="b2_06_01_cla" name="p3" type="text" class="fic upper w-100" value="" maxlength="30">
                                     <div class="small mt-3">Todas las letras y números sin espacios y elimina el año de publicación que aparece al final, por ejemplo: “BC7536.P10B23”.</div>
                                 </div>
                             </div>
@@ -184,70 +184,71 @@
                         </form>
                     </div>
                 </div>
-                {% else %}
-                    <div class="retroalimentacion">
-                        <h2 class="rosa">Retroalimentación</h2>
-                        <div class="row align-items-center">
-                            <div class="col-lg-6">
-                                <p class="lead">Tus respuestas</p>
-                                <p><strong>Plantel:</strong> {{retro_b6_1.p1}}</p>
-                                <p><strong>Título:</strong> {{retro_b6_1.p2}}</p>
-                                <p><strong>Clasificación:</strong> {{retro_b6_1.p3}}</p>
-                            </div>
-                            <div class="col-lg-6">
-                                  {% if retro_b6_1.retro == 1 %}
-
-                                    <div class="bg-success text-white text-center">
-                                      <p class="text-white p-2">¡Clasificación correcta! Revisa la siguiente tabla, en caso de haber puesto una clasificación correcta podrás localizar el libro físicamente en la biblioteca de tu plantel con ese número.  </p>
-                                    </div>
-
-
-                                  {% endif %}
-                                  {% if retro_b6_1.retro == 0 %}
-
-                                    <div class="bg-danger text-white text-center">
-                                      <p class="text-white p-3">¡Clasificación incorrecta! No te preocupes, revisa si escribiste el número de clasificación sin espacios y sin el año de publicación. O bien, revisa que la clasificación corresponda al libro que deseas. Ahora ya puedes buscar libros en la biblioteca de tu plantel.</p>
-                                    </div>
-
-                                  {% endif %}
-                            </div>
+                {% endif %}
+                <div class="retroalimentacion_b2_06_1 {% if cuestionario5 == 0 %}d-none{% endif %}">
+                    <h2 class="rosa">Retroalimentación</h2>
+                    <div class="row align-items-center">
+                        {% if retro_b6_1.retro == 1 %}
+                        <div class="col-lg-6">
+                            <p class="lead">Tus respuestas</p>
+                            <p><strong>Plantel:</strong> {{retro_b6_1.p1}}</p>
+                            <p><strong>Título:</strong> {{retro_b6_1.p2}}</p>
+                            <p><strong>Clasificación:</strong> {{retro_b6_1.p3}}</p>
                         </div>
+                        {% endif %}
+                        <div class="col-lg-6">
+                                
 
-                        <div class="table-responsive table-striped mx-auto mt-5">
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                      <th scope="col">#</th>
-                                      <th scope="col">Plantel</th>
-                                      <th scope="col">Título</th>
-                                      <th scope="col">Clasificación</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                      <th scope="row">1</th>
-                                      <td>Cualquier plantel </td>
-                                      <td>Las Batallas en el Desierto</td>
-                                      <td>PQ7297.P21B37</td>
-                                    </tr>
-                                    <tr>
-                                      <th scope="row">2</th>
-                                      <td>Cualquier plantel</td>
-                                      <td>Aura</td>
-                                      <td>PQ7297.F85A813</td>
-                                    </tr>
-                                    <tr>
-                                      <th scope="row">3</th>
-                                      <td>Cualquier plantel</td>
-                                      <td>El Amor en los Tiempos del Cólera</td>
-                                      <td>PQ8180.17A73A55</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                                <div id="retro_b2_06_1_success" class="bg-success text-white text-center d-none {% if retro_b6_1.retro == 1 %}d-block{% endif %}">
+                                    <p class="text-white p-2">¡Clasificación correcta! Revisa la siguiente tabla, en caso de haber puesto una clasificación correcta podrás localizar el libro físicamente en la biblioteca de tu plantel con ese número.  </p>
+                                </div>
+
+
+                              
+
+                                <div id="retro_b2_06_1_fail" class="bg-danger text-white text-center d-none {% if retro_b6_1.retro == 0 %}d-block{% endif %}">
+                                    <p class="text-white p-3">¡Clasificación incorrecta! No te preocupes, revisa si escribiste el número de clasificación sin espacios y sin el año de publicación. O bien, revisa que la clasificación corresponda al libro que deseas. Ahora ya puedes buscar libros en la biblioteca de tu plantel.</p>
+                                </div>
+
+                               
                         </div>
                     </div>
-                    {% include 'partials/completado.twig' %}
-                {% endif %}
+
+                    <div class="table-responsive table-striped mx-auto mt-5">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Plantel</th>
+                                    <th scope="col">Título</th>
+                                    <th scope="col">Clasificación</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Cualquier plantel </td>
+                                    <td>Las Batallas en el Desierto</td>
+                                    <td>PQ7297.P21B37</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Cualquier plantel</td>
+                                    <td>Aura</td>
+                                    <td>PQ7297.F85A813</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Cualquier plantel</td>
+                                    <td>El Amor en los Tiempos del Cólera</td>
+                                    <td>PQ8180.17A73A55</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                {% include 'partials/completado.twig' with {'bandera': cuestionario5} only %}
+
             </div>
             <hr class="dashed">
             <div>
@@ -274,12 +275,12 @@
                 {% if cuestionario6 == 0 %}
                 <div class="row">
                     <div class="col-lg-9 mx-auto">
-                        <form class="field ficha" action="/bloques/aprender/busqueda-de-informacion" method="post">
+                        <form id="b2_06_2" class="field ficha" action="/bloques/aprender/busqueda-de-informacion" method="post">
                             <div class="row">
                                 <div class="col-md-4">
                                     <p class="resb2 lead">Área de conocimiento</p>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="p1" id="a2p2r1" value="1" required>
+                                        <input class="form-check-input" type="radio" name="p1" id="a2p2r1" value="1">
                                         <label class="form-check-label" for="a2p2r1">
                                             Talleres
                                         </label>
@@ -305,12 +306,12 @@
                                 </div>
                                 <div class="col-md-4 p-1">
                                     <p class="resb2 lead">Título</p>
-                                    <input name="p2" type="text" class="fic upper w-100" value="" maxlength="30" required>
+                                    <input id="b2_06_02_titulo" name="p2" type="text" class="fic upper w-100" value="" maxlength="30" >
                                     {# <textarea class="w-100" name="p2" rows="1" cols="20" required></textarea> #}
                                 </div>
                                 <div class="col-md-4 p-1">
                                     <p class="resb2 lead">Clasificación</p>
-                                    <input name="p3" type="text" class="fic upper w-100" value="" maxlength="30" required>
+                                    <input id="b2_06_02_clasi" name="p3" type="text" class="fic upper w-100" value="" maxlength="30" >
                                     {# <textarea class="w-100" name="p3" rows="1" cols="20" required></textarea> #}
                                 </div>
                             </div>
@@ -323,10 +324,10 @@
                         </form>
                     </div>
                 </div>
-                {% else %}
-
-                    {% include 'partials/completado.twig' %}
                 {% endif %}
+
+                {% include 'partials/completado.twig' with {'bandera': cuestionario6} only %}
+                
             </div>
             <hr class="dashed">
             <div>
@@ -373,7 +374,7 @@
                 </div>-->
                 <div class="mt-5 small align-items-center row">
                     {% if cuestionario7 == 0 %}
-                    <form action="/bloques/aprender/busqueda-de-informacion" method="post">
+                    <form id="b2_06_3" action="/bloques/aprender/busqueda-de-informacion" method="post">
                         <div id="preguntas_1" class="row justify-content-around">
                             <div class="col-md-2">
                                  <a href="https://www.monografias.com/trabajos11/bioltrece/bioltrece.shtml" target="_blank"><img class="img-fluid" alt="CCH" src="/img/bloque2/b2_06_02.png"></a>
@@ -651,7 +652,7 @@
                             <div class="col-md-2">
                                 <p class="lead">Actualidad de la información</p>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="p13" id="p13r1" value="1" required>
+                                    <input class="form-check-input" type="radio" name="p13" id="p13r1" value="1">
                                     <label class="form-check-label" for="p13r1">
                                         Actualizado
                                     </label>
@@ -740,8 +741,8 @@
                             </div>
                         </div>
                     </form>
-                    {% else %}
-                        <div class="retroalimentacion">
+                    {% endif %}
+                        <div class="retroalimentacion b2_06_3 d-none {% if cuestionario7 == 1 %}d-block{% endif %}">
                             <h2 class="rosa">Retroalimentación </h2>
                             <div class="row">
                                 <div class="col-lg-6">
@@ -772,8 +773,8 @@
                                 </div>
                             </div>
                         </div>
-                        {% include 'partials/completado.twig' %}
-                    {% endif %}
+                        {% include 'partials/completado.twig' with {'bandera': cuestionario7} only %}
+
                 </div>
             </div>
     </div>
@@ -819,5 +820,21 @@
     </div>
 </div>
 
+<div id="HoneyError" class="modal fade">
+    <div class="modal-dialog modal-confirm modal-alerta">
+        <div class="modal-content">
+            <div class="modal-header justify-content-center">
+                <div class="icon-box">
+                    <i class="fas fa-exclamation-circle"></i>
+                </div>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body text-center">
+                <h4>¡Ups!</h4>
+                <p>Responde todas las preguntas para poder continuar.</p>
+            </div>
+        </div>
+    </div>
+</div>
 
 {% endblock %}

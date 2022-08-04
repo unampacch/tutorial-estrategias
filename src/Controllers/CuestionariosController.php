@@ -32,7 +32,7 @@ class CuestionariosController extends BaseController{
 
         return $response->withHeader('Location', $this->router->urlFor('asignaturas-areas'));
     }
-    public function cuestionario_b1_03_put($request, $response){
+    public function cuestionario_b1_03_js($request, $response){
 
         $form_data = $request->getParsedBody();
 
@@ -43,11 +43,6 @@ class CuestionariosController extends BaseController{
         $data['p1'] = $p1;
         $data['p2'] = $p2;
         $data['p3'] = $p3;
-
-
-        //$payload = json_encode($data);
-
-
 
         if(!$this->auth->is_guest()){
             Cuestionario_b1_03::guardaRespuestas($this->session->id, $p1, $p2, $p3);
@@ -77,6 +72,26 @@ class CuestionariosController extends BaseController{
         }
 
         return $response->withHeader('Location', $this->router->urlFor('aprender'));
+    }
+    public function cuestionario_b2_01_js($request, $response){
+        $form_data = $request->getParsedBody();
+
+        $p1 = $form_data['p1'];
+        $p2 = $form_data['p2'];
+        $data['respuesta'] = 'error';
+        $data['p1'] = $p1;
+        $data['p2'] = $p2;
+
+
+        if(!$this->auth->is_guest()){
+            Cuestionario_b2_01::guardaRespuestas($this->session->id, $p1, $p2);
+            $data['respuesta'] = 'exito';
+            $response->getBody()->write(json_encode($data));
+            return $response->withHeader('Content-type', 'application/json')->withStatus(201);
+        }else{
+            $response->getBody()->write(json_encode($data));
+            return $response->withHeader('Content-type', 'application/json')->withStatus(203);
+        }
     }
 
     public function cuestionario_b2_03($request, $response){
@@ -127,6 +142,27 @@ class CuestionariosController extends BaseController{
         return $response->withHeader('Location', $this->router->urlFor('estrategias-aprendizaje'));
     }
 
+    public function cuestionario_b2_04_js($request, $response){
+        $form_data = $request->getParsedBody();
+
+        $p1 = $form_data['p1'];
+        $p2 = $form_data['p2'];
+        $data['respuesta'] = 'error';
+        $data['p1'] = $p1;
+        $data['p2'] = $p2;
+
+
+        if(!$this->auth->is_guest()){
+            Cuestionario_b2_04::guardaRespuestas($this->session->id, $p1, $p2);
+            $data['respuesta'] = 'exito';
+            $response->getBody()->write(json_encode($data));
+            return $response->withHeader('Content-type', 'application/json')->withStatus(201);
+        }else{
+            $response->getBody()->write(json_encode($data));
+            return $response->withHeader('Content-type', 'application/json')->withStatus(203);
+        }
+    }
+
 
 
     public function cuestionario_b2_06($request, $response){
@@ -169,6 +205,75 @@ class CuestionariosController extends BaseController{
 
         return $response->withHeader('Location', $this->router->urlFor('busqueda-informacion'));
     }
+    public function cuestionario_b2_06_js($request, $response){
+        $form_data = $request->getParsedBody();
+
+        $p1 = $form_data['p1'];
+        $p2 = $form_data['p2'];
+        $p3 = $form_data['p3'];
+        $p4 = $form_data['p4'];
+        $p5 = $form_data['p5'];
+        $p6 = $form_data['p6'];
+        $p7 = $form_data['p7'];
+        $p8 = $form_data['p8'];
+        $p9 = $form_data['p9'];
+        $p10 = $form_data['p10'];
+        $p11 = $form_data['p11'];
+        $p12 = $form_data['p12'];
+        $p13 = $form_data['p13'];
+        $p14 = $form_data['p14'];
+        $p15 = $form_data['p15'];
+        $p16 = $form_data['p16'];
+        $nact = $form_data['nact'];
+        $numcuest = $form_data['numcuest'];
+        $data['respuesta'] = 'error';
+
+        switch ($numcuest) {
+            case 1:
+                if(!$this->auth->is_guest()){
+                    Cuestionario_b2_06_1::guardaRespuestas($this->session->id, $p1, $p2, str_replace(' ', '', $p3));
+                    $data['p1'] = $p1;
+                    $data['p2'] = $p2;
+                    $data['p3'] = $p3;
+                    $data['respuesta'] = 'exito';
+                    $response->getBody()->write(json_encode($data));
+                    return $response->withHeader('Content-type', 'application/json')->withStatus(201);
+                }else{
+                    $response->getBody()->write(json_encode($data));
+                    return $response->withHeader('Content-type', 'application/json')->withStatus(203);
+                }
+                break;
+            case 2:
+                if(!$this->auth->is_guest()){
+                    Cuestionario_b2_06_2::guardaRespuestas($this->session->id, $p1, $p2, trim($p3));
+                    $data['p1'] = $p1;
+                    $data['p2'] = $p2;
+                    $data['p3'] = $p3;
+                    $data['respuesta'] = 'exito';
+                    $response->getBody()->write(json_encode($data));
+                    return $response->withHeader('Content-type', 'application/json')->withStatus(201);
+                }else{
+                    $response->getBody()->write(json_encode($data));
+                    return $response->withHeader('Content-type', 'application/json')->withStatus(203);
+                }
+                break;
+            case 3:
+                if(!$this->auth->is_guest()){
+                    Cuestionario_b2_06_3::guardaRespuestas($this->session->id, $p1, $p2, $p3, $p4, $p5, $p6, $p7, $p8, $p9, $p10, $p11,$p12, $p13, $p14, $p15, $p16);
+                   
+                    $data['respuesta'] = 'exito';
+                    $response->getBody()->write(json_encode($data));
+                    return $response->withHeader('Content-type', 'application/json')->withStatus(201);
+                }else{
+                    $response->getBody()->write(json_encode($data));
+                    return $response->withHeader('Content-type', 'application/json')->withStatus(203);
+                }
+                break;
+        }
+
+
+        return $response->withHeader('Location', $this->router->urlFor('busqueda-informacion'));
+    }
 
     public function cuestionario_b2_10($request, $response){
         $data = $request->getParsedBody();
@@ -190,6 +295,33 @@ class CuestionariosController extends BaseController{
         $this->flash->addMessage('exito', "Tus respuestas han sido enviadas con éxito.");
 
         return $response->withHeader('Location', $this->router->urlFor('habitos-estudio'));
+    }
+
+    public function cuestionario_b2_10_js($request, $response){
+        $data = $request->getParsedBody();
+
+        $p1 = $data['p1'];
+        $p2 = $data['p2'];
+        $p3 = $data['p3'];
+        $p4 = $data['p4'];
+        $p5 = $data['p5'];
+        $p6 = $data['p6'];
+        $p7 = $data['p7'];
+        $p8 = $data['p8'];
+        $p9 = $data['p9'];
+        $p10 = $data['p10'];
+        $p11 = $data['p11'];
+
+        if(!$this->auth->is_guest()){
+            Cuestionario_b2_10::guardaRespuestas($this->session->id, $p1, $p2, $p3, $p4, $p5, $p6, $p7, $p8, $p9, $p10, $p11);
+           
+            $data['respuesta'] = 'exito';
+            $response->getBody()->write(json_encode($data));
+            return $response->withHeader('Content-type', 'application/json')->withStatus(201);
+        }else{
+            $response->getBody()->write(json_encode($data));
+            return $response->withHeader('Content-type', 'application/json')->withStatus(203);
+        }
     }
 
     public function honey_alonso(){
