@@ -247,7 +247,9 @@
                         </table>
                     </div>
                 </div>
-                {% include 'partials/completado.twig' with {'bandera': cuestionario5} only %}
+                <div id="b2_06_1_retro">
+                    {% include 'partials/completado.twig' with {'bandera': cuestionario5} only %}
+                </div>
 
             </div>
             <hr class="dashed">
@@ -326,7 +328,10 @@
                 </div>
                 {% endif %}
 
+                
+                <div id="b2_06_2_retro">
                 {% include 'partials/completado.twig' with {'bandera': cuestionario6} only %}
+                </div>
                 
             </div>
             <hr class="dashed">
@@ -773,7 +778,9 @@
                                 </div>
                             </div>
                         </div>
+                        <div id="b2_06_3_retro" class="col-12">
                         {% include 'partials/completado.twig' with {'bandera': cuestionario7} only %}
+                        </div>
 
                 </div>
             </div>
@@ -820,21 +827,6 @@
     </div>
 </div>
 
-<div id="HoneyError" class="modal fade">
-    <div class="modal-dialog modal-confirm modal-alerta">
-        <div class="modal-content">
-            <div class="modal-header justify-content-center">
-                <div class="icon-box">
-                    <i class="fas fa-exclamation-circle"></i>
-                </div>
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            </div>
-            <div class="modal-body text-center">
-                <h4>¡Ups!</h4>
-                <p>Responde todas las preguntas para poder continuar.</p>
-            </div>
-        </div>
-    </div>
-</div>
+{% include 'partials/formError.twig' %}
 
 {% endblock %}

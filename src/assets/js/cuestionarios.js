@@ -1,62 +1,88 @@
 $("#areas").on("submit",function(event){
     event.preventDefault();
 
-    $.ajax({
-        type: "POST",
-        url: "/bloques/el-cch/asignaturas-areas/js",
-        data: $(this).serialize(),
-        success: function(data) {
-            if(data.respuesta == "exito"){
-                $("#areas").addClass('d-none');
-                $('#retroalimentacion').removeClass('d-none');
-            }
-            console.log(data);
-       },
-      error: function(error) {
-          alert('error handing here '+  JSON.stringify(error));
-      }
-    });
+    let nradios = ($("[type=radio]", this ).length) / 4;
+    let nradiosCheck = $("[type=radio]:checked", this).length;
+
+    if(nradios == nradiosCheck){
+
+        $.ajax({
+            type: "POST",
+            url: "/bloques/el-cch/asignaturas-areas/js",
+            data: $(this).serialize(),
+            success: function(data) {
+                if(data.respuesta == "exito"){
+                    $("#areas").addClass('d-none');
+                    $('#retroalimentacion').removeClass('d-none');
+                }
+                console.log(data);
+        },
+        error: function(error) {
+            alert('error handing here '+  JSON.stringify(error));
+        }
+        });
+    }else{
+        $('#FormError').modal('show');
+        console.log("Falta seleccionar mas radios");
+    }
 });
 
 
 $("#b2_01").on("submit",function(event){
     event.preventDefault();
 
-    $.ajax({
-        type: "POST",
-        url: "/bloques/aprender/que-es-aprender/js",
-        data: $(this).serialize(),
-        success: function(data) {
-            if(data.respuesta == "exito"){
-                $('#b2_01').addClass('d-none');
-                $('#retroalimentacion').removeClass('d-none');
-            }
-            console.log(data);
-       },
-      error: function(error) {
-          alert('error handing here '+  JSON.stringify(error));
-      }
-    });
+    let nradios      = ($("[type=radio]", this ).length) / 3;
+    let nradiosCheck = $("[type=radio]:checked", this).length;
+
+    if(nradios == nradiosCheck){
+        $.ajax({
+            type: "POST",
+            url: "/bloques/aprender/que-es-aprender/js",
+            data: $(this).serialize(),
+            success: function(data) {
+                if(data.respuesta == "exito"){
+                    $('#b2_01').addClass('d-none');
+                    $('#retroalimentacion').removeClass('d-none');
+                }
+                console.log(data);
+        },
+        error: function(error) {
+            alert('error handing here '+  JSON.stringify(error));
+        }
+        });
+    }else{
+        $('#FormError').modal('show');
+        console.log("Falta seleccionar mas radios");
+    }
 });
 
 $("#b2_04").on("submit",function(event){
     event.preventDefault();
 
-    $.ajax({
-        type: "POST",
-        url: "/bloques/aprender/estrategias-de-aprendizaje/js",
-        data: $(this).serialize(),
-        success: function(data) {
-            if(data.respuesta == "exito"){
-                $('#b2_04').addClass('d-none');
-                $('#retroalimentacion').removeClass('d-none');
+    let nradios      = ($("[type=radio]", this ).length) / 3;
+    let nradiosCheck = $("[type=radio]:checked", this).length;
+
+    if(nradios == nradiosCheck){
+
+        $.ajax({
+            type: "POST",
+            url: "/bloques/aprender/estrategias-de-aprendizaje/js",
+            data: $(this).serialize(),
+            success: function(data) {
+                if(data.respuesta == "exito"){
+                    $('#b2_04').addClass('d-none');
+                    $('#retroalimentacion').removeClass('d-none');
+                }
+                console.log(data);
+            },
+            error: function(error) {
+                alert('error handing here '+  JSON.stringify(error));
             }
-            console.log(data);
-       },
-      error: function(error) {
-          alert('error handing here '+  JSON.stringify(error));
-      }
-    });
+        });
+    }else{
+        $('#FormError').modal('show');
+        console.log("Falta seleccionar mas radios");
+    }
 });
 
 $("#b2_06_1").on("submit",function(event){
@@ -79,7 +105,7 @@ $("#b2_06_1").on("submit",function(event){
                     let datos_respuesta = retro_b2_b6_1(data);
                     console.log(datos_respuesta);
                     $('#b2_06_1').addClass('d-none');
-                    $('#retroalimentacion, .retroalimentacion_b2_06_1').removeClass('d-none');
+                    $('#b2_06_1_retro > #retroalimentacion, .retroalimentacion_b2_06_1').removeClass('d-none');
 
                     if(datos_respuesta.retro == 1){
                         $("#retro_b2_06_1_fail").removeClass("d-block");
@@ -90,13 +116,13 @@ $("#b2_06_1").on("submit",function(event){
 
                 }
                 console.log(data);
-        },
-        error: function(error) {
-            alert('error handing here '+  JSON.stringify(error));
-        }
+            },
+            error: function(error) {
+                alert('error handing here '+  JSON.stringify(error));
+            }
         });
     }else{
-        $('#HoneyError').modal('show');
+        $('#FormError').modal('show');
         console.log("Falta seleccionar mas radios");
     }
 });
@@ -117,7 +143,7 @@ $("#b2_06_2").on("submit",function(event){
             success: function(data) {
                 if(data.respuesta == "exito"){
                     $('#b2_06_2').addClass('d-none');
-                    $('#retroalimentacion').removeClass('d-none').addClass('d-block');
+                    $('#b2_06_2_retro>#retroalimentacion').removeClass('d-none').addClass('d-block');
                 }
                 console.log(data);
         },
@@ -126,7 +152,7 @@ $("#b2_06_2").on("submit",function(event){
         }
         });
     }else{
-        $('#HoneyError').modal('show');
+        $('#FormError').modal('show');
         console.log("Falta seleccionar mas radios");
     }
 });
@@ -146,7 +172,7 @@ $("#b2_06_3").on("submit",function(event){
             success: function(data) {
                 if(data.respuesta == "exito"){
                     $('#b2_06_3').addClass('d-none');
-                    $('#retroalimentacion, .retroalimentacion.b2_06_3').removeClass('d-none').addClass('d-block');
+                    $('#b2_06_3_retro>#retroalimentacion, .retroalimentacion.b2_06_3').removeClass('d-none').addClass('d-block');
                 }
                 console.log(data);
             },
@@ -155,7 +181,7 @@ $("#b2_06_3").on("submit",function(event){
             }
         });
     }else{
-        $('#HoneyError').modal('show');
+        $('#FormError').modal('show');
         console.log("Falta seleccionar mas radios");
     }
 });
@@ -175,8 +201,8 @@ $("#b2_10").on("submit",function(event){
             data: $(this).serialize(),
             success: function(data) {
                 if(data.respuesta == "exito"){
-                    $('.col-preguntas').addClass('d-none');
-                    $('#retroalimentacion').removeClass('d-none').addClass('d-block');
+                    $('#col1,#col2,input.btn.btn-rosa').addClass('d-none');
+                    $('.retroalimentacion, #retroalimentacion').removeClass('d-none').addClass('d-block');
                 }
                 console.log(data);
             },
@@ -185,7 +211,7 @@ $("#b2_10").on("submit",function(event){
             }
         });
     }else{
-        $('#HoneyError').modal('show');
+        $('#FormError').modal('show');
         console.log("Falta seleccionar mas radios");
     }
 });

@@ -181,7 +181,7 @@
             <label class="col-md-12">1. ¿Cuál es tu área favorita?</label>
             <div class="form-group">
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="p1" id="p1Radio1" value="1" required>
+                    <input class="form-check-input" type="radio" name="p1" id="p1Radio1" value="1" >
                     <label class="form-check-label" for="p1Radio1">Talleres</label>
                 </div>
                 <div class="form-check form-check-inline">
@@ -203,7 +203,7 @@
             <label class="col-md-12">2. ¿En qué área (asignaturas) has obtenido mejores resultados?</label>
             <div class="form-group">
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="p2" id="p2Radio1" value="1" required>
+                    <input class="form-check-input" type="radio" name="p2" id="p2Radio1" value="1" >
                     <label class="form-check-label" for="p2Radio1">Talleres (Español)</label>
                 </div>
                 <div class="form-check form-check-inline">
@@ -226,7 +226,7 @@
             <label class="col-md-12">3. ¿Cuál es el área que menos te gusta?</label>
             <div class="form-group">
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="p3" id="p3Radio1" value="1" required>
+                    <input class="form-check-input" type="radio" name="p3" id="p3Radio1" value="1" >
                     <label class="form-check-label" for="p3Radio1">Talleres</label>
                 </div>
                 <div class="form-check form-check-inline">
@@ -268,4 +268,6 @@
         </div>
     </div>
 </div>
+
+{% include 'partials/formError.twig' %}
 {% endblock %}
