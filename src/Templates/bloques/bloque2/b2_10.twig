@@ -89,93 +89,95 @@
                     <h2 class="rosa">Espacio de estudio</h2>
                     <p>El espacio donde estudias es uno de los elementos que va a incidir de manera positiva o negativa en la calidad de tu estudio. Verás que organizar tu ambiente facilitará tu estudio.</p>
                     {% if cuestionario8 == 0 %}
-                    <div class="row col-preguntas">
-                        <div class="col-8">
-                          <label for="formGroupExampleInput">¿Estudias o trabajas siempre a la <strong>misma hora y todos los días</strong>?</label>
-                        </div>
-                        <div class="col-4">
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="p1r1" name="p1" class="form-check-input" value="1">
-                                <label class="custom-control-label" for="p1r1">Si</label>
+                    <div id="col1">
+                        <div class="row">
+                            <div class="col-8">
+                            <label for="formGroupExampleInput">¿Estudias o trabajas siempre a la <strong>misma hora y todos los días</strong>?</label>
                             </div>
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="p1r2" name="p1" class="form-check-input" value="0">
-                                <label class="custom-control-label" for="p1r2">No</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-8">
-                          <label for="formGroupExampleInput">¿Programas  el estudio de acuerdo con las exigencias y la <strong>dificultad</strong> de cada materia? </label>
-                        </div>
-                        <div class="col-4">
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="p2r1" name="p2" class="form-check-input" value="1">
-                                <label class="custom-control-label" for="p2r1">Si</label>
-                            </div>
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="p2r2" name="p2" class="form-check-input" value="0">
-                                <label class="custom-control-label" for="p2r2">No</label>
+                            <div class="col-4">
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="p1r1" name="p1" class="form-check-input" value="1">
+                                    <label class="custom-control-label" for="p1r1">Si</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="p1r2" name="p1" class="form-check-input" value="0">
+                                    <label class="custom-control-label" for="p1r2">No</label>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-8">
-                          <label for="formGroupExampleInput">¿Estudias <strong>todos los días</strong> durante un poco de tiempo, en vez de estudiar mucho tiempo durante muy pocos días?</label>
-                        </div>
-                        <div class="col-4">
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="p3r1" name="p3" class="form-check-input" value="1">
-                                <label class="custom-control-label" for="p3r1">Si</label>
+                        <div class="row">
+                            <div class="col-8">
+                            <label for="formGroupExampleInput">¿Programas  el estudio de acuerdo con las exigencias y la <strong>dificultad</strong> de cada materia? </label>
                             </div>
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="p3r2" name="p3" class="form-check-input" value="0">
-                                <label class="custom-control-label" for="p3r2">No</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-8">
-                          <label for="formGroupExampleInput">¿Te pones de <strong>acuerdo con tu familia y los amigos</strong> para que no te interrumpan en el horario de estudio?</label>
-                        </div>
-                        <div class="col-4">
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="p4r1" name="p4" class="form-check-input" value="1">
-                                <label class="custom-control-label" for="p4r1">Si</label>
-                            </div>
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="p4r2" name="p4" class="form-check-input" value="0">
-                                <label class="custom-control-label" for="p4r2">No</label>
+                            <div class="col-4">
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="p2r1" name="p2" class="form-check-input" value="1">
+                                    <label class="custom-control-label" for="p2r1">Si</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="p2r2" name="p2" class="form-check-input" value="0">
+                                    <label class="custom-control-label" for="p2r2">No</label>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-8">
-                          <label for="formGroupExampleInput">¿<strong>Duermes</strong> 8 horas diarias? </label>
-                        </div>
-                        <div class="col-4">
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="p5r1" name="p5" class="form-check-input" value="1">
-                                <label class="custom-control-label" for="p5r1">Si</label>
+                        <div class="row">
+                            <div class="col-8">
+                            <label for="formGroupExampleInput">¿Estudias <strong>todos los días</strong> durante un poco de tiempo, en vez de estudiar mucho tiempo durante muy pocos días?</label>
                             </div>
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="p5r2" name="p5" class="form-check-input" value="0">
-                                <label class="custom-control-label" for="p5r2">No</label>
+                            <div class="col-4">
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="p3r1" name="p3" class="form-check-input" value="1">
+                                    <label class="custom-control-label" for="p3r1">Si</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="p3r2" name="p3" class="form-check-input" value="0">
+                                    <label class="custom-control-label" for="p3r2">No</label>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-8">
-                          <label for="formGroupExampleInput">¿Tienes suficiente tiempo para <strong>actividades placenteras</strong>? </label>
-                        </div>
-                        <div class="col-4">
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="p6r1" name="p6" class="form-check-input" value="1">
-                                <label class="custom-control-label" for="p6r1">Si</label>
+                        <div class="row">
+                            <div class="col-8">
+                            <label for="formGroupExampleInput">¿Te pones de <strong>acuerdo con tu familia y los amigos</strong> para que no te interrumpan en el horario de estudio?</label>
                             </div>
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="p6r2" name="p6" class="form-check-input" value="0">
-                                <label class="custom-control-label" for="p6r2">No</label>
+                            <div class="col-4">
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="p4r1" name="p4" class="form-check-input" value="1">
+                                    <label class="custom-control-label" for="p4r1">Si</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="p4r2" name="p4" class="form-check-input" value="0">
+                                    <label class="custom-control-label" for="p4r2">No</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-8">
+                            <label for="formGroupExampleInput">¿<strong>Duermes</strong> 8 horas diarias? </label>
+                            </div>
+                            <div class="col-4">
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="p5r1" name="p5" class="form-check-input" value="1">
+                                    <label class="custom-control-label" for="p5r1">Si</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="p5r2" name="p5" class="form-check-input" value="0">
+                                    <label class="custom-control-label" for="p5r2">No</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-8">
+                            <label for="formGroupExampleInput">¿Tienes suficiente tiempo para <strong>actividades placenteras</strong>? </label>
+                            </div>
+                            <div class="col-4">
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="p6r1" name="p6" class="form-check-input" value="1">
+                                    <label class="custom-control-label" for="p6r1">Si</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="p6r2" name="p6" class="form-check-input" value="0">
+                                    <label class="custom-control-label" for="p6r2">No</label>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -196,78 +198,80 @@
                     <p>Esto significa que tendrás que adaptar tus tiempos tanto al trabajo que se va a realizar, como a tu personalidad. Si organizas adecuadamente tu tiempo y lo planificas, te será posible distribuir equilibradamente tu jornada diaria y semanal para completar de manera eficaz tu trabajo escolar y dar tiempo a otras actividades que no tengan que ver precisamente con la escuela.</p>
 
                     {% if cuestionario8 == 0 %}
-                    <div class="row col-preguntas">
-                        <div class="col-8">
-                          <label for="formGroupExampleInput">¿Tienes un <strong>lugar fijo</strong> de estudio?</label>
-                        </div>
-                        <div class="col-4">
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="p7r1" name="p7" class="form-check-input" value="1">
-                                <label class="custom-control-label" for="p7r1">Si</label>
+                    <div id="col2">
+                        <div class="row col-preguntas">
+                            <div class="col-8">
+                            <label for="formGroupExampleInput">¿Tienes un <strong>lugar fijo</strong> de estudio?</label>
                             </div>
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="p7r2" name="p7" class="form-check-input" value="0">
-                                <label class="custom-control-label" for="p7r2">No</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-8">
-                          <label for="formGroupExampleInput">¿El lugar dónde estudias es <strong>cómodo</strong> y tiene el mínimo de <strong>distractores</strong>? </label>
-                        </div>
-                        <div class="col-4">
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="p8r1" name="p8" class="form-check-input" value="1">
-                                <label class="custom-control-label" for="p8r1">Si</label>
-                            </div>
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="p8r2" name="p8" class="form-check-input" value="0">
-                                <label class="custom-control-label" for="p8r2">No</label>
+                            <div class="col-4">
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="p7r1" name="p7" class="form-check-input" value="1">
+                                    <label class="custom-control-label" for="p7r1">Si</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="p7r2" name="p7" class="form-check-input" value="0">
+                                    <label class="custom-control-label" for="p7r2">No</label>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-8">
-                          <label for="formGroupExampleInput">¿Tu lugar de estudio está bien <strong>iluminado</strong>, con una <strong>temperatura</strong> ambiental y una <strong>ventilación</strong> adecuada?</label>
-                        </div>
-                        <div class="col-4">
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="p9r1" name="p9" class="form-check-input" value="1">
-                                <label class="custom-control-label" for="p9r1">Si</label>
+                        <div class="row">
+                            <div class="col-8">
+                            <label for="formGroupExampleInput">¿El lugar dónde estudias es <strong>cómodo</strong> y tiene el mínimo de <strong>distractores</strong>? </label>
                             </div>
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="p9r2" name="p9" class="form-check-input" value="0">
-                                <label class="custom-control-label" for="p9r2">No</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-8">
-                          <label for="formGroupExampleInput">¿Cuentas con un <strong>escritorio</strong> o una <strong>mesa</strong> y <strong>silla</strong> cómoda?</label>
-                        </div>
-                        <div class="col-4">
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="p10r1" name="p10" class="form-check-input" value="1">
-                                <label class="custom-control-label" for="p10r1">Si</label>
-                            </div>
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="p10r2" name="p10" class="form-check-input" value="0">
-                                <label class="custom-control-label" for="p10r2">No</label>
+                            <div class="col-4">
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="p8r1" name="p8" class="form-check-input" value="1">
+                                    <label class="custom-control-label" for="p8r1">Si</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="p8r2" name="p8" class="form-check-input" value="0">
+                                    <label class="custom-control-label" for="p8r2">No</label>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-8">
-                          <label for="formGroupExampleInput">¿Tienes todo el <strong>material de estudio</strong> (útiles, diccionarios, libros, revistas, computadora, etc.) a la mano?</label>
-                        </div>
-                        <div class="col-4">
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="p11r1" name="p11" class="form-check-input" value="1">
-                                <label class="custom-control-label" for="p11r1">Si</label>
+                        <div class="row">
+                            <div class="col-8">
+                            <label for="formGroupExampleInput">¿Tu lugar de estudio está bien <strong>iluminado</strong>, con una <strong>temperatura</strong> ambiental y una <strong>ventilación</strong> adecuada?</label>
                             </div>
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="p11r2" name="p11" class="form-check-input" value="0">
-                                <label class="custom-control-label" for="p11r2">No</label>
+                            <div class="col-4">
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="p9r1" name="p9" class="form-check-input" value="1">
+                                    <label class="custom-control-label" for="p9r1">Si</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="p9r2" name="p9" class="form-check-input" value="0">
+                                    <label class="custom-control-label" for="p9r2">No</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-8">
+                            <label for="formGroupExampleInput">¿Cuentas con un <strong>escritorio</strong> o una <strong>mesa</strong> y <strong>silla</strong> cómoda?</label>
+                            </div>
+                            <div class="col-4">
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="p10r1" name="p10" class="form-check-input" value="1">
+                                    <label class="custom-control-label" for="p10r1">Si</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="p10r2" name="p10" class="form-check-input" value="0">
+                                    <label class="custom-control-label" for="p10r2">No</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-8">
+                            <label for="formGroupExampleInput">¿Tienes todo el <strong>material de estudio</strong> (útiles, diccionarios, libros, revistas, computadora, etc.) a la mano?</label>
+                            </div>
+                            <div class="col-4">
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="p11r1" name="p11" class="form-check-input" value="1">
+                                    <label class="custom-control-label" for="p11r1">Si</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" id="p11r2" name="p11" class="form-check-input" value="0">
+                                    <label class="custom-control-label" for="p11r2">No</label>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -353,21 +357,6 @@
     </div>
 </div>
 
-<div id="HoneyError" class="modal fade">
-    <div class="modal-dialog modal-confirm modal-alerta">
-        <div class="modal-content">
-            <div class="modal-header justify-content-center">
-                <div class="icon-box">
-                    <i class="fas fa-exclamation-circle"></i>
-                </div>
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            </div>
-            <div class="modal-body text-center">
-                <h4>¡Ups!</h4>
-                <p>Responde todas las preguntas para poder continuar.</p>
-            </div>
-        </div>
-    </div>
-</div>
+{% include 'partials/formError.twig' %}
 
 {% endblock %}
