@@ -8,8 +8,8 @@
         <span class="mr-2 d-none d-xl-block">
             <i class="fas fa-grin-squint"></i>
         </span>
-        <span id="nusuario" class="mr-2 d-none d-xl-block">{% if usuario.nombre is defined %}{{usuario.nombre}} {{usuario.apellidos}}{% else %} Invitado{% endif %}</span>
-         <a href="{{base_path()}}salir" title="Salirs del TEA"><span class="d-block-inline d-md-none mr-1">Salir</span><i class="fas fa-sign-out-alt"></i></a>
+        <span id="nusuario" class="mr-2 d-none d-sm-block">{% if usuario.nombre is defined %}{{usuario.nombre}} {{usuario.apellidos}}{% else %} Invitado{% endif %}</span>
+         <a href="{{base_path()}}salir" title="Salirs del TEA"><i class="fas fa-sign-out-alt"></i></a>
     </div>
 
 </header>
