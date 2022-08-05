@@ -11,10 +11,10 @@ body {
    ========================================================================== */
 @media (max-width: 575.98px) {
     .container{
-        padding-left: 2em !important;
+        padding-left: 3em !important;
     }
     .container-fluid{
-        padding-left: 2em !important;
+        padding-left: 3em !important;
     }
     #bloques-container{
         padding-left: 0 !important;
@@ -88,7 +88,7 @@ section h2 {
 @keyframes spin {
     to { transform: rotate(360deg);}
 }
-.spinner {        
+.spinner {
     border: 8px solid rgba(0, 0, 0, 0.1);
     border-left-color: #22a6b3;
     border-radius: 50%;
@@ -126,7 +126,10 @@ header.masthead .header-content {
 }
 
 header.masthead h1 {
-    font-size: 50px !important;
+    font-size: clamp(1.6rem, 4vw, 3rem);
+}
+header.masthead h2 {
+    font-size: clamp(1rem, 4vw, 2rem);
 }
 
 header.masthead h1, header.masthead h2, header.masthead h3{
@@ -148,9 +151,6 @@ header.masthead h1, header.masthead h2, header.masthead h3{
         text-align: left;
     }
 
-    header.masthead .header-content h1 {
-        font-size: 50px;
-    }
 
     header.masthead .device-container {
         max-width: 325px;
@@ -162,10 +162,10 @@ header.masthead h1, header.masthead h2, header.masthead h3{
 /* ------------------estilos ingreso responsivo-------------------*/
 
 header.ingreso {
-    position: relative;
+
     width: 100%;
     background: #6122b1;
-    height: 100vh;
+
 }
 header.ingreso p{
     color: #2a2a2a;
@@ -277,7 +277,7 @@ header.ingreso h1, header.ingreso h2, header.ingreso h3{
     align-items: center;
 }
 .enfasis {
-    font-size: 2.1rem;
+    font-size: clamp(1.6rem, 4vw, 3rem);
     font-weight: 200;
 }
 
@@ -288,6 +288,11 @@ footer {
     text-align: center;
     color: rgba(255, 255, 255, 0.9);
     background-color: #5E22B2;
+}
+@media (max-width: 640px) {
+    footer {
+        min-height: 20rem;
+    }
 }
 
 footer p {
@@ -339,6 +344,9 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 
 .amarillo {
     color: #FDCC52;
+}
+.bg-amarillo-verde{
+    background-color: #D9D874;
 }
 
 .bg-amarillo {
@@ -503,16 +511,19 @@ ul.temasbloque li {
     border-radius: 10px;
     border: none;
 }
+.card-header h2{
+    font-size: clamp(1rem, 4vw, 1.2rem) !important;
+}
 .card-header a {
     color: #fff !important;
     display: block;
     border: none;
     padding: 20px 35px;
-    font-size: 20px;
     background-color: rgba(94,34,178,1);
     font-weight: 600;
     position: relative;
     color: #fff;
+    font-size: clamp(1rem, 4vw, 1.2rem) !important;
     box-shadow: none;
     transition: all 0.1s ease 0;
     font-weight: 900;
@@ -762,10 +773,23 @@ position: relative;
 font-size: 1.1rem;
 background: #dcedee;
 }
+@media screen and (max-width: 768px) {
+   .blockquote-custom {
+        padding: 0.9rem !important;
+   }
+}
+.blockquote-custom span.enfasis{
+    font-size: clamp(1.2rem, 4vw, 1.5rem);
+}
+.blockquote-custom i{
+    font-size: clamp(2rem, 4vw, 3.5rem);
+}
 .blockquote-custom footer{
 background: none;
 }
-
+.blockquote-custom h1{
+    font-size: clamp(1.5rem, 4vw, 1.9rem);
+}
 .blockquote-custom-icon {
 width: 50px;
 height: 50px;
@@ -1001,6 +1025,12 @@ border-bottom: none;
 border-bottom-right-radius:0;
 border-bottom-left-radius:0;
 }
+.paso-paso h1{
+    font-size: clamp(1.6rem, 4vw, 2rem);
+}
+.paso-paso h3{
+    font-size: clamp(1.4rem, 4vw, 1.5rem);
+}
 
 /* -------------------------------------- */
 /* rounded  list style                    */
@@ -1170,15 +1200,15 @@ color: #fff;
     font-family: 'Catamaran', sans-serif;
     font-weight: 900;
     color: #FFFFFF;
-    font-size: 3rem;
+    font-size: clamp(1.5em, 4vw, 3rem);
     text-align: left;
 }
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
 
     .titulo__pantalla{
         font-size: 2.6rem;
     }
-}
+} */
 
 .breadcrumb{
     background: none;
@@ -1268,4 +1298,142 @@ a.btn-vamos{
 a.btn-vamos:hover{
     color: #e9e6ee !important
     ;
+}
+/*
+*
+* ==========================================
+* botones honeyAlonso
+* ==========================================
+*
+*/
+
+.preguntas-honey-alonso{
+    justify-content: center;
+}
+.preguntas-honey-alonso__pregunta{
+    width: 100%;
+}
+
+@media (min-width: 991px) {
+    .preguntas-honey-alonso{
+
+        justify-content: space-between;
+    }
+    .preguntas-honey-alonso__pregunta{
+        max-width: 75%;
+    }
+}
+
+
+/*
+*
+*
+/* With arrow tabs */
+/* DEMO GENERAL ============================== */
+/*********************** Demo - 8 *******************/
+.box8 .icon,
+.box8 .title {
+    margin: 0;
+    position: absolute
+}
+
+.box8 {
+    overflow: hidden;
+    width: 100%;
+    min-height: 5rem;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+    position: relative
+}
+
+@media only screen and (max-width:430px){
+    .box8 {
+
+        min-height: 10rem;
+
+    }
+}
+
+.box8 img {
+    width: 100%;
+    height: auto
+}
+
+.box8 .box-content {
+    color: white;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: perspective(400px) rotateX(-90deg);
+    transform-origin: center top 0;
+    transition: all .5s ease 0s
+}
+
+.box8 .icon li a,
+.box8 .title {
+    background: none;
+    font-size: 28px;
+    color: #FFFFFF
+}
+
+.box8:hover .box-content {
+    opacity: 1;
+    transform: perspective(400px) rotateX(0)
+}
+
+.box8 .title {
+    padding: 5px 7px;
+    border-radius: 5px;
+    font-weight: 200;
+    bottom: 20px;
+    left: 20px;
+    transition: all .9s ease 0s
+}
+
+.box8 .icon li a,
+.box9 .box-content,
+.box9 .icon li,
+.box9 img {
+    transition: all .35s ease 0s
+}
+
+.box8:hover .title {
+    bottom: -40px
+}
+
+.box8 .icon {
+    list-style: none;
+    padding: 0;
+    top: 42%;
+    left: 0;
+    right: 0
+}
+
+.box8 .icon li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    margin-right: 7px
+}
+
+.box9 .icon,
+.box9 .title {
+    width: 100%;
+    font-size: 22px
+}
+
+.box8 .icon li a:hover {
+    background: #fff;
+    color: #000
+}
+
+@media only screen and (max-width:990px) {
+    .box8 {
+        margin-bottom: 20px
+    }
 }

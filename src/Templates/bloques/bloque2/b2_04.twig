@@ -54,8 +54,8 @@
             <p class="lead morado mt-5 josh-js" data-josh-anim-name="fadeInUp">Las buenas estrategias de aprendizaje siempre comienzan con preguntas que ordenan nuestro pensamiento y conducta hacia el aprendizaje:</p>
         </div>
     </div>
-    <div class="container paso-paso josh-js" data-josh-anim-name="fadeInUp">
-        <div class="col-lg-10 mx-auto">
+    <div class="row paso-paso josh-js" data-josh-anim-name="fadeInUp">
+        <div class="col-11 mx-auto">
             <ol>
                         <li>
                             <h1 class="morado">Comprender las características de la tarea</h1>
@@ -86,11 +86,11 @@
 </div>
 <div class="bg-rosa text-white text-center d-flex container-fluid josh-js" data-josh-anim-name="fadeInUp">
     <div class="container p-3">
-        <div class=" text-white lead">Da clic en cada verbo para revisar su definición:</div>
+        <div class=" text-white lead">Selecciona cada verbo para revisar su definición:</div>
         <div class="text-white d-none d-xl-block mt-3"><i aria-hidden="true" class=" far fa-2x fa-arrow-alt-circle-down"></i></div>
     </div>
 </div>
-<div class="container text-center josh-js" data-josh-anim-name="fadeInUp">
+<div class="container text-center" >
     <div class="container my-5">
         <div class="row">
             <div class="col-lg-6">
@@ -253,18 +253,18 @@
         </div>
     </div>
 </div>
-<div class="container josh-js" data-josh-anim-name="fadeInUp">
-    <div class="row">
+<div class="container">
+    <div class="row josh-js" data-josh-anim-name="fadeInUp">
       <div class="col-lg-10 mx-auto">
         <p>Una vez identificado el objetivo, podrás armar una estrategia para tratar de alcanzarlo o cumplirlo. Es importante tener claro qué solicita el profesor o la tarea porque es muy distinto analizar, describir, explicar, identificar o valorar un fenómeno humano o natural; asimismo las estrategias para lograr identificar las características de un sistema político son probablemente diferentes de las estrategias que nos posibilitan comparar tres sistemas políticos.</p>
       </div>
     </div>
-    <div class="row my-5">
+    <div class="row my-5 josh-js" data-josh-anim-name="fadeInUp">
         <div class="col-lg-12">
           <h1>Recuerda que…</h1>
         </div>
     </div>
-    <div class="row">
+    <div class="row josh-js" data-josh-anim-name="fadeInUp">
       <div class="col-lg-10 mx-auto">
         <p class="morado lead">Escoger y construir las estrategias de aprendizaje no es tarea fácil. Aprender a aprender significa tener la capacidad de reflexionar detenidamente sobre la forma en cómo se aprende y actuar en consecuencia, autorregulando el propio proceso de aprendizaje mediante el uso de estrategias flexibles y apropiadas, que se transfieren y adaptan a nuevas situaciones.</p>
         <p class="morado lead">Aprendes a aprender cuando:</p>
@@ -298,7 +298,7 @@
 </div>
 
 
-<div class="container-fluid mt-5 josh-js" data-josh-anim-name="fadeInUp">
+<div class="container-fluid mt-5">
     <div class="row">
         <div class="col-lg-11 mx-auto">
             <form id="b2_04" method="post" action="/bloques/aprender/estrategias-de-aprendizaje">
@@ -588,6 +588,7 @@
             <nav aria-label="Page navigation example">
               <ul class="pagination pagination-lg flex-wrap justify-content-center">
                 <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/cuestionatio-honey-alonso"><i class="fas fa-angle-double-left"></i></a></li>
+                <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender"><i class="fas fa-level-up-alt"></i></a></li>
                 <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/que-es-aprender">1</a></li>
                 <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/estilos-de-aprendizaje">2</a></li>
                 <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/cuestionario-honey-alonso">3</a></li>
@@ -605,33 +606,4 @@
     </div>
 </div>
 
-<style media="screen">
-
-/*
-*
-* ==========================================
-* CUSTOM UTIL CLASSES
-* ==========================================
-*
-/* With arrow tabs */
-/* DEMO GENERAL ============================== */
-/*********************** Demo - 8 *******************/
-.box8 .icon,.box8 .title{margin:0;position:absolute}
-.box8{overflow: hidden;width: 100%;min-height: 70px;box-shadow:0 0 3px rgba(0,0,0,.3);position:relative}
-.box8 img{width:100%;height:auto}
-.box8 .box-content{color:white;width:100%;height:100%;background:rgba(0,0,0,.6);opacity:0;position:absolute;top:0;left:0;transform:perspective(400px) rotateX(-90deg);transform-origin:center top 0;transition:all .5s ease 0s}
-.box8 .icon li a,.box8 .title{background:none;font-size:28px;color:#FFFFFF}
-.box8:hover .box-content{opacity:1;transform:perspective(400px) rotateX(0)}
-.box8 .title{padding:5px 7px;border-radius:5px;font-weight:200;bottom:20px;left:20px;transition:all .9s ease 0s}
-.box8 .icon li a,.box9 .box-content,.box9 .icon li,.box9 img{transition:all .35s ease 0s}
-.box8:hover .title{bottom:-40px}
-.box8 .icon{list-style:none;padding:0;top:42%;left:0;right:0}
-.box8 .icon li a{display:block;width:40px;height:40px;line-height:40px;border-radius:50%;margin-right:7px}
-.box9 .icon,.box9 .title{width:100%;font-size:22px}
-.box8 .icon li a:hover{background:#fff;color:#000}
-@media only screen and (max-width:990px){.box8{margin-bottom:20px}
-}
-
-
-</style>
 {% endblock %}

@@ -78,7 +78,7 @@
         </div>
     </div>
 </div>
-<div class="container josh-js" data-josh-anim-name="fadeInUp">
+<div class="container">
     <div class="col-lg-12 mx-auto">
         <p>La búsqueda de información es una de las principales habilidades del aprender a aprender. Para conocer la oferta de libros, revistas en formato impreso y digital en el Colegio y aprender a evaluar los sitios en internet <strong>realiza las siguientes tres actividades</strong>:</p>
         <!--<ul id="tabs1" role="tablist" class="nav nav-tabs nav-pills with-arrow lined flex-column flex-sm-row text-center mt-5">
@@ -197,20 +197,20 @@
                         </div>
                         {% endif %}
                         <div class="col-lg-6">
-                                
+
 
                                 <div id="retro_b2_06_1_success" class="bg-success text-white text-center d-none {% if retro_b6_1.retro == 1 %}d-block{% endif %}">
                                     <p class="text-white p-2">¡Clasificación correcta! Revisa la siguiente tabla, en caso de haber puesto una clasificación correcta podrás localizar el libro físicamente en la biblioteca de tu plantel con ese número.  </p>
                                 </div>
 
 
-                              
+
 
                                 <div id="retro_b2_06_1_fail" class="bg-danger text-white text-center d-none {% if retro_b6_1.retro == 0 %}d-block{% endif %}">
                                     <p class="text-white p-3">¡Clasificación incorrecta! No te preocupes, revisa si escribiste el número de clasificación sin espacios y sin el año de publicación. O bien, revisa que la clasificación corresponda al libro que deseas. Ahora ya puedes buscar libros en la biblioteca de tu plantel.</p>
                                 </div>
 
-                               
+
                         </div>
                     </div>
 
@@ -327,7 +327,7 @@
                 {% endif %}
 
                 {% include 'partials/completado.twig' with {'bandera': cuestionario6} only %}
-                
+
             </div>
             <hr class="dashed">
             <div>
@@ -786,6 +786,7 @@
             <nav aria-label="Page navigation example">
               <ul class="pagination pagination-lg flex-wrap justify-content-center">
                 <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/tecnicas-de-estudio"><i class="fas fa-angle-double-left"></i></a></li>
+                <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender"><i class="fas fa-level-up-alt"></i></a></li>
                 <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/que-es-aprender">1</a></li>
                 <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/estilos-de-aprendizaje">2</a></li>
                 <li class="page-item"><a class="page-link" href="{{base_path()}}bloques/aprender/cuestionario-honey-alonso">3</a></li>
