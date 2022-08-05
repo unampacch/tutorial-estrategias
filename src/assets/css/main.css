@@ -126,7 +126,10 @@ header.masthead .header-content {
 }
 
 header.masthead h1 {
-    font-size: 50px !important;
+    font-size: clamp(1.6rem, 4vw, 3rem);
+}
+header.masthead h2 {
+    font-size: clamp(1rem, 4vw, 2rem);
 }
 
 header.masthead h1, header.masthead h2, header.masthead h3{
@@ -148,9 +151,6 @@ header.masthead h1, header.masthead h2, header.masthead h3{
         text-align: left;
     }
 
-    header.masthead .header-content h1 {
-        font-size: 50px;
-    }
 
     header.masthead .device-container {
         max-width: 325px;
@@ -162,10 +162,10 @@ header.masthead h1, header.masthead h2, header.masthead h3{
 /* ------------------estilos ingreso responsivo-------------------*/
 
 header.ingreso {
-    position: relative;
+
     width: 100%;
     background: #6122b1;
-    height: 100vh;
+
 }
 header.ingreso p{
     color: #2a2a2a;
@@ -277,7 +277,7 @@ header.ingreso h1, header.ingreso h2, header.ingreso h3{
     align-items: center;
 }
 .enfasis {
-    font-size: 2.1rem;
+    font-size: clamp(1.6rem, 4vw, 3rem);
     font-weight: 200;
 }
 
@@ -288,6 +288,11 @@ footer {
     text-align: center;
     color: rgba(255, 255, 255, 0.9);
     background-color: #5E22B2;
+}
+@media (max-width: 640px) {
+    footer {
+        min-height: 20rem;
+    }
 }
 
 footer p {
@@ -506,16 +511,19 @@ ul.temasbloque li {
     border-radius: 10px;
     border: none;
 }
+.card-header h2{
+    font-size: clamp(1rem, 4vw, 1.2rem) !important;
+}
 .card-header a {
     color: #fff !important;
     display: block;
     border: none;
     padding: 20px 35px;
-    font-size: 20px;
     background-color: rgba(94,34,178,1);
     font-weight: 600;
     position: relative;
     color: #fff;
+    font-size: clamp(1rem, 4vw, 1.2rem) !important;
     box-shadow: none;
     transition: all 0.1s ease 0;
     font-weight: 900;
@@ -765,10 +773,23 @@ position: relative;
 font-size: 1.1rem;
 background: #dcedee;
 }
+@media screen and (max-width: 768px) {
+   .blockquote-custom {
+        padding: 0.9rem !important;
+   }
+}
+.blockquote-custom span.enfasis{
+    font-size: clamp(1.2rem, 4vw, 1.5rem);
+}
+.blockquote-custom i{
+    font-size: clamp(2rem, 4vw, 3.5rem);
+}
 .blockquote-custom footer{
 background: none;
 }
-
+.blockquote-custom h1{
+    font-size: clamp(1.5rem, 4vw, 1.9rem);
+}
 .blockquote-custom-icon {
 width: 50px;
 height: 50px;
@@ -1004,6 +1025,12 @@ border-bottom: none;
 border-bottom-right-radius:0;
 border-bottom-left-radius:0;
 }
+.paso-paso h1{
+    font-size: clamp(1.6rem, 4vw, 2rem);
+}
+.paso-paso h3{
+    font-size: clamp(1.4rem, 4vw, 1.5rem);
+}
 
 /* -------------------------------------- */
 /* rounded  list style                    */
@@ -1173,15 +1200,15 @@ color: #fff;
     font-family: 'Catamaran', sans-serif;
     font-weight: 900;
     color: #FFFFFF;
-    font-size: 3rem;
+    font-size: clamp(1.5em, 4vw, 3rem);
     text-align: left;
 }
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
 
     .titulo__pantalla{
         font-size: 2.6rem;
     }
-}
+} */
 
 .breadcrumb{
     background: none;
