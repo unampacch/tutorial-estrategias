@@ -235,7 +235,7 @@ a.btn.open-menu:hover{
     position: relative
 }
 
-.sidebar ul li .sub-menu li a:before {
+.sidebar ul li .sub-menu li:not(:first-child) a:before {
     font-family: "Font Awesome 5 Free";
     content: "\f30b";
     display: inline-block;
@@ -243,6 +243,11 @@ a.btn.open-menu:hover{
     padding-right: 10px;
     vertical-align: middle;
     font-weight: 900;
+}
+
+.sidebar ul li .sub-menu li:first-child a{
+    font-weight: bold;
+    background-color: rgba(48, 14, 114, 0.8);
 }
 
 .sidebar ul li .sub-menu li a:hover:after {
