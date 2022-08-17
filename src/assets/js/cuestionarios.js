@@ -216,6 +216,20 @@ $("#b2_10").on("submit",function(event){
     }
 });
 
+$("#cuestionario_opinion").on("submit",function(event){
+
+    let nradios = (($("[type=radio]", this ).length) + 1) / 5;
+    let nradiosCheck = $("[type=radio]:checked", this).length;
+
+    console.log("sleccion:"+nradiosCheck+" numero:"+ nradios);
+
+    if(nradios != nradiosCheck){
+        event.preventDefault();
+        $('#FormError').modal('show');
+        console.log("Falta seleccionar mas radios");
+    }
+});
+
 
 function retro_b2_b6_1(data){
     
