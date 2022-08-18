@@ -4,50 +4,52 @@
 
 {% block content %}
     <!-- aqui va el codigo html -->
-<div class="indexbloque justify-content-between d-flex flex-column bg-verde">
-    <div class="container-fluid d-flex h-100 mt-3 josh-js" data-josh-anim-name="bounceInDown">
-        <div class="row d-flex align-items-center justify-content-center">
+<div class="indexbloque bg-verde align-items-center">
+    <div class="container-fluid">
+        <div class="row justify-content-center josh-js" data-josh-anim-name="fadeInUp">
             <div class="col-8 col-md-5 col-lg-5">
                 <img class="img-fluid" alt="" src="/img/bloque3/bloquetres-int.png">
             </div>
             <div class="col-11 col-lg-5">
                 <h2 class="titulobloque">Recursos para aprender</h2>
-                <div class="proposito mt-3"> El Colegio de Ciencias y Humanidades tiene un enfoque innovador que integra los conocimientos de varias disciplinas en cuatro áreas. En este bloque te presentamos una serie de recursos en línea para que aprendas de manera autónoma.</div>
-                <ul class="preguntas mt-5 mb-5">
-                    <li>
-                        <i class="fas fa-long-arrow-alt-right "></i>
-                        &nbsp;&nbsp; ¿Para qué estudiar Ciencias Experimentales?</li>
-                    <li>
-                        <i class="fas fa-long-arrow-alt-right"></i>
-                        &nbsp;&nbsp; ¿Para qué las Matemáticas?</li>
-                    <li>
-                        <i class="fas fa-long-arrow-alt-right "></i>
-                        &nbsp;&nbsp; ¿Para qué estudiar Historia y Ciencias Sociales? </li>
-                    <li>
-                        <i class="fas fa-long-arrow-alt-right "></i>
-                        &nbsp;&nbsp; ¿Para qué los Talleres de Lenguaje y Comunicación?</li>
-                    <li>
-                        <i class="fas fa-long-arrow-alt-right "></i>
-                        &nbsp;&nbsp; ¿Para qué aprender una lengua extranjera? </li>
-                    <li>
-                        <i class="fas fa-long-arrow-alt-right"></i>
-                        &nbsp;&nbsp; ¿Qué es el Portal Académico?  </li>
+                <div class="proposito  mt-3 mb-3"> El Colegio de Ciencias y Humanidades tiene un enfoque innovador que integra los conocimientos de varias disciplinas en cuatro áreas. En este bloque te presentamos una serie de recursos en línea para que aprendas de manera autónoma.</div>
+                <ul class="preguntas">
+                    <li>¿Para qué estudiar Ciencias Experimentales?</li>
+                    <li>¿Para qué las Matemáticas?</li>
+                    <li>¿Para qué estudiar Historia y Ciencias Sociales</li>
+                    <li>¿Para qué los Talleres de Lenguaje y Comunicación?</li>
+                    <li>¿Para qué aprender una lengua extranjera?</li>
+                    <li>¿Qué es el Portal Académico?</li>
                 </ul>
-                <div class="mt-3 text-center frase"><span class=" font-weight-light">Descubre las respuestas y más a continuación... </span> <a href="{{base_path()}}bloques/recursos/ciencias-experimentales"" class="btn-vamos p-2 btn-block my-3 w-75 mx-auto">Vamos</a></div>
             </div>
         </div>
     </div>
+    <div class="container-fluid mt-4 josh-js" data-josh-anim-name="fadeInUp">
+        <div class="row">
+            <div class="col-11 mx-auto">
+                <div class="my-3 w-100 text-center frase"><span class="amarillo font-weight-light">Descubre las respuestas y más a continuación...</span>
+                    <div class="w-100 mt-4"><a href="{{base_path()}}bloques/recursos/ciencias-experimentales" class="btn-vamos px-5 d-inline py-2 btn-block my-3 mx-auto">Vamos</a></div></div>
+            </div>
+        </div>
+    </div>
+</div>
         {%if usuario.tipo == "P" %}
-        <div class="container-fluid josh-js seccion-tutor mt-5" data-josh-anim-name="bounceInUp">
-            <div class="seccion-tutor-icono d-flex align-items-center"><i class="fas fa-chalkboard-teacher"></i> <span class="font-weight-light">sección</span><span >tutores</span></div>
+        <div class="seccion-tutor-flecha josh-js" data-josh-anim-name="fadeInUp" data-josh-anim-delay="1s">
+            <a href="#tutores"><i class="fas fa-arrow-alt-circle-down"></i></a>
+        </div>
+        <div id="tutores" class="container-fluid seccion-tutor josh-js" data-josh-anim-name="fadeIn">
+            <div class="seccion-tutor-icono">
+                <i class="fas fa-chalkboard-teacher"></i> <span class="font-weight-light">sección</span><span >tutores</span>
+            </div>
             <div class="container">
                 <div class="row py-5">
-                    <div class="col-12 ">
+                    <div class="col-12">
+                        <h2><i class="fas fa-chalkboard-teacher"></i> Sección tutores</h2>
                         <h3 class="font-weight-bold">Hola {{usuario.nombre}} {{usuario.apellidos}}</h3>
                         <p>A continuación te mostramos algunas sugerencias para que puedas vincular la información de este bloque con las actividades que se encuentran en el cuadernillo “<a href="https://www.cch.unam.mx/sites/default/files/PAT1.pdf" target="_blank">Programa de Acción tutoral de primer semestre</a >”, y así complementar y reforzar tus acciones como tutor(a).</p>
                         <div class="row d-flex justify-content-center align-items-center">
                             <div class="col-2 d-flex justify-content-end">
-                                <a href="/doc/bloque_3_tutores.pdf" target="_blank" class="hvr-bob"><i class="fas fa-file-pdf"></i></a>
+                                <a href="/doc/bloque_3_tutores.pdf" target="_blank"><i class="fas fa-file-pdf"></i></a>
                             </div>
                             <div class="col-6">
                                 <a href="/doc/bloque_3_tutores.pdf" target="_blank" class="lead">Bloque 3. Guía para tutoría</a>
@@ -58,5 +60,4 @@
             </div>
         </div>
     {% endif %}
-</div>
 {% endblock %}
