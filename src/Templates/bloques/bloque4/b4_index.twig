@@ -4,44 +4,53 @@
 
 {% block content %}
     <!-- aqui va el codigo html -->
-<div class="indexbloque justify-content-between d-flex flex-column bg-morado">
-    <div class="container-fluid d-flex h-100 mt-3 josh-js" data-josh-anim-name="bounceInDown">
-        <div class="row d-flex align-items-center justify-content-center">
-            <div class="col-8 col-md-5 col-lg-5">
+<div class="indexbloque bg-morado align-items-center">
+        <div class="container-fluid">
+            <div class="row justify-content-center josh-js" data-josh-anim-name="fadeInUp">
+                <div class="col-8 col-md-5 col-lg-5">
                 <img class="img-fluid" alt="" src="/img/bloque4/bloquecuatro-int.png">
             </div>
             <div class="col-11 col-lg-5">
                 <h2 class="titulobloque">Las TIC para aprender</h2>
-                <div class="proposito mt-3"> Además de los recursos de internet que te ofrece el Colegio de Ciencias y Humanidades, existen muchos otros que facilitan tu aprendizaje,  pues te ayudan a buscar información, almacenarla y compartirla,  así como  a estar en contacto con tus profesores y compañeros.</div>
+                <div class="proposito mt-3 mb-3"> Además de los recursos de internet que te ofrece el Colegio de Ciencias y Humanidades, existen muchos otros que facilitan tu aprendizaje,  pues te ayudan a buscar información, almacenarla y compartirla,  así como  a estar en contacto con tus profesores y compañeros.</div>
                 <ul class="preguntas mt-5 mb-5">
-                    <li>
-                        <i class="fas fa-long-arrow-alt-right "></i>
-                        &nbsp;&nbsp; ¿Cómo aprovechar las redes sociales para tu aprendizaje?</li>
-                    <li>
-                        <i class="fas fa-long-arrow-alt-right"></i>
-                        &nbsp;&nbsp; ¿Dónde puedes almacenar información en línea?</li>
-                    <li>
-                        <i class="fas fa-long-arrow-alt-right "></i>
-                        &nbsp;&nbsp; ¿Qué recursos en internet te ayudan? </li>
+                    <li>¿Cómo aprovechar las redes sociales para tu aprendizaje?</li>
+                    <li>¿Dónde puedes almacenar información en línea?</li>
+                    <li>¿Qué recursos en internet te ayudan? </li>
                 </ul>
-                <div class="mt-3 text-center frase"><span class="amarillo font-weight-light">Descúbrelo a continuación...  </span> <a href="{{base_path()}}bloques/tic-aprender/que-son-las-tic"" class="btn-vamos p-2 btn-block my-3 w-75 mx-auto">Vamos</a></div>
             </div>
         </div>
     </div>
-            {%if usuario.tipo == "P" %}
-        <div class="container-fluid josh-js seccion-tutor" data-josh-anim-name="bounceInUp">
-            <div class="seccion-tutor-icono d-flex align-items-center"><i class="fas fa-chalkboard-teacher"></i> <span class="font-weight-light">sección</span><span >tutores</span></div>
+    <div class="container-fluid mt-4 josh-js" data-josh-anim-name="fadeInUp">
+        <div class="row">
+            <div class="col-11 mx-auto">
+                <div class="my-3 w-100 text-center frase"><span class="amarillo font-weight-light">Descúbrelo a continuación... </span>
+                    <div class="w-100 mt-4"><a href="{{base_path()}}bloques/tic-aprender/que-son-las-tic" class="btn-vamos px-5 d-inline py-2 btn-block my-3 mx-auto">Vamos</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{%if usuario.tipo == "P" %}
+<div class="seccion-tutor-flecha josh-js" data-josh-anim-name="fadeInUp" data-josh-anim-delay="1s">
+            <a href="#tutores"><i class="fas fa-arrow-alt-circle-down"></i></a>
+        </div>
+        <div id="tutores" class="container-fluid seccion-tutor josh-js" data-josh-anim-name="fadeIn">
+            <div class="seccion-tutor-icono">
+                <i class="fas fa-chalkboard-teacher"></i> <span class="font-weight-light">sección</span><span >tutores</span>
+            </div>
             <div class="container">
                 <div class="row py-5">
-                    <div class="col-12 ">
-                        <h3 class="font-weight-bold">Hola {{usuario.nombre}} {{usuario.apellidos}}</h3>
-                        <p>A continuación te mostramos algunas sugerencias para que puedas vincular la información de este bloque con las actividades que se encuentran en el cuadernillo “<a href="https://www.cch.unam.mx/sites/default/files/PAT1.pdf" target="_blank">Programa de Acción tutoral de primer semestre</a >”, y así complementar y reforzar tus acciones como tutor(a).</p>
-                        <div class="row d-flex justify-content-center align-items-center">
-                            <div class="col-2 d-flex justify-content-end">
-                                <a href="/doc/bloque_3_tutores.pdf" target="_blank" class="hvr-bob"><i class="fas fa-file-pdf"></i></a>
-                            </div>
-                            <div class="col-6">
-                                <a href="/doc/bloque_3_tutores.pdf" target="_blank" class="lead">Bloque 4. Guía para tutoría</a>
+                    <div class="col-12">
+                        <h2><i class="fas fa-chalkboard-teacher"></i> Sección tutores</h2>
+                    <h3 class="font-weight-bold">Hola {{usuario.nombre}} {{usuario.apellidos}}</h3>
+                    <p>A continuación te mostramos algunas sugerencias para que puedas vincular la información de este bloque con las actividades que se encuentran en el cuadernillo “<a href="https://www.cch.unam.mx/sites/default/files/PAT1.pdf" target="_blank">Programa de Acción tutoral de primer semestre</a >”, y así complementar y reforzar tus acciones como tutor(a).</p>
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="col-2 d-flex justify-content-end">
+                            <a href="/doc/bloque_3_tutores.pdf" target="_blank"><i class="fas fa-file-pdf"></i></a>
+                        </div>
+                        <div class="col-6">
+                            <a href="/doc/bloque_3_tutores.pdf" target="_blank" class="lead">Bloque 4. Guía para tutoría</a>
                             </div>
                         </div>
                     </div>
@@ -49,5 +58,4 @@
             </div>
         </div>
     {% endif %}
-</div>
 {% endblock %}
