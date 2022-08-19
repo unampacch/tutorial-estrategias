@@ -1247,7 +1247,7 @@ color: #fff;
     padding: 1em;
     font-size: 1.2em;
     font-weight: 900;
-    scroll-behavior: smooth;
+
 }
 /* @media screen and (min-width: 560px) and (max-width:1366px) {
     .seccion-tutor-flecha{
@@ -1261,7 +1261,6 @@ color: #fff;
 }
 .seccion-tutor-flecha a{
     color:#FDCC52 ;
-    scroll-behavior: smooth;
 }
 .seccion-tutor-flecha a:hover{
     color:#dda10a ;
@@ -1275,13 +1274,12 @@ color: #fff;
 .seccion-tutor-flecha::before{
     content: "tutores";
     top: 0;
-    left: 0;
+    left: 6px;
     position: absolute;
 }
 .seccion-tutor{
     background-color: #FDCC52;
     position: relative;
-    scroll-behavior: smooth;
 
 }
 /* @media only screen and (max-width: 991px)  {
