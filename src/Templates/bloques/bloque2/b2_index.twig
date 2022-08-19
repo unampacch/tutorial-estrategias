@@ -28,15 +28,12 @@
             <div class="row">
                 <div class="col-11 mx-auto">
                     <div class="my-3 w-100 text-center frase"><span class="amarillo font-weight-light">Descubre tu estilo de aprendizaje y reflexiona acerca de tus estrategias, técnicas y hábitos para aprender...</span>
-                        <div class="w-100 mt-4"><a href="{{base_path()}}bloques/aprender/que-es-aprender"" class="btn-vamos px-5 d-inline py-2 btn-block my-3 mx-auto">Vamos</a></div></div>
+                        <div class="w-100 mt-4"><a href="{{base_path()}}bloques/aprender/que-es-aprender" class="btn-vamos px-5 d-inline py-2 btn-block my-3 mx-auto">Vamos</a></div></div>
                 </div>
             </div>
         </div>
     </div>
     {%if usuario.tipo == "P" %}
-        <div class="seccion-tutor-flecha josh-js" data-josh-anim-name="fadeInUp" data-josh-anim-delay="1s">
-            <a href="#tutores"><i class="fas fa-arrow-alt-circle-down"></i></a>
-        </div>
         <div id="tutores" class="container-fluid seccion-tutor josh-js" data-josh-anim-name="fadeIn">
             <div class="seccion-tutor-icono">
                 <i class="fas fa-chalkboard-teacher"></i> <span class="font-weight-light">sección</span><span >tutores</span>
@@ -72,5 +69,6 @@
                 </div>
             </div>
         </div>
+        {% include 'partials/flecha-scroll.twig' %}
     {% endif %}
 {% endblock %}
