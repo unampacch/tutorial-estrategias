@@ -1253,6 +1253,7 @@ color: #fff;
     padding: 1em;
     font-size: 1.2em;
     font-weight: 900;
+    z-index: 1;
 
 }
 /* @media screen and (min-width: 560px) and (max-width:1366px) {
@@ -1265,10 +1266,10 @@ color: #fff;
         display: none;
     }
 }
-.seccion-tutor-flecha a{
+.seccion-tutor-flecha a i{
     color:#FDCC52 ;
 }
-.seccion-tutor-flecha a:hover{
+.seccion-tutor-flecha a i:hover{
     color:#dda10a ;
 }
 
@@ -1286,6 +1287,7 @@ color: #fff;
 .seccion-tutor{
     background-color: #FDCC52;
     position: relative;
+    z-index: 2;
 
 }
 /* @media only screen and (max-width: 991px)  {
