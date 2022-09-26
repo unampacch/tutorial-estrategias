@@ -34,7 +34,7 @@ class OpinionController extends BaseController{
         $p10 = $data['p10'];
         $p11 = $data['p11'];
         $p12 = $data['p12'];
-        $p13 = $data['p12'];
+        $p13 = $data['p13'];
 
         Cuestionario_opinion::guardaRespuestas($this->session->id, $p1, $p2, $p3, $p4, $p5, $p6, $p7, $p8, $p9, $p10, $p11, $p12, $p13);
         Avance::registra_opinion($this->session->id);
