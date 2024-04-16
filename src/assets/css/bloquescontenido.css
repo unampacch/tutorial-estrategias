@@ -19,16 +19,17 @@
 }
 .proposito {
     color: #FFFFFF;
-    font-size: clamp(1em, 1.3vw, 1.5em);
+    font-size: 1.1rem;
 }
-.preguntas {
-    text-align: left;
-}
-ul.preguntas li{
+ul.preguntas {
     color: #FFFFFF;
-    font-size: clamp(1em, 1.3vw, 1.5em);
-    margin-bottom: 0.5rem;
-    font-weight: 700;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 900;
+    font-size: 1.3rem;
+}
+ul.preguntas li {
+    list-style: none;
+padding: 0.5rem .5rem;
 }
 
 /* ========= FIN BLOQUE UNO ========== */

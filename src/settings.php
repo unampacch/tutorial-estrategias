@@ -1,7 +1,7 @@
 <?php
 $container->set('settings', function () {
     return [
-        'displayErrorDetails' => true, //poner false en produccion
+        'displayErrorDetails' => false, //poner false en produccion
         'LogErrorDetails' => true,
         'logErrors' => true,
         'app' => [
@@ -10,8 +10,8 @@ $container->set('settings', function () {
         'views' => [
             'path' => __DIR__ .'/Templates',
             'settings' => [
-              #  'cache'=> true,
-              #  'cache' => __DIR__ . '/../cache', //Activar en produccion
+                'cache'=> true,
+                'cache' => __DIR__ . '/../cache', //Activar en produccion
             ],
         ],
         'session' => [

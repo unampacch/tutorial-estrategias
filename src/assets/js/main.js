@@ -64,8 +64,4 @@ $(function() {
     $('.flash-modal').modal('show');
 
     $("#honeyAlonso").checkRadioHoney();
-
-    var scroll = new SmoothScroll('a#fechascroll[href*="#"]', {
-        speed: 1000
-    });
 });

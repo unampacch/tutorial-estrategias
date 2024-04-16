@@ -4,7 +4,6 @@
 body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    scroll-behavior: smooth !important;
 }
 
 /* ==========================================================================
@@ -467,14 +466,6 @@ ul.temasbloque {
 }
 ul.temasbloque li {
     list-style: disc;
-}
-@media screen and (max-width: 1500px) {
-    ul.temasbloque li {
-        font-size: 0.8em;
-    }
-    .titulobloque {
-        font-size: 1.5em;
-    }
 }
 @media (max-width: 767px) {
     .cajas {
@@ -962,12 +953,6 @@ z-index: 2;
 margin: 0 0 0 -1px;
 }
 
-@media screen and (max-width: 968px) {
-    .paso-paso ol{
-        width: 95%;
-    }
-}
-
 .paso-paso ol:after {
 margin: -50px 0 0 -1px;
 }
@@ -1197,12 +1182,6 @@ color: #fff;
 .indexbloque{
     min-height:100vh;
     width: 100%;
-    display: flex;
-    flex-flow: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    scroll-behavior: smooth;
 }
 .indexbloque__h1{
     color: white;
@@ -1244,85 +1223,29 @@ color: #fff;
 * ==========================================
 *
 */
-
-.seccion-tutor-flecha{
-    color:#FDCC52 ;
-    position: fixed;
-    right: 1em;
-    bottom: 2em;
-    padding: 1em;
-    font-size: 1.2em;
-    font-weight: 900;
-    z-index: 1;
-
-}
-/* @media screen and (min-width: 560px) and (max-width:1366px) {
-    .seccion-tutor-flecha{
-        display: block;
-    }
-} */
- @media only screen and (max-width: 768px)  {
-    .seccion-tutor-flecha{
-        display: none;
-    }
-}
-.seccion-tutor-flecha a i{
-    color:#FDCC52 ;
-}
-.seccion-tutor-flecha a i:hover{
-    color:#dda10a ;
-}
-
-.seccion-tutor-flecha i{
-    font-size: 2.5em;
-    text-shadow: 0.1rem 0.2rem 0.4rem rgba(36, 36, 36, 0.26);
-    padding-top: 0.2em;
-}
-.seccion-tutor-flecha::before{
-    content: "tutores";
-    top: 0;
-    left: 6px;
-    position: absolute;
-}
 .seccion-tutor{
     background-color: #FDCC52;
-    position: relative;
-    z-index: 2;
-
+    margin-top: 1rem;
 }
-/* @media only screen and (max-width: 991px)  {
+@media only screen and (max-width: 991px)  {
     .seccion-tutor{
         margin-top: 5rem;
     }
-} */
-.seccion-tutor h2{
-    display: none;
-    font-size: 1.5em;
-    color: #eeaf0f;
-    font-family: 'Catamaran', sans-serif;
-    font-weight: 900;
-    margin-bottom: 1em;
 }
-.seccion-tutor h2 i{
-    font-size: 1em;
-}
+
 .seccion-tutor-icono{
     font-size: 1.5em;
     position: absolute;
+    position: absolute;
     top: -2em;
-    right: 2rem;
+    right: 5em;
     color:#eeaf0f ;
     font-weight: 900;
-    text-shadow: 0.1rem 0.2rem 0.4rem rgba(36, 36, 36, 0.26);
-    display: inline-flex;
-    align-items: center;
+    overflow: hidden;
 }
-@media only screen and (max-width: 770px)  {
+@media only screen and (max-width: 991px)  {
     .seccion-tutor-icono{
-        display: none;
-    }
-    .seccion-tutor h2{
-        display: block;
+        right: 2em;
     }
 }
 
@@ -1330,7 +1253,7 @@ color: #fff;
     font-size: 2em;
     margin-right:0.1em ;
 }
-/* @media only screen and (max-width: 360px)  {
+@media only screen and (max-width: 360px)  {
     .seccion-tutor-icono{
         left:4rem;
         font-size: 1.1rem;
@@ -1339,13 +1262,13 @@ color: #fff;
         left:4rem;
         font-size:1rem;
     }
-} */
+}
   .seccion-tutor  a:link{
         text-decoration: none;
-        color: #5E22B2;
+        color: #7c612e;
     }
     .seccion-tutor a:hover{
-        color: #936acc;
+        color: #5E22B2;
     }
 .seccion-tutor i{
     font-size: 3em;
@@ -1358,7 +1281,7 @@ color: #fff;
 *
 */
 .frase{
-    font-size: clamp(1.5em, 2vw, 2em);
+    font-size: 2em;
 }
 
 .btn-vamos{
